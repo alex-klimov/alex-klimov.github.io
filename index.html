@@ -3,9 +3,11 @@
 <head>
   <title>Skody AI</title>
   <link rel="shortcut icon" href="/img/skunk.logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -15,19 +17,38 @@
     }
 
     .logo {
-      margin-left: 50px;
-      height: 45%;
+      height: 325px;
     }
 
     .slogan {
-      text-align: right;
-      font-size: 95px;
+      text-align: center;
+      font-size: 65px;
       color: #071016;
+    }
+
+    @media ((max-width: 900px) and (oriendation: landscape)) or ((max-height: 900px) and (oriendation: portrait)) {
+      .logo {
+        height: 150px;
+      }
+
+      .slogan {
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 700px) or (max-height: 700px) {
+      .logo {
+        height: 135px;
+      }
+
+      .slogan {
+        font-size: 35px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1 class="slogan">The future of BI<br>is<br>Explainable BI</h1>
   <img src="img/skunk.analytics.png" alt="Skody Logo" class="logo">
+  <h1 class="slogan">The future of BI<br>is<br>Explainable BI</h1>  
 </body>
 </html>
