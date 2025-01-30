@@ -6,14 +6,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <style>
-    body {
+    html, body {
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+    .root {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100%;
       font-family: "DM Sans", Arial, sans-serif;
       margin: 0;
       background-color: #f4f4f4;
@@ -29,7 +34,13 @@
       color: #071016;
     }
 
-    .separator {
+    .private_preview {
+      text-align: center;
+      font-size: 49px;
+      color: #071016;
+    }
+
+    .separator {      
       margin-top: 23px;
     }
 
@@ -41,6 +52,10 @@
       .slogan {
         font-size: 50px;
       }
+
+      .private_preview {
+        font-size: 45px;
+      }
     }
 
     @media (max-width: 700px) or (max-height: 700px) {
@@ -51,11 +66,18 @@
       .slogan {
         font-size: 35px;
       }
+
+      .private_preview {
+        font-size: 33px;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="img/skunk.analytics.png" alt="Skody Logo" class="logo">
-  <h1 class="slogan">Automated scheduling assistant & analytics<div class="separator"/>for manufacturing</h1>
+  <div class="root">
+    <img src="img/skunk.analytics.png" alt="Skody Logo" class="logo">
+    <h1 class="slogan">Automated production planning assistant <div class="separator"/>for manufacturing</h1>
+    <h1 class="private_preview">We are in Private Preview. <div class="separator"/>To join please <a href="mailto:alex@skody.ai">email</a> us.</h1>
+  </div>
 </body>
 </html>
