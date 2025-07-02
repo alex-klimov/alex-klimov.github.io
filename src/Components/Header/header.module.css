@@ -1,0 +1,144 @@
+.stickyHeader{
+    position: sticky;
+    top: 0;
+    z-index: 1212;
+
+}
+.homePageContainer {
+    max-width: calc(1280px + 2rem);
+    margin: 0rem auto;
+    overflow: hidden;
+    padding: 0 1rem;
+   
+}
+
+.header {
+    color: var(--primary-black);
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.barrierPoint{
+    display: flex
+;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 140px;
+    height: 47px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.header nav ul li {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-black);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+}
+
+.header nav ul li:hover{
+    background: var(--grey-color-300);
+    border-radius: 2rem;
+}
+
+.header nav ul li:last-child{
+    background-color: var(--blue-color-500);
+    border-radius: 2rem;
+}
+.header nav ul li:last-child a{
+    color: var(--primary-white);
+    font-size: 1rem;
+}
+.mobileHeader {
+    position: absolute;
+    top: 4.5rem;
+    background: var(--primary-white);
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0rem 0rem 1rem;
+  
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease-in-out;
+  }
+.mobileHeader.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+@media screen and (max-width:768px) {
+    .header{
+        background: var(--primary-white);
+        padding: 1rem 1rem;
+    }
+    .demo{
+        background-color: var(--blue-color-500);
+        border-radius: 2rem;
+        cursor: pointer;
+        
+    }
+    .demo a{
+        color: var(--primary-white) !important;
+        font-size: 1rem;
+    }
+    .demo:hover{
+        background-color: var(--blue-color-600-hover) !important;
+    }
+    .header nav ul{
+        align-items: center;    
+    }
+    .mobileNavigation li{
+        list-style: none;
+        width: fit-content;
+        padding: 1rem 3rem;
+        cursor: pointer ;
+
+    }
+    .mobileNavigation li:hover{
+        background-color: var(--grey-color-200);
+        border-radius: 2rem;
+
+    }
+    .hambuger{
+        display: flex;
+    }
+    
+    .mobileNavigation li:active{
+        background-color: var(--grey-color-300);
+        border-radius: 2rem;
+
+    }
+    
+    .mobileNavigation{
+        display: flex
+        ;
+            flex-direction: column;
+            align-items: center;
+    }
+    .logo {
+        width: 65px;
+
+        height: 38px;
+    }
+    
+}
