@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/skody_landing_page/static/css/main.7cde7ee1.css",
+    "main.js": "/skody_landing_page/static/js/main.09d9707d.js",
+    "static/js/453.f1aeb191.chunk.js": "/skody_landing_page/static/js/453.f1aeb191.chunk.js",
+    "static/media/backgroundOfImpact.png": "/skody_landing_page/static/media/backgroundOfImpact.b6c4ee282850a5ec6ca8.png",
+    "static/media/machine.png": "/skody_landing_page/static/media/machine.241e3ca211460571ac51.png",
+    "index.html": "/skody_landing_page/index.html",
+    "main.7cde7ee1.css.map": "/skody_landing_page/static/css/main.7cde7ee1.css.map",
+    "main.09d9707d.js.map": "/skody_landing_page/static/js/main.09d9707d.js.map",
+    "453.f1aeb191.chunk.js.map": "/skody_landing_page/static/js/453.f1aeb191.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cde7ee1.css",
+    "static/js/main.09d9707d.js"
+  ]
+}
