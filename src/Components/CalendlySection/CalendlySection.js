@@ -7,7 +7,7 @@ const CalendlySection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const checkMobileView = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -28,7 +28,7 @@ const CalendlySection = () => {
       {isMobile? 
       <PopupButton
           className={`bold ${styles.button}`}
-          url="https://calendly.com/alexl-skody/30min"
+          url="https://calendly.com/alexl-skody/30min?hide_event_type_details=1&hide_gdpr_banner=1"
           rootElement={document.getElementById("root")}
           text="Schedule Demo"
         /> :null}
@@ -41,7 +41,7 @@ const CalendlySection = () => {
         <CommonText smallDescription='Connect with our team to learn more about our product and start your trial today.' />
         {!isMobile? <PopupButton
           className={`bold ${styles.button}`}
-          url="https://calendly.com/alexl-skody/30min"
+          url="https://calendly.com/alexl-skody/30min?hide_event_type_details=1&hide_gdpr_banner=1"
           rootElement={document.getElementById("root")}
           text="Schedule Demo"
         /> :null}

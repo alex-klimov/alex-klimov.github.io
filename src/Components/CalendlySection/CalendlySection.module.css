@@ -37,6 +37,10 @@
     margin-top: 1rem;
     border-radius: 3rem;
 }
+:global(.calendly-popup-content){
+    height: 700px !important;
+    scale: 0.9;
+}
 
 @media screen and (max-width:1024px) {
     .mainContainer {

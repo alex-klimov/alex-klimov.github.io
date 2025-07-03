@@ -42,6 +42,7 @@
 
 .header nav ul li {
     display: inline-block;
+    cursor: pointer;
     padding: 0.6rem 1.2rem;
 
 }
