@@ -1,0 +1,59 @@
+{
+  "header": {
+    "title": "Schedule Smarter, Build Faster",
+    "description": "Skody AI transforms your ERP data into optimal schedules in seconds—starting with purchase orders and adapting instantly to priority shifts. Like Google Maps for production, we guide you to the best route, no complaints, just smarter suggestions."
+  },
+  "schedule": {
+    "image": "/assets/images/machine-schedule-new-version.png"
+  },
+  "background": {
+    "image": "/assets/images/machineworkimage.png"
+  },
+  "moblieschedule": {
+    "image": "/assets/images/mobile-Banner-image.png"
+  },
+  "actions": [
+    {
+      "type": "button",
+      "label": "Optimize",
+      "action": "optimizeSchedule"
+    }
+  ],
+  "section": [
+    {
+      "title": "Skody AI APS: Your Production Navigator",
+      "bannerImage":{
+        "src":"/assets/images/System-cogs-Icon.png",
+        "alt":"backgroundSystemCogs"
+
+      },
+      "bulletpointBannerImage":{
+        "src":"/assets/icons/System-cogs-Icon-small-blue.png",
+        "alt":"bulletpointBannerImage"
+      },
+      "bulletpoint": [
+        {
+          "text": "Skody AI APS is an AI-driven Advanced Planning and Scheduling software for manufacturers.",
+          "icon": {
+            "src": "/assets/icons/Icons_system-blue.png",
+            "alt": "bulletpoint"
+          }
+        },
+        {
+          "text": "Automates and optimizes complex scheduling and constraints, adapts in real-time, and integrates with any ERP.",
+          "icon": {
+            "src": "/assets/icons/Icon-access-data.png",
+            "alt": "bulletpoint"
+          }
+        },
+        {
+          "text": "Enhances communication with real-time progress tracking.",
+          "icon": {
+            "src": "/assets/icons/message.png",
+            "alt": "bulletpoint"
+          }
+        }
+      ]
+    }
+  ]
+}

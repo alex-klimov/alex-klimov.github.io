@@ -1,0 +1,89 @@
+{
+    "images": [
+      {
+        "id": 1,
+        "url": "/assets/dashboardImage/dashboards.png",
+        "description": "Image 1 Description"
+      },
+      {
+        "id": 2,
+        "url": "/assets/dashboardImage/sch.png",
+        "description": "Image 2 Description"
+      },
+      {
+        "id": 3,
+        "url": "/assets/dashboardImage/drag&drop.png",
+        "description": "Image 2 Description"
+      },
+      {
+        "id": 4,
+        "url": "/assets/dashboardImage/workorder.png",
+        "description": "Image 3 Description"
+      },
+      {
+        "id": 5,
+        "url": "/assets/dashboardImage/messaging.png",
+        "description": "Image 3 Description"
+      },
+      {
+        "id": 6,
+        "url": "/assets/dashboardImage/production.png",
+        "description": "Image 3 Description"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "dashboard",
+        "label": "Dashboard",
+        "imageId": 1
+      },
+      {
+        "id": "schedule",
+        "label": "Schedule",
+        "imageId": 2
+      },
+      {
+        "id": "drag&drop",
+        "label": "Drag & Drop",
+        "imageId": 3
+      },
+      {
+        "id": "workOrder",
+        "label": "Work Order",
+        "imageId": 4
+      },
+      {
+        "id": "messaging",
+        "label": "Messaging",
+        "imageId": 5
+      },
+      {
+        "id": "inProduction",
+        "label": "In Production",
+        "imageId": 6
+      }
+    ],
+    "benefitSections": 
+    {
+      "title": "Here's how we work:",
+      "content": {
+        "paragraph": "It all starts with PO delivery dates, using an AI algorithm to sequence production steps efficiently.",
+        "description": "The algorithm processes this data to determine the optimal sequence of production steps, resolving conflicts like skill mismatches and equipment overlaps, adjusting dynamically to priority shifts or disruptions."
+      },
+      "points": [
+        "Shift days and times",
+        "Employee skill matrix",
+        "Equipment capabilities",
+        "Job equipment specifications",
+        "Material availability",
+        "Order of operations",
+        "Takt time estimates"
+      ],
+      "arrows":{
+        "scr":"/assets/icons/arrow.png",
+        "alt":"arrow"
+      }
+    }
+  
+  }
+  

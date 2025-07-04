@@ -1,0 +1,74 @@
+{
+  "heading": "Why Choose Skody?",
+  "detail": {
+    "floatingImage": {
+      "src": "/assets/images/floatingPainPoints.png",
+      "alt": ""
+    },
+    "image": { "src": "/assets/dashboardImage/painPoint.png", "alt": "WhySkody" },
+    "slogan": "Scheduling Challenges Slow You Down"
+  },
+  "sections": [
+    {
+      "heading": [
+        {
+          "title": "Google Maps:",
+          "subheading": "Real-Time Route Optimization"
+        },
+        {
+          "title": "Skody:",
+          "subheading": "Real-Time Schedule Optimization"
+        }
+      ],
+      "imageContainer": {
+        "src": "/assets/images/whyimagenavigation.png",
+        "alt": "navigation"
+      },
+      "content": {
+        "description": "Skody is the Google maps of manufacturing - auto-rerouting production on every change, conflict-free and effortless."
+      }
+    },
+    {
+      "heading":"Skody AI APS tackles these challenges with smart, automated scheduling.",
+      "button":{
+        "label":"Demo Skody AI"
+      },
+      "bannerImage":{
+        "src":"/assets/images/demoSystemcogs.png",
+        "alt":"demoSystemcogs"
+      }
+    },
+    {
+      "components": [
+        {
+          "type": "card",
+          "title": "ERP Integration",
+          "description": "Updates hit the factory floor, instantly",
+          "icon":{
+            "src":"/assets/images/Media2.png",
+            "alt":"card"
+          }
+        },
+        {
+          "type": "card",
+          "title": "AI-Driven",
+          "description": "AI-driven, solves NP-hard sequencing, dynamic",
+          "icon":{
+            "src":"/assets/images/Media3.png",
+            "alt":"card"
+          }
+        },
+        {
+          "type": "card",
+          "title": "Analytics",
+          "description": "Open-source, customizable, scalable, ITAR/CMMC",
+          "icon":{
+            "src":"/assets/images/Media.png",
+            "alt":"card"
+          }
+        }
+      ]
+    }
+    
+  ]
+}
