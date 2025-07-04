@@ -2,7 +2,6 @@
   "name": "skodyai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alex-klimov.github.io/skody_landing_page",
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@testing-library/dom": "^10.4.0",
