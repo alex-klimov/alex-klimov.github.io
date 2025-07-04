@@ -10,7 +10,7 @@
     border: 1px solid;
     padding: 2rem 2rem 0rem;
     height: 600px;
-    width: 30%;
+    width: 450px;
     min-width: 200px;
 }
 
@@ -55,6 +55,9 @@
 
     .scheduleDemoContainer {
         width: 60%;
+    }
+    .button{
+        width: 80%;
     }
 }
 

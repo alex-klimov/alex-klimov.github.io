@@ -2,9 +2,20 @@ import React from 'react';
 import footerData from './Footer.json';
 import styles from './Footer.module.css';
 import CommonText from '../CommonText/CommonText';
+import { useScroll } from '../ScrollContext/ScrollContext';
 
 const Footer = () => {
+  const { scrollToSection, productRef, whyRef, impactRef, demoRef } =
+    useScroll();
   const footerInfo = footerData.footer;
+
+  // Create a mapping between link names and corresponding references
+  const sectionRefs = {
+    Product: productRef,
+    "Why Skody": whyRef,
+    "Impact": impactRef,
+    "Schedule Demo": demoRef,
+  };
 
   if (!footerInfo) return null;
 
@@ -32,10 +43,13 @@ const Footer = () => {
             </div>
             <div className={styles.productLinks}>
               {footerInfo.productLinks.map((link) => (
-                <a href={link.url} key={link.name} className={styles.link}>
-                  <CommonText smallDescription={link.name} size='body-sm' />
-
-                </a>
+                <div
+                  key={link.name}
+                  className={styles.link}
+                  onClick={() => scrollToSection(sectionRefs[link.name])}
+                >
+                  <CommonText smallDescription={link.name} size="body-sm" />
+                </div>
               ))}
             </div>
           </div>

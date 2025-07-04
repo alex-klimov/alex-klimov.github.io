@@ -45,9 +45,10 @@
     object-fit: contain;
 }
 
-.productLinks a,
+.productLinks div,
 .socialLink a {
     text-decoration: none;
+    cursor: pointer;
     color: inherit;
     font-weight: normal;
     color: var(--grey-color-700, #343434);

@@ -26,8 +26,8 @@
       { "name": "Schedule Demo", "url": "/schedule-demo" }
     ],
     "links": [
-      { "name": "Privacy Policy", "url": "/privacy-policy" },
-      { "name": "Terms of Service", "url": "/terms-of-service" }
+      { "name": "Privacy Policy", "url": "/" },
+      { "name": "Terms of Service", "url": "/" }
     ],
     "contact": {
       "email": "info@skody.ai"

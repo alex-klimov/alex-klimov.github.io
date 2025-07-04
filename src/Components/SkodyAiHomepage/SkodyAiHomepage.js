@@ -5,6 +5,7 @@ import SkodyImpact from "../SkodyImpactContainer/SkodyImpact/SkodyImpact";
 import ProductDemo from "../ProductDemo/ProductDemo";
 import { useScroll } from "../ScrollContext/ScrollContext";
 import CalendlySection from "../CalendlySection/CalendlySection";
+import styles from './SkodyAiHomepage.module.css'
 
 const SkodyAiHomepage = () => {
   const { productRef, whyRef, impactRef, demoRef } = useScroll();
@@ -17,13 +18,13 @@ const SkodyAiHomepage = () => {
       <div >
         <ProductDemo />
       </div>
-      <div ref={whyRef}>
+      <div ref={whyRef} className={styles.whySkody}>
         <WhySkody />
       </div>
-      <div ref={impactRef}>
+      <div ref={impactRef} className={styles.skodyImpactContainer}>
         <SkodyImpact />
       </div>
-      <div ref={demoRef}>
+      <div ref={demoRef} className={styles.skodyCalendlySection}>
         <CalendlySection />
       </div>
     </div>

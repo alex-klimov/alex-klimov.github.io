@@ -1,6 +1,6 @@
 .mainContainer {
     overflow: unset;
-    margin: 3rem auto;
+    margin: 6rem auto;
 }
 
 .mainContainer :global(.commonText) h2 {
