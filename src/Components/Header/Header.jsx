@@ -26,8 +26,8 @@ const Header = () => {
       <li className="medium" onClick={() => scrollToSection(impactRef)}>
         Impact
       </li>
-      <li className="medium" onClick={() => scrollToSection(demoRef)}>
-        <a href="#">Schedule Demo</a>
+      <li className={`medium ${styles.sch}`} onClick={() => scrollToSection(demoRef)} >
+        Schedule Demo
       </li>
     </>
   );
@@ -61,7 +61,7 @@ const Header = () => {
                     className={`medium ${styles.demo}`}
                     onClick={() => scrollToSection(demoRef)}
                   >
-                    <a href="#">Schedule Demo</a>
+                    Schedule Demo
                   </li>
                   <div
                     className={styles.hambuger}

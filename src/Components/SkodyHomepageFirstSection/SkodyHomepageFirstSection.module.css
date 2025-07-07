@@ -12,7 +12,7 @@
     overflow: unset;
 }
 .headingContainer {
-    width: 50%;
+    width: 51%;
 }
 
 .arrow {
@@ -31,7 +31,7 @@
 }
 
 .description :global(.commonText) p {
-    color: var(--primary-black-dark);
+    color: var(--grey-color-800);
     letter-spacing: 0.2px;
     text-align: start;
 
@@ -50,14 +50,15 @@
 .animatedImageArrow{
     rotate: 180deg;
     position: absolute;
-    top: 70%;
+    top: 58%;
+    width: 81%;
     left: 0;
     z-index: -1;
 
 }
 
 .imageContainer {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .imageContainer img {
@@ -91,10 +92,30 @@
     .imageContainer img {
         width: 80%;
     }
+    /* .backgroundImageContainer {
+        height: 830px;
+    } */
     .backgroundImageContainer {
-        height: 700 px;
+        background-image: none;
+        height: auto;
     }
-
+    .bannerImageContainerGear {
+        display: block;
+        top: 0;
+        position: absolute;
+        height: 46%;
+        width: 26%;
+        bottom: 57.1%;
+        right: 17.6%;
+        z-index: -1;
+        scale: 0.6;
+    }
+    .heading :global(.commonText) h2{
+        padding-top: 2rem;
+    }
+    .arrow{
+        display: none;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -104,17 +125,18 @@
     .animatedImageArrow{
         display: none;
     }
-    .arrow{
+    /* .arrow{
         display: none;
-    }
+    } */
     .heading :global(.commonText) h2{
         padding-top: 2rem;
     }
 
-    .backgroundImageContainer {
+    
+    /* .backgroundImageContainer {
         background-image: none;
         height: auto;
-    }
+    } */
 
     .imageContainer {
         margin-top: 1.2rem;

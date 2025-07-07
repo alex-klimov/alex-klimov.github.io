@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import styles from './OptimizationCard.module.css';
+import CommonText from '../../CommonText/CommonText';
+
 
 const OptimizationCard = () => {
   const [count, setCount] = useState(0);
@@ -12,22 +14,22 @@ const OptimizationCard = () => {
 
   const barConfigs = [
     [
-      { width: '15%', bgColor: '#89B2EF', label: 'Part 1' },
-      { width: '25%', bgColor: '#ACDA9E', label: 'Part 2' },
-      { width: '35%', bgColor: '#FFFFFF', label: 'Part 3' },
-      { width: '10%', bgColor: '#FBD0A3', label: 'Part 4' },
+      { width: '35%', bgColor: '#FBD0A3', label: 'PO #2506' },
+      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2504' },
+      { width: '35%', bgColor: '#FFFFFF', label: 'PO #2509' },
+      // { width: '10%', bgColor: '#FBD0A3', label: 'Part 4' },
     ],
     [
-      { width: '25%', bgColor: '#ACDA9E', label: 'Part 2' },
-      { width: '15%', bgColor: '#89B2EF', label: 'Part 1' },
-      { width: '10%', bgColor: '#FBD0A3', label: 'Part 4' },
-      { width: '35%', bgColor: '#FFFFFF', label: 'Part 3' },
+      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '20%', bgColor: '#FBD0A3', label: 'PO #2501' },
+      // { width: '35%', bgColor: '#FFFFFF', label: 'Part 3' },
     ],
     [
-      { width: '10%', bgColor: '#ACDA9E', label: 'Part 4' },
-      { width: '35%', bgColor: '#89B2EF', label: 'Part 1' },
-      { width: '10%', bgColor: '#FBD0A3', label: 'Part 2' },
-      { width: '15%', bgColor: '#FFFFFF', label: 'Part 3' },
+      { width: '20%', bgColor: '#ACDA9E', label: 'PO #2504' },
+      { width: '35%', bgColor: '#89B2EF', label: 'PO #2506' },
+      { width: '30%', bgColor: '#FBD0A3', label: 'PO #2501' },
+      // { width: '15%', bgColor: '#FFFFFF', label: 'Part 3' },
     ],
   ];
 
@@ -45,17 +47,11 @@ const OptimizationCard = () => {
 
   return (
     <div className={styles.card}>
-      <div>
-
-        <div className={styles.days}>
-
-          {Array.from({ length: 7 }, (_, i) => (
-            <div key={i}>Day {i + 1}</div>
-          ))}
-          <span
-
-            className={`${styles.optimizeBtn} ${styles.glowAnimation}`}
-          >
+      <div className={styles.cardHeadingSection}>
+        <div className={styles.cardHeadingSectionInnerContainer}>
+          <div className={styles.heading}>
+            <CommonText smallDescription='Scheduling Assistant' size='body-lg' weight='medium' />
+            <span className={`${styles.optimizeBtn} ${styles.glowAnimation}`}>
             <span onClick={increment}>
               Optimize
             </span>
@@ -64,16 +60,24 @@ const OptimizationCard = () => {
             </svg>
           </span>
 
+          </div>
+          <div className={styles.days}>
+
+            {Array.from({ length: 8 }, (_, i) => (
+              <div key={i}>Day {i + 1}</div>
+            ))}
+          </div>
 
         </div>
+
       </div>
 
       <div className={styles.machines}>
         <div className={styles.machine}>
           <div className={styles.machineNameContainer}>
-            <div className={styles.machineName}>Machine_0</div>
-            <div className={styles.machineName}>Machine_1</div>
-            <div className={styles.machineName}>Machine_2</div>
+            <div className={styles.machineName}>Machine 1</div>
+            <div className={styles.machineName}>Machine 2</div>
+            <div className={styles.machineName}>Packaging</div>
           </div>
 
           <div className={styles.barsContainer}>

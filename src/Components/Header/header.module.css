@@ -44,17 +44,8 @@
 .header nav ul li {
     display: inline-block;
     cursor: pointer;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
 
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: var(--primary-black);
-    font-size: 0.9rem;
-    font-weight: 700;
-    line-height: 140%;
-    letter-spacing: 0.5px;
 }
 
 .header nav ul li:hover {
@@ -65,11 +56,14 @@
 .header nav ul li:last-child {
     background-color: var(--blue-color-500);
     border-radius: 2rem;
+    
 }
 
-.header nav ul li:last-child a {
+.sch {
     color: var(--primary-white);
+    font-family:'Inter';
     font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .mobileHeader {
@@ -100,10 +94,6 @@
         visibility: visible;
     }
 
-    .hambugerMenu {
-        /* rotate: 90deg; */
-    }
-
     .header {
         background: var(--primary-white);
         padding: 1rem 1rem;
@@ -113,12 +103,10 @@
         background-color: var(--blue-color-500);
         border-radius: 2rem;
         cursor: pointer;
-
-    }
-
-    .demo a {
+        font-family: 'Inter';
         color: var(--primary-white) !important;
-        font-size: 1rem;
+        font-size: 15px;
+
     }
 
     .demo:hover {

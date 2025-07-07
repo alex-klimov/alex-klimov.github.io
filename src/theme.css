@@ -3,6 +3,8 @@ body {
     --primary-black: #222222;
     --primary-black-dark: #000000;
 
+    --card-background:#2f2f2f;
+
     /* Light Mode */
 
     --Light-1: #8088A0;
@@ -158,6 +160,11 @@ body.dark {
     font-size: 22px;
     line-height: 30px;
 }
+.label-sub1-new {
+    font-size: 24px;
+    line-height: 33px;
+}
+
 
 .label-sub2 {
     font-size: 20px;
@@ -235,5 +242,9 @@ body.dark {
     .title-h2-v2 {
         line-height: 28px;
         font-size: 22px;
+    }
+    .label-sub1-new {
+        font-size: 16px;
+        line-height: 24px;
     }
 }

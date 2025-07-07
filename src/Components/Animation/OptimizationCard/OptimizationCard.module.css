@@ -1,3 +1,19 @@
+.cardHeadingSection {
+  background: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem 0.4rem;
+
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
 .bars1,
 .bars2,
 .bars3,
@@ -19,10 +35,10 @@
 }
 
 .card {
-  color: white;
+  color: var(--primary-white);
   overflow: hidden;
   border-radius: 0.7rem;
-  width: 100%;
+  width: 68%;
   display: flex;
   flex-direction: column;
 }
@@ -32,10 +48,9 @@
   grid-template-columns: repeat(8, 1fr);
   text-align: center;
   background: #2f2f2f;
-  padding: 20px;
   align-items: center;
-  padding-left: 7rem;
-
+  gap: 0.1rem;
+  padding-left: 6.4rem;
 }
 
 .days span {
@@ -64,7 +79,6 @@
 .machine {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 
 .machineName {
@@ -110,21 +124,19 @@
 
 
 .machineNameContainer {
-  width: 10%;
+  width: 14%;
 }
 
 .bars {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 0.5rem;
-  ;
+  padding: 0.5rem 0rem;
 
 }
 
 .font {
   color: #131313;
-
   font-size: 14px;
   font-family: 'Inter';
   font-weight: 500;
@@ -144,7 +156,6 @@
   align-items: center;
   width: 15%;
   height: 25px;
-  ;
   background: #89B2EF;
   border-radius: 2rem;
 }
@@ -155,7 +166,6 @@
   align-items: center;
   width: 25%;
   height: 25px;
-  ;
   background: #ACDA9E;
   border-radius: 2rem;
 }
@@ -166,7 +176,6 @@
   align-items: center;
   width: 35%;
   height: 25px;
-  ;
   background: #FFFFFF;
   border-radius: 2rem;
 }
@@ -177,7 +186,6 @@
   align-items: center;
   width: 10%;
   height: 25px;
-  ;
   background: #FBD0A3;
   border-radius: 2rem;
 }
@@ -188,7 +196,6 @@
   align-items: center;
   width: 20%;
   height: 25px;
-  ;
   background: #89B2EF;
   border-radius: 2rem;
 }
@@ -199,7 +206,6 @@
   align-items: center;
   width: 35%;
   height: 25px;
-  ;
   background: #FBD0A3;
   border-radius: 2rem;
 }
@@ -210,7 +216,6 @@
   align-items: center;
   width: 20%;
   height: 25px;
-  ;
   background: #89B2EF;
   border-radius: 2rem;
 }
@@ -221,7 +226,6 @@
   align-items: center;
   width: 30%;
   height: 22px;
-  ;
   background: #ACDA9E;
   border-radius: 2rem;
 }
@@ -232,7 +236,6 @@
   align-items: center;
   width: 10%;
   height: 22px;
-  ;
   background: #FFFFFF;
   border-radius: 2rem;
 }
@@ -243,14 +246,24 @@
   align-items: center;
   width: 20%;
   height: 25px;
-  ;
   background: #FBD0A3;
   border-radius: 2rem;
+}
+
+@media screen and (max-width:1024px) {
+  .card {
+    width: 75%;
+  }
+
 }
 
 @media screen and (max-width:840px) {
   .machineNameContainer {
     width: 12%;
+  }
+
+  .card {
+    width: 85%;
   }
 
 }
@@ -271,10 +284,26 @@
     font-size: 10px;
   }
 
+  .cardHeadingSection {
+    padding: 0.5rem 1rem 0.4rem;
+  }
+
+  .heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .bars {
+    padding: 0.3rem 0rem;
+  }
+
   .machineName {
     font-size: 12px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 
   .machineNameContainer {
@@ -283,6 +312,8 @@
 
   .barsContainer {
     width: 80%;
+    gap: 0;
+
   }
 }
 
@@ -301,15 +332,46 @@
   }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:540px) {
   .machineName {
     font-size: 7px;
   }
 
+  .heading :global(.commonText) p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .optimizeBtn {
+    font-size: 8px;
+  }
+
+  .bars1,
+  .bars2,
+  .bars3,
+  .bars4,
+  .bars5,
+  .bars6,
+  .bars7,
+  .bars8,
+  .bars9,
+  .bars10 {
+    height: 13px;
+
+  }
+
+  .barsContainer {
+    gap: 1rem;
+  }
+
   .font {
     display: flex;
-    font-size: 6px;
+    font-size: 7px;
     align-items: center;
+  }
+
+  .optimizeBtn {
+    padding: 0px 5px;
   }
 
   .days div {
@@ -321,24 +383,29 @@
     padding: 0;
   }
 
-  .glowAnimation span {
-    display: none;
-  }
 
   .bars {
     padding: 0;
   }
 
-  .days {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 5px;
+  .days div {
+    font-size: 7px;
+    line-height: 10px;
+    padding: 2px;
+    height: unset;
   }
 
   .days span {
     margin-left: 0.2rem;
   }
 
+
+}
+@media screen and (max-width:425px) {
+  .days{
+    padding-left: 2rem;
+  }
+  
 }
 
 @keyframes glowEffect {

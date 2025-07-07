@@ -61,6 +61,12 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .mainContainer{
+        margin: 0rem auto 2rem;
+    }
+
+}
 @media screen and (max-width:540px) {
     :global(.calendly-inline-widget) {
         width: 300px;

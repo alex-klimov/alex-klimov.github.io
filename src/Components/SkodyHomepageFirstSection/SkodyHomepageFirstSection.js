@@ -13,7 +13,7 @@ function SkodyHomepageFirstSection() {
   const [isMobile, setIsMobile] = useState(false);
   const [mobliegear ,setIsMobileGear] =useState(false)
   const checkMobileView = () => {
-    if (window.innerWidth <= 640) {
+    if (window.innerWidth <= 768) {
       setIsMobileGear(true);
     } else {
       setIsMobileGear(false);
@@ -87,7 +87,7 @@ function SkodyHomepageFirstSection() {
               <CommonText heading={data.header.title} size='title-h1' />
             </div>
             <div className={styles.description}>
-              <CommonText smallDescription={data.header.description} size='body-lg' weight='regular' />
+              <CommonText smallDescription={data.header.description} size='label-sub1-new' weight='regular' />
             </div>
           </div>
           <div className={styles.imageContainer}>
