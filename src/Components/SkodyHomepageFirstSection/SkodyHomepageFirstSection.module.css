@@ -1,7 +1,7 @@
 .backgroundImageContainer {
     width: 100%;
     height: 850px;
-    background-image: url('/public/assets/images/machine.png');
+    background-image: url('/public/assets/images/svgviewer-png-output.png');
     background-size: 100% 100%;
     background-position: center;
     position: relative;
@@ -40,8 +40,8 @@
 .bannerImageContainerGear {
     position: absolute;
     scale: 0.2;
-    right: 40%;
-    top: 22%;
+    right: 19%;
+    top: 17%;
     z-index: -1;
 }
 .animatedImage{

@@ -11,10 +11,19 @@ function SkodyHomepageFirstSection() {
   const skodyProductDetails = data.section[0]
   const [arrow, setArrowCount] = useState(4)
   const [isMobile, setIsMobile] = useState(false);
-
+  const [mobliegear ,setIsMobileGear] =useState(false)
   const checkMobileView = () => {
+    if (window.innerWidth <= 640) {
+      setIsMobileGear(true);
+    } else {
+      setIsMobileGear(false);
+    }
+  
     if (window.innerWidth <= 400) {
       setIsMobile(true);
+    }else if(window.innerWidth <= 640){
+      setIsMobile(!mobliegear)
+
     } else if (window.innerWidth <= 920) {
       setArrowCount(2);
     } else if (window.innerWidth <= 1220) {
@@ -40,17 +49,32 @@ function SkodyHomepageFirstSection() {
         className={styles.backgroundImageContainer}
       >
         <div className={styles.bannerImageContainerGear}>
-          <Gear
-            gear1="/assets/icons/greysystem.svg"
-            gear2="/assets/icons/greysystem.svg"
-            gear3="/assets/icons/greysystem.svg"
-            size1={{ width: '395', height: '395' }}
-            size2={{ width: '489', height: '489' }}
-            size3={{ width: '222', height: '243' }}
-            position1={{ top: '-46px', left: '-42px' }}
-            position2={{ top: '203px', left: '98px' }}
-            position3={{ bottom: '93px', left: '290px' }}
-          />
+          {mobliegear ? (
+            <Gear
+              gear1="/assets/icons/greysystem.svg"
+              gear2="/assets/icons/greysystem.svg"
+              gear3="/assets/icons/greysystem.svg"
+              size1={{ width: '395', height: '395' }}
+              size2={{ width: '489', height: '489' }}
+              size3={{ width: '222', height: '243' }}
+              position1={{ top: '-46px', left: '-42px' }}
+              position2={{ top: '203px', left: '98px' }}
+              position3={{ bottom: '93px', left: '290px' }}
+            />
+          ) : (
+            <Gear
+              gear1="/assets/icons/yellowgear.svg"
+              gear2="/assets/icons/yellowgear.svg"
+              gear3="/assets/icons/yellowgear.svg"
+              size1={{ width: '395', height: '395' }}
+              size2={{ width: '489', height: '489' }}
+              size3={{ width: '222', height: '243' }}
+              position1={{ top: '-46px', left: '-42px' }}
+              position2={{ top: '203px', left: '98px' }}
+              position3={{ bottom: '93px', left: '290px' }}
+            />
+          )}
+
         </div>
         <div className={styles.arrow}>
 

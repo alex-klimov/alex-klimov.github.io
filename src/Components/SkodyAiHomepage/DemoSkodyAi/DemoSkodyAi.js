@@ -2,10 +2,14 @@ import React from 'react'
 import CommonText from '../../CommonText/CommonText'
 import styles from './DemoSkodyAi.module.css'
 import Gear from '../../Animation/geat'
+import { useScroll } from '../../ScrollContext/ScrollContext'
 
 const DemoSkodyAi = ({ DemoSkodyAiContent }) => {
+    const { scrollToSection,demoRef } =
+        useScroll();
     const heading = DemoSkodyAiContent.heading;
     const label = DemoSkodyAiContent.button.label;
+    
     return (
         <>
             <div className={`homePageContainer ${styles.mainContainer}`}>
@@ -13,7 +17,7 @@ const DemoSkodyAi = ({ DemoSkodyAiContent }) => {
                     <CommonText heading={heading} size='title-h2-v2' weight='medium' />
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button}>
+                    <button className={styles.button}  onClick={() => scrollToSection(demoRef)} >
                         {label}
                     </button>
                 </div>

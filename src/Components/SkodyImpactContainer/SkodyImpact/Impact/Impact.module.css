@@ -58,7 +58,7 @@
 
 .card:nth-child(even) {
     background: var(--blue-color-100);
-    color: var(--Light-2);
+    color: var(--grey-color-800);
 }
 
 
