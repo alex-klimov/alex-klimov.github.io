@@ -53,3 +53,13 @@
     }
 
 }
+@media screen and (max-width:640px) {
+    .button{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 1rem 5.5rem;
+    }
+    .mainContainer{
+        gap: 2rem;
+    }
+}
