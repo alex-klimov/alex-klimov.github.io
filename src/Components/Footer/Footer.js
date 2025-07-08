@@ -5,7 +5,7 @@ import CommonText from '../CommonText/CommonText';
 import { useScroll } from '../ScrollContext/ScrollContext';
 
 const Footer = () => {
-  const { scrollToSection, productRef, whyRef, impactRef, demoRef } =
+  const { scrollToSection, productRef, whyRef, impactRef } =
     useScroll();
   const footerInfo = footerData.footer;
 
@@ -14,7 +14,7 @@ const Footer = () => {
     Product: productRef,
     "Why Skody": whyRef,
     "Impact": impactRef,
-    "Schedule Demo": demoRef,
+    "Blogs": '',
   };
 
   if (!footerInfo) return null;

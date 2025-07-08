@@ -137,6 +137,10 @@ body.dark {
     font-size: 56px;
     line-height: 72.8px;
 }
+.title-h1-multi {
+    font-size: 56px;
+    line-height: 72.8px;
+}
 
 /* Title/H2 */
 .title-h2 {
@@ -192,8 +196,23 @@ body.dark {
     line-height: 56px;
     font-size: 40px;
 }
+@media screen and (max-width:860px) {
+    .title-h1-multi {
+        font-size: 45px;
+        line-height: 50px;
 
+    }
+    .label-sub1-new {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+}
 @media screen and (max-width:640px) {
+    .title-h1-multi {
+        font-size: 26px;
+        line-height: 32px;
+    }
     .title-h1 {
         font-size: 26px;
         line-height: 32px;

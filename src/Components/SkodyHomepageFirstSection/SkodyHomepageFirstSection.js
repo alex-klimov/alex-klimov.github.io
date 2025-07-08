@@ -6,32 +6,35 @@ import CommonText from '../CommonText/CommonText';
 import Gear from '../Animation/geat';
 import ArrowAnimation from '../Animation/Arrow/ArrowAnimation';
 import OptimizationCard from '../Animation/OptimizationCard/OptimizationCard';
+import Bars from '../Animation/Bars/Bars';
+import { useCallback } from 'react';
 
 function SkodyHomepageFirstSection() {
   const skodyProductDetails = data.section[0]
   const [arrow, setArrowCount] = useState(4)
   const [isMobile, setIsMobile] = useState(false);
-  const [mobliegear ,setIsMobileGear] =useState(false)
-  const checkMobileView = () => {
+  const [mobilegear ,setIsMobileGear] =useState(false)
+  const checkMobileView = useCallback(() => {
     if (window.innerWidth <= 768) {
       setIsMobileGear(true);
     } else {
       setIsMobileGear(false);
     }
-  
+
     if (window.innerWidth <= 400) {
       setIsMobile(true);
-    }else if(window.innerWidth <= 640){
-      setIsMobile(!mobliegear)
-
+    } else if (window.innerWidth <= 640) {
+      setIsMobile(!mobilegear);
     } else if (window.innerWidth <= 920) {
       setArrowCount(2);
-    } else if (window.innerWidth <= 1220) {
+    } else if (window.innerWidth <= 1320) {
       setArrowCount(3);
+    }else if (window.innerWidth > 1320) {
+      setArrowCount(4);
     } else {
       setIsMobile(false);
     }
-  };
+  }, [mobilegear]); 
 
   useEffect(() => {
     checkMobileView();
@@ -40,7 +43,7 @@ function SkodyHomepageFirstSection() {
     return () => {
       window.removeEventListener('resize', checkMobileView);
     };
-  }, []);
+  }, [checkMobileView]);
 
   return (
     <>
@@ -48,8 +51,14 @@ function SkodyHomepageFirstSection() {
       <div
         className={styles.backgroundImageContainer}
       >
+        <div className={styles.imageContainerNew}>
+
+        <div className={styles.movingBar}>
+          <Bars/>
+
+        </div>
         <div className={styles.bannerImageContainerGear}>
-          {mobliegear ? (
+          {mobilegear ? (
             <Gear
               gear1="/assets/icons/greysystem.svg"
               gear2="/assets/icons/greysystem.svg"
@@ -84,7 +93,7 @@ function SkodyHomepageFirstSection() {
           <div className={styles.headingContainer}>
 
             <div className={styles.heading}>
-              <CommonText heading={data.header.title} size='title-h1' />
+              <CommonText heading={data.header.title} size='title-h1-multi' />
             </div>
             <div className={styles.description}>
               <CommonText smallDescription={data.header.description} size='label-sub1-new' weight='regular' />
@@ -108,6 +117,8 @@ function SkodyHomepageFirstSection() {
 
           </div>
         </div>
+        </div>
+        
 
       </div>
 

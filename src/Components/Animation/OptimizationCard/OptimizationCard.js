@@ -14,22 +14,60 @@ const OptimizationCard = () => {
 
   const barConfigs = [
     [
-      { width: '35%', bgColor: '#FBD0A3', label: 'PO #2506' },
-      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2504' },
-      { width: '35%', bgColor: '#FFFFFF', label: 'PO #2509' },
-      // { width: '10%', bgColor: '#FBD0A3', label: 'Part 4' },
+      { width: '30%', bgColor: '#FBD0A3', label: 'PO #2501' },
+      { width: '20%', bgColor: '#89B2EF', label: 'PO #2504' },
     ],
     [
-      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '20%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '30%', bgColor: '#FBD0A3', label: 'PO #2501' },
+    ],
+    [
+      { width: '25%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '15%', bgColor: '#FBD0A3', label: 'PO #2501' },
+    ],
+   
+  ];
+  const barConfigs2 = [
+    [
+      { width: '40%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '25%', bgColor: 'transparent', label: '' },
+      { width: '20%', bgColor: '#FBD0A3', label: 'PO #2501' },
+    ],
+    [
+      { width: '40%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: 'transparent', label: '' },
       { width: '25%', bgColor: '#89B2EF', label: 'PO #2504' },
       { width: '20%', bgColor: '#FBD0A3', label: 'PO #2501' },
-      // { width: '35%', bgColor: '#FFFFFF', label: 'Part 3' },
     ],
     [
-      { width: '20%', bgColor: '#ACDA9E', label: 'PO #2504' },
-      { width: '35%', bgColor: '#89B2EF', label: 'PO #2506' },
-      { width: '30%', bgColor: '#FBD0A3', label: 'PO #2501' },
-      // { width: '15%', bgColor: '#FFFFFF', label: 'Part 3' },
+      { width: '40%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '20%', bgColor: '#FBD0A3', label: 'PO #2501' },
+      { width: '25%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '25%', bgColor: 'transparent', label: '' },
+    ],
+  ];
+  const barConfigs3 = [
+    [
+      { width: '12.5%', bgColor: 'transparent', label: '' },
+      { width: '15%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '12.5%', bgColor: 'transparent', label: '' },
+      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: '#FBD0A3', label: 'PO #2501' },
+    ],
+    [
+      { width: '12.5%', bgColor: 'transparent', label: '' },
+      { width: '12.5%', bgColor: 'transparent', label: '' },
+      { width: '15%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: '#FBD0A3', label: 'PO #2501' },
+    ],
+    [
+      { width: '12.5%', bgColor: 'transparent', label: '' },
+      { width: '15%', bgColor: '#89B2EF', label: 'PO #2504' },
+      { width: '25%', bgColor: '#ACDA9E', label: 'PO #2506' },
+      { width: '25%', bgColor: '#FBD0A3', label: 'PO #2501' },
+      { width: '12.5%', bgColor: 'transparent', label: '' },
     ],
   ];
 
@@ -82,8 +120,8 @@ const OptimizationCard = () => {
 
           <div className={styles.barsContainer}>
             <div className={styles.bars}>{renderBars(barConfigs[count])}</div>
-            <div className={styles.bars}>{renderBars(barConfigs[(count + 1) % 3])}</div>
-            <div className={styles.bars}>{renderBars(barConfigs[(count + 2) % 3])}</div>
+            <div className={styles.bars}>{renderBars(barConfigs2[(count) % 3])}</div>
+            <div className={styles.bars}>{renderBars(barConfigs3[(count) % 3])}</div>
           </div>
         </div>
       </div>

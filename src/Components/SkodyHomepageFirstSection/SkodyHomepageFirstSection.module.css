@@ -1,18 +1,38 @@
 .backgroundImageContainer {
     width: 100%;
-    height: 850px;
-    background-image: url('/public/assets/images/svgviewer-png-output.png');
+    background-color: #F6F6F7;
+   
+}
+.imageContainerNew{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background-image: url('/public/assets/images/machineworkimagenew.png');
     background-size: 100% 100%;
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
     z-index: 0;
+
+    max-width: 1584px;
 }
-.outerContainer{
+
+.outerContainer {
     overflow: unset;
 }
+
 .headingContainer {
     width: 51%;
+}
+
+.movingBar {
+    position: absolute;
+    width: 22%;
+    height: 21%;
+    top: 12%;
+    left: 53.5%;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 .arrow {
@@ -27,6 +47,8 @@
     padding-top: 6rem;
     text-align: start;
     margin-bottom: 1.6rem;
+    z-index: 1;
+    position: relative;
 
 }
 
@@ -44,13 +66,15 @@
     top: 17%;
     z-index: -1;
 }
-.animatedImage{
+
+.animatedImage {
     position: relative;
 }
-.animatedImageArrow{
+
+.animatedImageArrow {
     rotate: 180deg;
     position: absolute;
-    top: 58%;
+    top: 60%;
     width: 81%;
     left: 0;
     z-index: -1;
@@ -59,6 +83,7 @@
 
 .imageContainer {
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .imageContainer img {
@@ -74,31 +99,50 @@
 }
 
 @media screen and (max-width:1024px) {
-    .backgroundImageContainer {
-        height: 774px;
-    }
 
     .headingContainer {
-        width: 70%;
+        width: 66%;
+    }
+    .heading :global(.commonText) h2{
+        padding-top: 2rem;
     }
 
+    .movingBar {
+        position: absolute;
+        width: 23%;
+        height: 166px;
+        top: 9.3%;
+        left: 53.1%;
+    }
+}
+@media screen and (max-width:860px) {
+    .movingBar{
+        height: 156px;
+    }
+    
 }
 
 @media screen and (max-width:768px) {
     .headingContainer {
-        width: 75%;
+        width: 82%;
+    }
+    .imageContainerNew{
+        background: none;
     }
 
     .imageContainer img {
         width: 80%;
     }
-    /* .backgroundImageContainer {
-        height: 830px;
-    } */
+
+    .movingBar {
+        display: none;
+    }
+
     .backgroundImageContainer {
-        background-image: none;
+        background-color: unset;
         height: auto;
     }
+
     .bannerImageContainerGear {
         display: block;
         top: 0;
@@ -110,10 +154,16 @@
         z-index: -1;
         scale: 0.6;
     }
-    .heading :global(.commonText) h2{
+
+    .heading :global(.commonText) h2 {
         padding-top: 2rem;
     }
-    .arrow{
+
+    .arrow {
+        display: none;
+    }
+
+    .animatedImageArrow {
         display: none;
     }
 }
@@ -122,21 +172,9 @@
     .headingContainer {
         width: 90%;
     }
-    .animatedImageArrow{
-        display: none;
-    }
-    /* .arrow{
-        display: none;
-    } */
-    .heading :global(.commonText) h2{
+    .heading :global(.commonText) h2 {
         padding-top: 2rem;
     }
-
-    
-    /* .backgroundImageContainer {
-        background-image: none;
-        height: auto;
-    } */
 
     .imageContainer {
         margin-top: 1.2rem;

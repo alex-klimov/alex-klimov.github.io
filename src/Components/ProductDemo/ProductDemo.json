@@ -65,7 +65,7 @@
     ],
     "benefitSections": 
     {
-      "title": "Here's how we work:",
+      "title": "Here’s how it works",
       "content": {
         "paragraph": "It all starts with PO delivery dates, using an AI algorithm to sequence production steps efficiently.",
         "description": "The algorithm processes this data to determine the optimal sequence of production steps, resolving conflicts like skill mismatches and equipment overlaps, adjusting dynamically to priority shifts or disruptions."
@@ -73,8 +73,7 @@
       "points": [
         "Shift days and times",
         "Employee skill matrix",
-        "Equipment capabilities",
-        "Job equipment specifications",
+        "Equipment specifications",
         "Material availability",
         "Order of operations",
         "Takt time estimates"

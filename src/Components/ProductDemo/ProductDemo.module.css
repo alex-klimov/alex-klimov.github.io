@@ -67,7 +67,11 @@
 .detailPoints {
     width: 47%;
 }
-
+.detailPoints{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
 .benefitContainer :global(.commonText) h2 {
     color: var(--border-color-blue);
 

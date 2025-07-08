@@ -23,7 +23,7 @@
     "productLinks": [
       { "name": "Why Skody", "url": "/why-skody" },
       { "name": "Impact", "url": "/impact" },
-      { "name": "Schedule Demo", "url": "/schedule-demo" }
+      { "name": "Blogs", "url": "/blogs" }
     ],
     "links": [
       { "name": "Privacy Policy", "url": "/" },

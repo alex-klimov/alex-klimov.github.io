@@ -29,7 +29,6 @@
   justify-content: center;
   align-items: center;
   height: 25px;
-  ;
   border-radius: 2rem;
   transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
@@ -130,14 +129,14 @@
 .bars {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   padding: 0.5rem 0rem;
 
 }
 
 .font {
   color: #131313;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Inter';
   font-weight: 500;
   line-height: 20.6px;
