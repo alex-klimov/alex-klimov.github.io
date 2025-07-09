@@ -25,7 +25,7 @@ function SkodyHomepageFirstSection() {
       setIsMobile(true);
     } else if (window.innerWidth <= 640) {
       setIsMobile(!mobilegear);
-    } else if (window.innerWidth <= 920) {
+    } else if (window.innerWidth <= 940) {
       setArrowCount(2);
     } else if (window.innerWidth <= 1320) {
       setArrowCount(3);
