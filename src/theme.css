@@ -1,0 +1,258 @@
+body {
+    --primary-white: #ffffff;
+    --primary-black: #222222;
+    --primary-black-dark: #000000;
+
+    --card-background:#2f2f2f;
+
+    /* Light Mode */
+
+    --Light-1: #8088A0;
+    --Light-2: #848BA3;
+    --Light-3: #626E8A;
+    --dark-1: #081535;
+    --dark-2: #0A1435;
+    --dark-3: #050B2B;
+
+    /* Grey Color */
+
+    --grey-color-100: #FFFFFF;
+    --grey-color-200: #FAFAFA;
+    --grey-color-300: #EFEFEF;
+    --grey-color-300-border: #D9D9D9;
+    --grey-color-400: #BEBEBE;
+    --grey-color-500: #757575;
+    --grey-color-600: #525252;
+    --grey-color-700: #343434;
+    --grey-color-800: #131313;
+
+    /* Yellow Color */
+
+    --yellow-color-100: #FFF6E5;
+    --yellow-color-200: #FFD88A;
+    --yellow-color-300: #F9B530;
+    --yellow-color-400: #F4A508;
+
+    /* Green color */
+    --green-color-100: #2ECC71;
+    --green-color-200: #27AE60;
+    --green-color-300: #229954;
+    --green-color-400: #1E8449;
+    --green-color-50: #E3F4DE;
+
+    /* Red Color Scale */
+
+    --red-color-100: #FFEDEF;
+    --red-color-200: #DF7E8A;
+    --red-color-300: #AE2434;
+    --red-color-400: #8C0A1A;
+
+    /* Blue Color Scale */
+    --blue-color-100: #DEE7F4;
+    --blue-color-200: #89B2EF;
+    --blue-color-300: #89B2EF;
+    --blue-color-400: #89B2EF;
+    --blue-color-500: #0038B1;
+    --blue-color-600: #0038B1;
+    --blue-color-600-hover: #4476e2;
+
+    --blue-background: #D4E7FF;
+
+    /* border color Blue */
+    --border-color-blue: #002BC4;
+    --border-color-grey: #EEE;
+
+
+}
+
+body.dark {
+
+    --primary-white: #ffff;
+    --primary-black-dark: #000000;
+
+    /* Light Mode */
+
+    --Light-1: #091334;
+    --Light-2: #FFFFFF;
+    --Light-3: #FFFFFF;
+    --dark-1: #FFFFFF;
+    --dark-2: #FFFFFF;
+    --dark-3: #FFFFFF;
+
+    /* Grey Color */
+
+    --grey-color-100: #131313;
+    --grey-color-200: #343434;
+    --grey-color-300: #525252;
+    --grey-color-400: #757575;
+    --grey-color-500: #DADADA;
+    --grey-color-600: #EFEFEF;
+    --grey-color-700: #FAFAFA;
+    --grey-color-800: #FFFFFF;
+
+    /* Yellow Color */
+
+    --yellow-color-100: #F4A508;
+    --yellow-color-200: #F9B530;
+    --yellow-color-300: #FFD88A;
+    --yellow-color-400: #FFF6E5;
+
+    /* Green color */
+    --green-color-100: #2D7616;
+    --green-color-200: #408829;
+    --green-color-300: #ACDA9E;
+    --green-color-400: #E3F4DE;
+
+    /* Red Color Scale */
+
+    --red-color-100: #8C0A1A;
+    --red-color-200: #AE2434;
+    --red-color-300: #DF7E8A;
+    --red-color-400: #FFEDEF;
+
+    /* Blue Color Scale */
+    --blue-color-100: #0A3E8C;
+    --blue-color-200: #2660B7;
+    --blue-color-300: #89B2EF;
+    --blue-color-400: #DEE7F4;
+    --blue-color-500: #FFFFFF;
+    --blue-color-600: #FFFFFF;
+    --blue-color-700: #00229D;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.medium {
+    font-weight: 600;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+/* Title/H1 */
+.title-h1 {
+    font-size: 56px;
+    line-height: 72.8px;
+}
+.title-h1-multi {
+    font-size: 56px;
+    line-height: 72.8px;
+}
+
+/* Title/H2 */
+.title-h2 {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+/* Title/H3 */
+.title-h3 {
+    font-size: 32px;
+    line-height: 44.8px;
+}
+
+.title-h4 {
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+/* Label/Sub1 - Bold */
+.label-sub1 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.label-sub1-new {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+
+.label-sub2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Body/Lg - Medium */
+.body-lg {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* Body sm - Regular */
+.body-sm {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.body-other {
+    font-size: 26px;
+    line-height: 36.4px;
+}
+
+.title-h2-v2 {
+    line-height: 56px;
+    font-size: 40px;
+}
+
+@media screen and (max-width:640px) {
+    .title-h1-multi {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .title-h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .title-h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .title-h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .title-h4 {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+
+    .label-sub1 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .label-sub2 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .body-lg {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .body-sm {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .body-other {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .title-h2-v2 {
+        line-height: 28px;
+        font-size: 22px;
+    }
+    .label-sub1-new {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

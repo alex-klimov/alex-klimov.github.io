@@ -1,0 +1,49 @@
+
+@import './theme.css';
+
+
+
+body {
+  margin: 0;
+  font-family: 'Prompt';
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+:root {
+  font-size: 20px;
+}
+
+.homePageContainer {
+  max-width: 1280px;
+  /* max-width: calc(1280px + 2rem); */
+  margin: 0rem auto;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* to make sticky work */
+  max-height: 100vh;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    line-height: 1.25; 
+  }
+  :root {
+    font-size: 16px; /* Default for mobile */
+  }
+}

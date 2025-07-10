@@ -1,0 +1,257 @@
+.backgroundImageContainer {
+    width: 100%;
+    background-color: #F6F6F7;
+   
+}
+.imageContainerNew {
+    margin: 0 auto;
+    height: auto;
+    background-image: url('/public/assets/images/machineworkimagenew.png');
+    background-size: contain;  
+    background-position: right center; 
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0;
+    max-width: 1700px;
+}
+
+.outerContainer {
+    overflow: unset;
+}
+
+.headingContainer {
+    width: 52%;
+}
+
+.movingBar {
+    position: absolute;
+    width: 300px;
+    height: 21%;
+    top: 12%;
+    right: 301px;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 7rem;
+    right: -19px;
+
+}
+
+.heading :global(.commonText) h2 {
+    color: var(--grey-color-800);
+    padding-top: 6rem;
+    text-align: start;
+    padding-right: 1rem;
+    margin-bottom: 1.6rem;
+    z-index: 1;
+    position: relative;
+
+}
+
+.description :global(.commonText) p {
+    color: var(--grey-color-800);
+    letter-spacing: 0.2px;
+    position: relative;
+    text-align: start;
+
+}
+
+.bannerImageContainerGear {
+    position: absolute;
+    scale: 0.2;
+    right: 19%;
+    top: 17%;
+    z-index: -1;
+}
+
+.animatedImage {
+    position: relative;
+}
+
+.animatedImageArrow {
+    rotate: 180deg;
+    position: absolute;
+    top: 60%;
+    width: 81%;
+    left: 0;
+    z-index: -1;
+
+}
+
+.imageContainer {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.imageContainer img {
+    width: 96%;
+    height: auto;
+}
+
+@media screen and (max-width:1300px) {
+   .movingBar{
+    position: absolute;
+    width: 23%;
+    height: 23%;
+    top: 12%;
+    right: 24%;
+    background-size: 100% 100%;
+    background-position: center;
+   }
+  
+}
+@media screen and (max-width:1200px) {
+   .movingBar{
+    position: absolute;
+        width: 23%;
+        height: 18%;
+        top: 16.3%;
+        left: 53.1%;
+   }
+   .heading :global(.commonText) h2 {
+    padding-top: 4rem;
+    padding-right: 0rem;
+   }
+}
+@media screen and (max-width:1100px) {
+    .movingBar{
+        top: 18.3%;
+    }
+    .arrow{
+        top:9rem;
+    }
+    
+}
+@media screen and (max-width:1046px) {
+    .imageContainer {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .headingContainer {
+        width: 74%;
+    }
+    .heading :global(.commonText) h2{
+        padding-top: 2rem;
+    }
+
+    .movingBar {
+        top: 16%;
+    }
+}
+@media screen and (max-width:940px) {
+    .movingBar {
+        top: 17.3%;
+    }
+    .arrow{
+        right: 25px;
+    }
+}
+@media screen and (max-width:860px) {
+    .movingBar{
+        height: 15%;
+        top: 21.7%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .headingContainer {
+        width: 90%;
+    }
+    .imageContainerNew{
+        background: none;
+    }
+
+    .imageContainer img {
+        width: 80%;
+    }
+
+    .movingBar {
+        display: none;
+    }
+
+    .backgroundImageContainer {
+        background-color: unset;
+        height: auto;
+    }
+
+    .bannerImageContainerGear {
+        display: block;
+        top: 0;
+        position: absolute;
+        height: 46%;
+        width: 26%;
+        bottom: 57.1%;
+        right: 17.6%;
+        z-index: -1;
+        scale: 0.6;
+    }
+
+    .heading :global(.commonText) h2 {
+        padding-top: 2rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .animatedImageArrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .headingContainer {
+        width: 90%;
+    }
+    .heading :global(.commonText) h2 {
+        padding-top: 2rem;
+    }
+
+    .imageContainer {
+        margin-top: 1.2rem;
+    }
+
+    .imageContainer img {
+        width: 100%;
+    }
+
+    .heading :global(.commonText) h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    .bannerImageContainerGear {
+        display: block;
+        top: 0;
+        position: absolute;
+        height: 46%;
+        width: 26%;
+        bottom: 57.1%;
+        right: 17.6%;
+        z-index: -1;
+        scale: 0.6;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .bannerImageContainerGear {
+        right: 23.6%;
+        z-index: -1;
+        scale: 0.5;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .bannerImageContainerGear {
+        z-index: -1;
+        scale: 0.4;
+    }
+
+}

@@ -1,0 +1,154 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 1rem;
+    border-top: 1px solid var(--border-color-grey);
+}
+
+.logoContainer {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    padding-left: 5px;
+}
+
+.links {
+    display: flex;
+    gap: 4rem;
+
+}
+
+.heading :global(.commonText) p {
+    margin-bottom: 1.4rem;
+}
+
+.productLinks,
+.socialLink {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.productLinks div,
+.socialLink a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: normal;
+    color: var(--grey-color-700, #343434);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+
+}
+
+.productLinksContainer h4,
+.socialLinkContainer h4,
+.contact h4 {
+    color: var(--grey-color-700);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin-top: 0rem;
+
+}
+
+.email {
+    display: flex;
+    color: var(--grey-color-700);
+    align-items: center;
+    gap: 0.2rem;
+    font-family: 'inter';
+    font-size: 16px;
+}
+
+.copyRight {
+    width: 22%;
+
+}
+
+.email a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyRight {
+    align-self: end;
+}
+
+@media screen and (max-width:840px) {
+    .links {
+        gap: 0;
+    }
+
+    .content {
+        gap: 1%
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .productLinks,
+    .socialLink,
+    .productLinksContainer h4,
+    .socialLinkContainer h4,
+    .contact h4 {
+        text-align: start;
+    }
+
+    .heading :global(.commonText) p {
+        margin-bottom: 1rem;
+        text-align: start;
+    }
+
+    .logoContainer {
+        align-items: center;
+        margin-bottom: 1rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .copyRight {
+        align-self: start;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .contact p {
+        text-align: start;
+    }
+
+    @media screen and(max-width:640px) {
+        .email {
+            font-size: 14px;
+        }
+
+    }
+
+}

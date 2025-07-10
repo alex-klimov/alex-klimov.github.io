@@ -1,0 +1,446 @@
+.cardHeadingSection {
+  background: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem 0.4rem;
+
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.bars1,
+.bars2,
+.bars3,
+.bars4,
+.bars5,
+.bars6,
+.bars7,
+.bars8,
+.bars9,
+.bars10 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  border-radius: 2rem;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.card {
+  color: var(--primary-white);
+  overflow: hidden;
+  border-radius: 0.7rem;
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  text-align: center;
+  background: #2f2f2f;
+  align-items: center;
+  gap: 0.1rem;
+  padding-left: 6.4rem;
+}
+
+.days span {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.days div {
+  border: 1px solid;
+  font-size: 13px;
+  height: 33px;
+  border-radius: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.machines {
+  display: flex;
+  background: #525252;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.machine {
+  display: flex;
+  align-items: center;
+}
+
+.machineName {
+  font-size: 15px;
+  border-right: 1px solid;
+  padding-top: 0.9rem;
+  text-align: center;
+  padding-bottom: 0.9rem;
+  font-family: 'lato';
+}
+
+.parts {
+  display: flex;
+  gap: 5px;
+}
+
+.part {
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+}
+
+.optimizeBtn {
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.machineNameContainer {
+  width: 14%;
+}
+
+.bars {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
+  padding: 0.5rem 0rem;
+
+}
+
+.font {
+  color: #131313;
+  font-size: 13px;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 20.6px;
+}
+
+.barsContainer {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;;
+}
+
+.bars1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 25px;
+  background: #89B2EF;
+  border-radius: 2rem;
+}
+
+.bars2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 25px;
+  background: #ACDA9E;
+  border-radius: 2rem;
+}
+
+.bars3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 2rem;
+}
+
+.bars4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 25px;
+  background: #FBD0A3;
+  border-radius: 2rem;
+}
+
+.bars5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 25px;
+  background: #89B2EF;
+  border-radius: 2rem;
+}
+
+.bars6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 25px;
+  background: #FBD0A3;
+  border-radius: 2rem;
+}
+
+.bars7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 25px;
+  background: #89B2EF;
+  border-radius: 2rem;
+}
+
+.bars9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 22px;
+  background: #ACDA9E;
+  border-radius: 2rem;
+}
+
+.bars8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 22px;
+  background: #FFFFFF;
+  border-radius: 2rem;
+}
+
+.bars10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 25px;
+  background: #FBD0A3;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width:1024px) {
+  .card {
+    width: 75%;
+  }
+
+}
+
+@media screen and (max-width:840px) {
+  .machineNameContainer {
+    width: 12%;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .machineNameContainer {
+    width: 15%;
+  }
+
+  .optimizeBtn {
+    padding: 5px 9px;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+  .font {
+    font-size: 10px;
+  }
+
+  .cardHeadingSection {
+    padding: 0.5rem 1rem 0.4rem;
+  }
+
+  .heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .bars {
+    padding: 0.3rem 0rem;
+  }
+
+  .machineName {
+    font-size: 12px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .machineNameContainer {
+    width: 17%;
+  }
+
+  .barsContainer {
+    width: 80%;
+    gap: 0;
+
+  }
+}
+
+@media screen and (max-width:650px) {
+  .days {
+    padding-left: 4rem;
+  }
+
+  .optimizeBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .days div {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .machineName {
+    font-size: 7px;
+  }
+
+  .heading :global(.commonText) p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .optimizeBtn {
+    font-size: 8px;
+  }
+
+  .bars1,
+  .bars2,
+  .bars3,
+  .bars4,
+  .bars5,
+  .bars6,
+  .bars7,
+  .bars8,
+  .bars9,
+  .bars10 {
+    height: 13px;
+
+  }
+
+  .barsContainer {
+    gap: 1rem;
+  }
+
+  .font {
+    display: flex;
+    font-size: 7px;
+    align-items: center;
+  }
+
+  .optimizeBtn {
+    padding: 0px 5px;
+  }
+
+  .days div {
+    font-size: 7px;
+    height: 20px;
+  }
+
+  .barsContainer {
+    padding: 0;
+  }
+
+
+  .bars {
+    padding: 0;
+  }
+
+  .days div {
+    font-size: 7px;
+    line-height: 10px;
+    padding: 2px;
+    height: unset;
+  }
+
+  .days span {
+    margin-left: 0.2rem;
+  }
+
+
+}
+@media screen and (max-width:425px) {
+  .days{
+    padding-left: 2rem;
+  }
+  
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: none;
+  }
+
+  50% {
+    box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.7)
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+@keyframes grow {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+.glowAnimation {
+  animation: glowEffect 3s infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+.star {
+  animation: grow 3s infinite;
+  transition: all 0.3 ease;
+}

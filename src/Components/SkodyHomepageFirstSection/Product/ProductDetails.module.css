@@ -1,0 +1,130 @@
+.productDetails {
+    position: relative;
+    margin: 2rem auto;
+    overflow: unset;
+    padding: 2rem 0rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splitHeadint {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.splitHeadint :global(.commonText) h2 {
+    text-align: start;
+}
+
+.gearStyle {
+    position: absolute;
+    height: 200px;
+    bottom: 47px;
+    left: 32px;
+    width: 200px;
+    scale: 1.2;
+    z-index: 2;
+}
+
+.bannerImageContainer {
+    position: absolute;
+    height: 46%;
+    width: 26%;
+    bottom: 48%;
+    right: 8%;
+    z-index: -1;
+}
+
+.outerContainerBulletPoint {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.systemcogs {
+    position: absolute;
+    bottom: -22%;
+    transform: rotate(-12deg);
+    left: 19%;
+}
+
+.bulletPointsCard {
+    width: 47%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 0.6rem;
+    padding: 1rem 0.8rem;
+    background: var(--primary-white);
+}
+
+.bulletPointsCard:nth-child(1) {
+    border: 2px solid var(--border-color-blue);
+}
+
+.bulletPointsCard:nth-child(2) {
+    border: 2px solid var(--green-color-100);
+}
+
+.bulletPointsCard:nth-child(3) {
+    border: 3px solid var(--yellow-color-400);
+}
+
+
+@media screen and (max-width:1200px) {
+    .gearStyle {
+        bottom: 48px;
+        left: -27px;
+        width: 10px;
+    }
+
+}
+@media screen and (max-width:1024px) {
+    .bannerImageContainer {
+        scale: 0.6;
+    }
+    .gearStyle {
+        left: -27px;
+    }
+}
+@media screen and (max-width:940px) {
+  
+    .gearStyle {
+        left: -70px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bulletPointsCard{
+        width: 85%;
+    }
+    .splitHeadint{
+        width: 85%;
+        
+    }
+    .splitHeadint h2{
+        text-align: center !important;
+    }
+    .gearStyle{
+        left: -150px;
+        bottom: 124px;
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .splitHeadint{
+        margin-bottom: 1.4rem;
+    }
+    .productDetails{
+        padding: 1rem 0 3rem;
+    }
+    .bannerImageContainer{
+        display: none;
+    }
+    
+}

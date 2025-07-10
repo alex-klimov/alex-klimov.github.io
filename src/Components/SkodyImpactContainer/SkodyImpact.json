@@ -1,0 +1,106 @@
+{
+  "page": {
+    "sections": [
+      {
+        "type": "header",
+        "title": "Impact",
+        "content": {
+          "title": "Elevate Your Manufacturing Operations",
+          "features": [
+            {
+              "featuresPoints": "Save time with automated, rapid scheduling",
+              "image": {
+                "src": "/assets/icons/IconAccess.png",
+                "alt": "features"
+              }
+            },
+            {
+              "featuresPoints": "Stay agile with real-time plan adjustments",
+              "image": {
+                "src": "/assets/icons/Icons_system-blue.png",
+                "alt": "features"
+              }
+            },
+            {
+              "featuresPoints": "Simplify complex production constraints",
+              "image": {
+                "src": "/assets/icons/IconAccess1.png",
+                "alt": "features"
+              }
+            },
+            {
+              "featuresPoints": "Improve team coordination with clear communication",
+              "image": {
+                "src": "/assets/icons/impactMessage.png",
+                "alt": "features"
+              }
+            },
+            {
+              "featuresPoints": "Gain visibility for better decision-making",
+              "image": {
+                "src": "/assets/icons/Icons_telescope.png",
+                "alt": "features"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "testimonial",
+        "title": "Early Success with Skody",
+        "subHeading": "Customer Story",
+        "image": {
+          "src": "/assets/images/systemcogsicon.png",
+          "alt": "star"
+        },
+        "content": {
+          "bannerImage":{
+            "src":"/assets/images/skodydemoreviewimg.png",
+            "alt":"bannerImageTestimonial"
+          },
+          "slogan": "Game Changer!",
+          "quote": "Skody has transformed our scheduling, giving us flexibility to respond to customer needs dynamically",
+          "author": "Ken Frankel, CEO of Three Sigma",
+          "rating": 5,
+          "image": {
+            "src": "/assets/icons/Star.png",
+            "alt": "star"
+          }
+        }
+      },
+      {
+        "type": "slider",
+        "content": [
+          {
+            "src": "https://example.com/image1.jpg",
+            "alt": "Image 1"
+          },
+          {
+            "src": "https://example.com/image2.jpg",
+            "alt": "Image 2"
+          },
+          {
+            "src": "https://example.com/image3.jpg",
+            "alt": "Image 3"
+          },
+          {
+            "src": "https://example.com/image4.jpg",
+            "alt": "Image 4"
+          }
+        ]
+      },
+      {
+        "type": "customerSuccess",
+        "content": {
+          "title": "Early Success with Skody",
+          "subTitle": "Customer Success Story",
+          "logoCarousel": [
+            { "logo": "logo1.png" },
+            { "logo": "logo2.png" },
+            { "logo": "logo3.png" }
+          ]
+        }
+      }
+    ]
+  }
+}

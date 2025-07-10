@@ -1,0 +1,37 @@
+{
+  "footer": {
+    "logo": {
+      "image": "/assets/images/skodyAitextlogo.png",
+      "alt": "SkodyAI"
+    },
+    "socialLinks": [
+      {
+        "platform": {
+          "src": "/assets/icons/LinkedIn.png",
+          "alt": "lindin"
+        },
+        "url": "https://linkedin.com"
+      },
+      {
+        "platform": {
+          "src": "/assets/icons/XLogo.png",
+          "alt": "X"
+        },
+        "url": "https://twitter.com"
+      }
+    ],
+    "productLinks": [
+      { "name": "Why Skody", "url": "/why-skody" },
+      { "name": "Impact", "url": "/impact" },
+      { "name": "Blogs", "url": "/blogs" }
+    ],
+    "links": [
+      { "name": "Privacy Policy", "url": "/" },
+      { "name": "Terms of Service", "url": "/" }
+    ],
+    "contact": {
+      "email": "info@skody.ai"
+    },
+    "copyright": "© 2025 Skody AI. All rights reserved."
+  }
+}
