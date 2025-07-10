@@ -28,9 +28,7 @@
 
 }
 .titleContainer :global(.commonText) p {
-    font-size: 17px;
     text-align: center;
-    line-height: 24px;
 }
 
 .imageContainer {
@@ -61,9 +59,9 @@
 }
 @media screen and (max-width:640px) {
     .titleContainer :global(.commonText) p {
-        font-size: 17px;
+        font-size: 16px;
         text-align: center;
-        line-height: 24px;
+        /* line-height: 24px; */
     }
     
 }

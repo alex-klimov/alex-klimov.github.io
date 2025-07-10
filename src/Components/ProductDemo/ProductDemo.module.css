@@ -86,7 +86,7 @@
 }
 
 .details :global(.commonText) p {
-    color: var(#202022);
+    color: var(--grey-color-800);
     padding: 1.7rem 0;
 
 }

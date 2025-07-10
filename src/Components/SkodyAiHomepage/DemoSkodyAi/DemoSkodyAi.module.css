@@ -4,6 +4,7 @@
     align-items: center;
     gap: 1rem;
     padding: 10rem 0rem;
+    overflow: unset;
     position: relative;
 }
 
@@ -62,4 +63,16 @@
     .mainContainer{
         gap: 2rem;
     }
+    .bannerImageContainer {
+
+
+        right: 100%;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .bannerImageContainer {
+        right: 110%;
+    }
+
 }

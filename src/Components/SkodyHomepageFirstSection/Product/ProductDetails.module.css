@@ -1,6 +1,7 @@
 .productDetails {
     position: relative;
     margin: 2rem auto;
+    overflow: unset;
     padding: 2rem 0rem 7rem;
     display: flex;
     flex-direction: column;

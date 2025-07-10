@@ -9,6 +9,14 @@ function ProductDemo() {
     const slogna = benefitSections.content.paragraph;
     const description = benefitSections.content.description;
     const arrow = benefitSections.arrows;
+
+    const highlightedText = slogna.split(/(sequence)/gi).map((part, index) =>
+        part.toLowerCase() === "sequence" ? (
+          <span key={index} style={{ backgroundColor: `var(--blue-background)` }}>{part}</span>
+        ) : (
+          part
+        )
+      );
     const [currentImage, setCurrentImage] = useState(productDemo.images[0]);
 
     const handleButtonClick = (imageId) => {
@@ -40,7 +48,7 @@ function ProductDemo() {
                 <CommonText heading={benefitSections.title} size="title-h2" weight="bold" />
                 <div className={styles.detailContainer}>
                     <div className={styles.details}>
-                        <CommonText smallDescription={slogna} size='label-sub1' weight='medium' />
+                        <CommonText smallDescription={highlightedText} size='label-sub1' weight='medium' />
                         <div className={styles.descriptionPoint}>
 
                             <CommonText smallDescription={description} size='body-lg' weight='medium' />

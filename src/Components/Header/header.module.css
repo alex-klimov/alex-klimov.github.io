@@ -132,6 +132,7 @@
 
     .hambuger {
         display: flex;
+        cursor: pointer;
     }
 
     .mobileNavigation li:active {
