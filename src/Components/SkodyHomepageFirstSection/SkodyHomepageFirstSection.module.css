@@ -135,14 +135,14 @@
 @media screen and (max-width:1024px) {
 
     .headingContainer {
-        width: 70%;
+        width: 74%;
     }
     .heading :global(.commonText) h2{
         padding-top: 2rem;
     }
 
     .movingBar {
-        top: 15.3%;
+        top: 16%;
     }
 }
 @media screen and (max-width:940px) {
@@ -153,10 +153,16 @@
         right: 25px;
     }
 }
-
+@media screen and (max-width:860px) {
+    .movingBar{
+        height: 15%;
+        top: 21.7%;
+    }
+    
+}
 @media screen and (max-width:768px) {
     .headingContainer {
-        width: 82%;
+        width: 90%;
     }
     .imageContainerNew{
         background: none;
