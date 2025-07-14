@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useRef } from 'react';
+import React, { createContext, useContext, useRef, useEffect, useState } from 'react';
 
 const ScrollContext = createContext();
 
@@ -9,6 +9,7 @@ export const ScrollProvider = ({ children }) => {
   const whyRef = useRef(null);
   const impactRef = useRef(null);
   const demoRef = useRef(null);
+  const [isImpactInView, setIsImpactInView] = useState(false);
 
   const scrollToSection = (ref) => {
     if (ref.current) {
@@ -16,8 +17,37 @@ export const ScrollProvider = ({ children }) => {
     }
   };
 
+  useEffect(() => {
+    
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log('Impact section in view:', entry.isIntersecting);
+        setIsImpactInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    const target = whyRef.current;
+    if (target) observer.observe(target);
+
+    return () => {
+      if (target) observer.unobserve(target);
+    };
+  }, [whyRef]);
+
   return (
-    <ScrollContext.Provider value={{ productRef, whyRef, impactRef, demoRef, scrollToSection }}>
+    <ScrollContext.Provider
+      value={{
+        productRef,
+        whyRef,
+        impactRef,
+        demoRef,
+        scrollToSection,
+        isImpactInView,
+      }}
+    >
       {children}
     </ScrollContext.Provider>
   );

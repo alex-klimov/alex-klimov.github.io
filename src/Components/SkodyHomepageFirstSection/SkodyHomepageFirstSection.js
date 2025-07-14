@@ -73,9 +73,9 @@ function SkodyHomepageFirstSection() {
               />
             ) : (
               <Gear
-                gear1="/assets/icons/yellowgear.svg"
-                gear2="/assets/icons/yellowgear.svg"
-                gear3="/assets/icons/yellowgear.svg"
+                gear1="/assets/icons/systembannercog.svg"
+                gear2="/assets/icons/systembannercog.svg"
+                gear3="/assets/icons/systembannercog.svg"
                 size1={{ width: '395', height: '395' }}
                 size2={{ width: '489', height: '489' }}
                 size3={{ width: '222', height: '243' }}
@@ -112,12 +112,6 @@ function SkodyHomepageFirstSection() {
               {!isMobile ? (
                 <>
                   <OptimizationCard />
-
-                  <div className={styles.animatedImageArrow}>
-
-                    <ArrowAnimation count={20} reverse={false} />
-                  </div>
-
                 </>
               ) : (
                 <OptimizationCard />
@@ -126,6 +120,10 @@ function SkodyHomepageFirstSection() {
 
             </div>
           </div>
+          <div className={styles.animatedImageArrow}>
+
+                    <ArrowAnimation count={20} reverse={false} />
+                  </div>
         </div>
 
 

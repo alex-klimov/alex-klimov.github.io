@@ -3,7 +3,9 @@ body {
     --primary-black: #222222;
     --primary-black-dark: #000000;
 
-    --card-background:#2f2f2f;
+    --card-background:#E2E4EA;
+    --card-days:#FAFAFA;
+    --card-bar-background:#EBECEF;
 
     /* Light Mode */
 
@@ -25,6 +27,7 @@ body {
     --grey-color-600: #525252;
     --grey-color-700: #343434;
     --grey-color-800: #131313;
+    --grey-color-900: #111111;
 
     /* Yellow Color */
 

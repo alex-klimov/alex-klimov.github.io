@@ -74,8 +74,8 @@
 .animatedImageArrow {
     rotate: 180deg;
     position: absolute;
-    top: 60%;
-    width: 81%;
+    bottom: 34%;
+    width: 100%;
     left: 0;
     z-index: -1;
 
@@ -84,6 +84,7 @@
 .imageContainer {
     margin-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
 }
 
 .imageContainer img {
@@ -127,7 +128,7 @@
 }
 @media screen and (max-width:1046px) {
     .imageContainer {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
 }
@@ -215,7 +216,7 @@
     }
 
     .imageContainer {
-        margin-top: 1.2rem;
+        margin-top: 3.2rem;
     }
 
     .imageContainer img {
