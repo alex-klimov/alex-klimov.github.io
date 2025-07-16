@@ -3,20 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
 import { ScrollProvider } from './Components/ScrollContext/ScrollContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ScrollProvider>
-
-    <Header/>
       <App />
-      <Footer/>
     </ScrollProvider>
-
   </React.StrictMode>
 );
 

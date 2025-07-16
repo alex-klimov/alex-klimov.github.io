@@ -12,30 +12,17 @@ import { useCallback } from 'react';
 function SkodyHomepageFirstSection() {
   const skodyProductDetails = data.section[0]
   const [arrow, setArrowCount] = useState(4)
-  const [isMobile, setIsMobile] = useState(false);
-  const [mobilegear, setIsMobileGear] = useState(false)
   const [first, second] = data.header.title.split(',');
   const checkMobileView = useCallback(() => {
-    if (window.innerWidth <= 768) {
-      setIsMobileGear(true);
-    } else {
-      setIsMobileGear(false);
-    }
-
-    if (window.innerWidth <= 400) {
-      setIsMobile(true);
-    } else if (window.innerWidth <= 640) {
-      setIsMobile(!mobilegear);
-    } else if (window.innerWidth <= 940) {
+    if (window.innerWidth <= 940) {
       setArrowCount(2);
     } else if (window.innerWidth <= 1320) {
       setArrowCount(3);
     } else if (window.innerWidth > 1320) {
       setArrowCount(4);
-    } else {
-      setIsMobile(false);
     }
-  }, [mobilegear]);
+  }, []); 
+  
 
   useEffect(() => {
     checkMobileView();
@@ -59,7 +46,6 @@ function SkodyHomepageFirstSection() {
 
           </div>
           <div className={styles.bannerImageContainerGear}>
-            {mobilegear ? (
               <Gear
                 gear1="/assets/icons/greysystem.svg"
                 gear2="/assets/icons/greysystem.svg"
@@ -71,20 +57,6 @@ function SkodyHomepageFirstSection() {
                 position2={{ top: '203px', left: '98px' }}
                 position3={{ bottom: '93px', left: '290px' }}
               />
-            ) : (
-              <Gear
-                gear1="/assets/icons/systembannercog.svg"
-                gear2="/assets/icons/systembannercog.svg"
-                gear3="/assets/icons/systembannercog.svg"
-                size1={{ width: '395', height: '395' }}
-                size2={{ width: '489', height: '489' }}
-                size3={{ width: '222', height: '243' }}
-                position1={{ top: '-46px', left: '-42px' }}
-                position2={{ top: '203px', left: '98px' }}
-                position3={{ bottom: '93px', left: '290px' }}
-              />
-            )}
-
           </div>
           <div className={styles.arrow}>
 
@@ -109,15 +81,7 @@ function SkodyHomepageFirstSection() {
               </div>
             </div>
             <div className={styles.imageContainer}>
-              {!isMobile ? (
-                <>
-                  <OptimizationCard />
-                </>
-              ) : (
                 <OptimizationCard />
-
-              )}
-
             </div>
           </div>
           <div className={styles.animatedImageArrow}>

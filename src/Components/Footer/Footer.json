@@ -8,26 +8,25 @@
       {
         "platform": {
           "src": "/assets/icons/LinkedIn.png",
-          "alt": "lindin"
+          "alt": "LinkedIn"
         },
-        "url": "https://linkedin.com"
+        "url": "https://www.linkedin.com/company/skody-ai/posts/?feedView=all"
       },
       {
         "platform": {
           "src": "/assets/icons/XLogo.png",
           "alt": "X"
         },
-        "url": "https://twitter.com"
+        "url": "https://x.com/skody_ai"
       }
     ],
     "productLinks": [
-      { "name": "Why Skody", "url": "/why-skody" },
-      { "name": "Impact", "url": "/impact" },
-      { "name": "Blogs", "url": "/blogs" }
+      { "name": "Why Skody", "url": "/#why" },
+      { "name": "Impact", "url": "/#impact" }
     ],
     "links": [
-      { "name": "Privacy Policy", "url": "/" },
-      { "name": "Terms of Service", "url": "/" }
+      { "name": "Policy", "url": "/privacy-policy" },
+      { "name": "Blogs", "url": "https://blog.skody.ai/" }
     ],
     "contact": {
       "email": "info@skody.ai"

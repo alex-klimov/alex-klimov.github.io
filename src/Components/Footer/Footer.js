@@ -9,12 +9,10 @@ const Footer = () => {
     useScroll();
   const footerInfo = footerData.footer;
 
-  // Create a mapping between link names and corresponding references
   const sectionRefs = {
     Product: productRef,
     "Why Skody": whyRef,
     "Impact": impactRef,
-    "Blogs": '',
   };
 
   if (!footerInfo) return null;
@@ -29,7 +27,7 @@ const Footer = () => {
           </div>
           <div className={styles.socialLinks}>
             {footerInfo.socialLinks.map((link) => (
-              <a href={link.url} key={link.platform.alt} className={styles.socialLink}>
+              <a href={link.url} key={link.platform.alt} className={styles.socialLink} target='_blank' rel="noreferrer" >
                 <img src={link.platform.src} alt={link.platform.alt} className={styles.socialIcon} />
               </a>
             ))}
@@ -48,7 +46,9 @@ const Footer = () => {
                   className={styles.link}
                   onClick={() => scrollToSection(sectionRefs[link.name])}
                 >
-                  <CommonText smallDescription={link.name} size="body-sm" />
+                  <a href={link.url} key={link.name} className={styles.link}>
+                    <CommonText smallDescription={link.name} size="body-sm" />
+                  </a>
                 </div>
               ))}
             </div>

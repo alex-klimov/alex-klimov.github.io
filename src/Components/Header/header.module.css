@@ -49,6 +49,9 @@
     padding: 0.5rem 1rem;
 
 }
+.header nav ul li a{
+    all: unset
+}
 
 .header nav ul li:hover {
     background: var(--grey-color-300);
@@ -114,6 +117,9 @@
 
     .header nav ul {
         align-items: center;
+    }
+    .mobileNavigation li a{
+        all: unset;
     }
 
     .mobileNavigation li {

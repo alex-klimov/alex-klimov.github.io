@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { useScroll } from "../ScrollContext/ScrollContext";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { scrollToSection, productRef, whyRef, impactRef, demoRef } =
@@ -18,16 +19,19 @@ const Header = () => {
   const renderDesktopNav = () => (
     <>
       <li className="medium" onClick={() => scrollToSection(productRef)}>
-        Product
+        <a href="/#product">Product</a>
       </li>
       <li className="medium" onClick={() => scrollToSection(whyRef)}>
-        Why
+        <a href="/#why">Why</a>
       </li>
       <li className="medium" onClick={() => scrollToSection(impactRef)}>
-        Impact
+        <a href="/#impact">Impact</a>
       </li>
-      <li className={`medium ${styles.sch}`} onClick={() => scrollToSection(demoRef)} >
-        Schedule Demo
+      <li
+        className={`medium ${styles.sch}`}
+        onClick={() => scrollToSection(demoRef)}
+      >
+        <a href="/#demo">Schedule Demo</a>
       </li>
     </>
   );
@@ -36,23 +40,27 @@ const Header = () => {
     <header className={styles.stickyHeader}>
       <div className={`${styles.homePageContainer} ${styles.header}`}>
         <div className={styles.barrierPoint}>
-          {isMobile ? (
-            <>
-              <img
-                src="/assets/icons/skody Ai logo.png"
-                alt="SkodyAi Logo"
-                className={styles.logo}
-              />
-            </>
-          ) : (
-            <>
-              <img
-                src="/assets/images/skodyAitextlogo.png"
-                alt="SkodyAi Logo"
-                className={styles.logo}
-              />
-            </>
-          )}
+            <Link to="/">
+
+            {isMobile ? (
+              <>
+                <img
+                  src="/assets/icons/skody Ai logo.png"
+                  alt="SkodyAi Logo"
+                  className={styles.logo}
+                />
+              </>
+            ) : (
+              <>
+                <img
+                  src="/assets/images/skodyAitextlogo.png"
+                  alt="SkodyAi Logo"
+                  className={styles.logo}
+                />
+              </>
+            )}
+            </Link>
+
           <nav>
             <ul>
               {isMobile && (
@@ -61,7 +69,7 @@ const Header = () => {
                     className={`medium ${styles.demo}`}
                     onClick={() => scrollToSection(demoRef)}
                   >
-                    Schedule Demo
+                    <a href="/#demo">Schedule Demo</a>
                   </li>
                   <div
                     className={styles.hambuger}
@@ -73,7 +81,11 @@ const Header = () => {
                       </>
                     ) : (
                       <>
-                        <img src="/assets/icons/menu.png" alt="menu" className={styles.hambugerMenu} />
+                        <img
+                          src="/assets/icons/menu.png"
+                          alt="menu"
+                          className={styles.hambugerMenu}
+                        />
                       </>
                     )}
                   </div>
@@ -88,13 +100,13 @@ const Header = () => {
         >
           <nav className={styles.mobileNavigation}>
             <li className="medium" onClick={() => scrollToSection(productRef)}>
-              Product
+              <a href="/#product">Product</a>
             </li>
             <li className="medium" onClick={() => scrollToSection(whyRef)}>
-              Why
+              <a href="/#why">Why</a>
             </li>
             <li className="medium" onClick={() => scrollToSection(impactRef)}>
-              Impact
+              <a href="/#impact">Impact</a>
             </li>
           </nav>
         </div>

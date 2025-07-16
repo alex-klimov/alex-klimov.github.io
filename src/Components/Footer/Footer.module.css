@@ -23,6 +23,9 @@
     gap: 4rem;
 
 }
+.links a{
+    text-decoration: none;
+}
 
 .heading :global(.commonText) p {
     margin-bottom: 1.4rem;

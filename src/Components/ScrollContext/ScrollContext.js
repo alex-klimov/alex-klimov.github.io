@@ -16,7 +16,24 @@ export const ScrollProvider = ({ children }) => {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const scrollMap = {
+        "#product": productRef,
+        "#why": whyRef,
+        "#impact": impactRef,
+        "#demo": demoRef,
+      };
+  
+      const refToScroll = scrollMap[hash];
+      if (refToScroll && refToScroll.current) {
+        setTimeout(() => {
+          refToScroll.current.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }
+  }, []);
   useEffect(() => {
     
     const observer = new IntersectionObserver(
