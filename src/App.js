@@ -10,12 +10,12 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<SkodyAiHomepage />} />
+        <Route path="/privacy-policy" element={<Policy />} />
         <Route path="/#product" element={<SkodyAiHomepage />} />
         <Route path="/#why" element={<SkodyAiHomepage />} />
         <Route path="/#impact" element={<SkodyAiHomepage />} />
         <Route path="/#demo" element={<SkodyAiHomepage />} />
-        <Route path="/privacy-policy" element={<Policy />} />
+        <Route path="/" element={<SkodyAiHomepage />} />
       </Routes>
       <Footer />
     </Router>
