@@ -25,6 +25,7 @@
 }
 .links a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 .heading :global(.commonText) p {

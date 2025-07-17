@@ -4,6 +4,7 @@ import styles from './CalendlySection.module.css'
 import CommonText from '../CommonText/CommonText';
 
 const CalendlySection = () => {
+  const CalendlyLink = process.env.REACT_APP_CALENDLY_CONNECTION_LINK;
   const [isMobile, setIsMobile] = useState(false);
 
   const checkMobileView = () => {
@@ -28,12 +29,12 @@ const CalendlySection = () => {
       {isMobile? 
       <PopupButton
           className={`bold ${styles.button}`}
-          url="https://calendly.com/alexl-skody/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+          url={CalendlyLink}
           rootElement={document.getElementById("root")}
           text="Schedule Demo"
         /> :null}
       <div className={styles.widgetCalendly}>
-        <InlineWidget url="https://calendly.com/alexl-skody/30min?hide_event_type_details=1&hide_gdpr_banner=1" styles={{
+        <InlineWidget url={CalendlyLink} styles={{
         }} />
       </div>
       <div className={styles.scheduleDemoContainer}>
@@ -41,7 +42,7 @@ const CalendlySection = () => {
         <CommonText smallDescription='Connect with our team to learn more about our product and start your trial today.' />
         {!isMobile? <PopupButton
           className={`bold ${styles.button}`}
-          url="https://calendly.com/alexl-skody/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+          url={CalendlyLink}
           rootElement={document.getElementById("root")}
           text="Schedule Demo"
         /> :null}
