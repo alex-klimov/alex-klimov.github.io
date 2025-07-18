@@ -6,6 +6,7 @@ import styles from './Policy.module.css'
 const Policy = () => {
   return (
     <div
+    id='privacy-policy'
       className={`homePageContainer ${styles.markdown}`}
       style={{ padding: '1rem' }}>
       <ReactMarkdown>{policyData.content}</ReactMarkdown>

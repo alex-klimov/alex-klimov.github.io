@@ -3,6 +3,7 @@ import footerData from './Footer.json';
 import styles from './Footer.module.css';
 import CommonText from '../CommonText/CommonText';
 import { useScroll } from '../ScrollContext/ScrollContext';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { scrollToSection, productRef, whyRef, impactRef } =
@@ -46,9 +47,10 @@ const Footer = () => {
                   className={styles.link}
                   onClick={() => scrollToSection(sectionRefs[link.name])}
                 >
-                  <a href={link.url} key={link.name} className={styles.link}>
+                  <Link to={link.url} key={link.name} className={styles.link}>
                     <CommonText smallDescription={link.name} size="body-sm" />
-                  </a>
+
+                  </Link>
                 </div>
               ))}
             </div>
@@ -60,12 +62,28 @@ const Footer = () => {
             </div>
 
             <div className={styles.socialLink}>
-
-              {footerInfo.links.map((link) => (
-                <a href={link.url} key={link.name} className={styles.link}>
-                  <CommonText smallDescription={link.name} size='body-sm' />
-                </a>
-              ))}
+              {footerInfo.links.map((link) =>
+                link.url.startsWith("/") || link.url.startsWith("#/")
+                  ? (
+                    <Link
+                      to={link.url} // Remove # if present
+                      key={link.name}
+                      className={styles.link}
+                    >
+                      <CommonText smallDescription={link.name} size="body-sm" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.url}
+                      key={link.name}
+                      className={styles.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CommonText smallDescription={link.name} size="body-sm" />
+                    </a>
+                  )
+              )}
             </div>
           </div>
           <div className={styles.contact}>

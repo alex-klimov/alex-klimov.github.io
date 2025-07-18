@@ -19,19 +19,19 @@ const Header = () => {
   const renderDesktopNav = () => (
     <>
       <li className="medium" onClick={() => scrollToSection(productRef)}>
-        <a href="/#product">Product</a>
+        <Link to="/#product">Product</Link>
       </li>
       <li className="medium" onClick={() => scrollToSection(whyRef)}>
-        <a href="/#why">Why</a>
+        <Link to="/#why">Why</Link>
       </li>
       <li className="medium" onClick={() => scrollToSection(impactRef)}>
-        <a href="/#impact">Impact</a>
+        <Link to="/#impact">Impact</Link>
       </li>
       <li
         className={`medium ${styles.sch}`}
         onClick={() => scrollToSection(demoRef)}
       >
-        <a href="/#demo">Schedule Demo</a>
+        <Link to="/#demo">Schedule Demo</Link>
       </li>
     </>
   );
@@ -69,7 +69,7 @@ const Header = () => {
                     className={`medium ${styles.demo}`}
                     onClick={() => scrollToSection(demoRef)}
                   >
-                    <a href="/#demo">Schedule Demo</a>
+                    <Link to="/#demo">Schedule Demo</Link>
                   </li>
                   <div
                     className={styles.hambuger}
@@ -100,13 +100,13 @@ const Header = () => {
         >
           <nav className={styles.mobileNavigation}>
             <li className="medium" onClick={() => scrollToSection(productRef)}>
-              <a href="/#product">Product</a>
+              <Link to="/#product">Product</Link>
             </li>
             <li className="medium" onClick={() => scrollToSection(whyRef)}>
-              <a href="/#why">Why</a>
+              <Link to="/#why">Why</Link>
             </li>
             <li className="medium" onClick={() => scrollToSection(impactRef)}>
-              <a href="/#impact">Impact</a>
+              <Link to="/#impact">Impact</Link>
             </li>
           </nav>
         </div>
