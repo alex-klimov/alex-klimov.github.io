@@ -5,6 +5,7 @@
       "src": "/assets/images/floatingPainPoints.png",
       "alt": ""
     },
+    "mobile":{"src": "/assets/whyusmobile/media image.png", "alt": "WhySkody" },
     "image": { "src": "/assets/dashboardImage/painPoint.png", "alt": "WhySkody" },
     "slogan": "Scheduling Challenges Slow You Down"
   },
