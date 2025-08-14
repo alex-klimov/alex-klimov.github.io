@@ -10,6 +10,12 @@ const Optimization = ({OptimizationContent}) => {
   return (
     <>
       <div className={`homePageContainer ${styles.outerContainer}`}>
+        <div className={`font-weight-500 ${styles.description}`}>
+            <CommonText smallDescription={description.description} size='body-other' />
+        </div>
+        <div className={styles.imageContainer}>
+            <img src={image.src} alt={image.alt} className={styles.image}/>
+        </div>
         <div className={styles.headingContainer}>
           {heading.map((item, index) => (
             <div key={index} className={styles.titleContainer}>
@@ -17,12 +23,6 @@ const Optimization = ({OptimizationContent}) => {
               <CommonText smallDescription={item.subheading} size='label-sub1' />
             </div>
           ))}
-        </div>
-        <div className={styles.imageContainer}>
-            <img src={image.src} alt={image.alt} className={styles.image}/>
-        </div>
-        <div className={styles.description}>
-            <CommonText smallDescription={description.description} size='body-other' />
         </div>
       </div>
     </>

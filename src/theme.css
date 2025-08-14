@@ -126,7 +126,9 @@ body.dark {
 .bold {
     font-weight: bold;
 }
-
+.font-weight-500{
+    font-weight: 500;
+}
 .medium {
     font-weight: 600;
 }
