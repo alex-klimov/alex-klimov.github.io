@@ -1,11 +1,17 @@
-import React from "react";
 import SkodyHomepageFirstSection from '../SkodyHomepageFirstSection/SkodyHomepageFirstSection';
-import WhySkody from "./WhySkody/WhySkody";
-import SkodyImpact from "../SkodyImpactContainer/SkodyImpact/SkodyImpact";
-import ProductDemo from "../ProductDemo/ProductDemo";
 import { useScroll } from "../ScrollContext/ScrollContext";
-import CalendlySection from "../CalendlySection/CalendlySection";
 import styles from './SkodyAiHomepage.module.css'
+import GetInTouch from "../GetInTouch/GetInTouch";
+import KpiSection from "../KPIGap/KPIGap";
+import DashboardSection from "../DashboardSection/DashboardSection";
+import SchedulerSection from "../Scheduler/SchedulerSection";
+import StatisticsSection from "../StatisticsSection/StatisticsSection";
+import PricingSection from '../PriceSection/PriceSection';
+import ContineslySlider from '../Slider/ContinueslyMoving/ContineslySlider';
+import Difference from '../Difference/Difference';
+import WhySkody from "./WhySkody/WhySkody";
+import TestimonialsSection from '../TestimonialsSection/TestimonialsSection';
+import FAQ from '../FAQ/FAQ';
 
 const SkodyAiHomepage = () => {
   const { productRef, whyRef, impactRef, demoRef } = useScroll();
@@ -15,17 +21,38 @@ const SkodyAiHomepage = () => {
       <div ref={productRef}>
         <SkodyHomepageFirstSection />
       </div>
-      <div >
-        <ProductDemo />
+      <div className='margin'>
+        <StatisticsSection/>
       </div>
-      <div ref={whyRef} className={styles.whySkody}>
-        <WhySkody />
+      <div className={` ${styles.schedulerSection}`}>
+        <SchedulerSection/>
       </div>
-      <div ref={impactRef} className={styles.skodyImpactContainer}>
-        <SkodyImpact />
+      <div style={{margin:"2rem auto"}} >
+        <Difference/>
       </div>
-      <div ref={demoRef} className={styles.skodyCalendlySection}>
-        <CalendlySection />
+       <div className='margin'>
+         <WhySkody />
+      </div>
+      <div className={`margin ${styles.dashBoardSection}`}>
+        <DashboardSection/>
+      </div>
+       <div>
+        <ContineslySlider />
+      </div>
+      <div>
+        <PricingSection/>
+      </div>
+      <div>
+        <TestimonialsSection/>
+      </div>
+      <div className='margin'>
+        <FAQ/>
+      </div>
+      <div style={{backgroundColor:'#F5F8FC'}}>
+        <KpiSection/>
+      </div>
+      <div className={`margin ${styles.getInTouch}`}>
+        <GetInTouch/>
       </div>
     </div>
   );

@@ -1,0 +1,34 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 4rem 1rem;
+    gap: 1rem;
+    text-align: center;
+}
+.getInTouchButton{
+    color: var(--zaffra);
+    background-color: var(--blue-200);
+    border-radius: 0.4rem;
+    border: 1px solid var(--zaffra);
+    padding: 8px 16px;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+.headlineContainer{
+    max-width: 873px;
+}
+.headlineContainer :global(.commonText) h2,.headlineContainer :global(.commonText) p{
+    color: var(--primary-white);
+}
+.book30MinButton{
+    margin-top: 2.2rem;
+    background-color: var(--primary-white);
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+.getInTouch{
+    background-color: var(--primary-white);
+    color: var(--violet);
+}

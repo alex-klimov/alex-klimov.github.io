@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './CommonText.module.css';
+import ReactMarkdown from 'react-markdown';
 
 export default function CommonText({
     heading,
@@ -8,6 +9,7 @@ export default function CommonText({
     size, 
     subHeadingh4,
     weight,
+    newDescription,
     detail,
     fontFamily,  
 }) {
@@ -19,7 +21,7 @@ export default function CommonText({
             {subHeading ? <h3 className={combinedClass} style={customStyles}>{subHeading}</h3> : null}
             {subHeadingh4 ? <h4 className={combinedClass} style={customStyles}>{subHeadingh4}</h4> : null}
             {smallDescription ? <p className={combinedClass} style={customStyles}>{smallDescription}</p> : null}
-            
+            {newDescription ? <p className={combinedClass} style={customStyles} ><ReactMarkdown>{newDescription}</ReactMarkdown></p> : null}
         </div>
     );
 }

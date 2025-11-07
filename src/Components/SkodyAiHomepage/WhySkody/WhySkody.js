@@ -1,61 +1,38 @@
-import React from 'react'
-import WhySkodyDetails from './WhySkody.json'
-import styles from './WhySkody.module.css'
-import Optimization from '../Optimization/Optimization'
-import DemoSkodyAi from '../DemoSkodyAi/DemoSkodyAi'
-import CardList from '../CardList/CardList '
-import CommonText from '../../CommonText/CommonText'
-import ImageSlider from '../../Animation/Image/Image'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import MobileImageComponent from '../../Animation/Image/mobileImageComponent'
-
-
+import React from "react";
+import WhySkodyDetails from "./WhySkody.json";
+import Optimization from "../Optimization/Optimization";
+import CommonText from "../../CommonText/CommonText";
+import styles from "../SkodyAiHomepage.module.css";
+import SimpleButton from "../../../Buttons/SimpleButton";
+import HeaderSection from "../../../CommonComponent/HeaderSection/HeaderSection";
 const WhySkody = () => {
-    const OptimizationContent = WhySkodyDetails.sections[0]
-    const DemoSkodyAiContent = WhySkodyDetails.sections[1]
-    const CardsDetails = WhySkodyDetails.sections[2]
-    const [isshowImage, setShowImage] = useState(false);
+  const OptimizationContent = WhySkodyDetails.sections[0];
+  return (
+    <>
+    <div className={styles.whyskodyHeader}>
 
-    useEffect(() => {
-      const checkMobileView = () => {
-        setShowImage(window.innerWidth <= 640);
-      };
-  
-      checkMobileView();
-  
-      window.addEventListener('resize', checkMobileView);
-  
-      return () => {
-        window.removeEventListener('resize', checkMobileView);
-      };
-    }, []);
-  
-    return (
-        <>
-            <div className={` ${styles.mainContainer}`}>
-                <div className={styles.whySkodyHeading}>
+      <HeaderSection
+        title="⚡ Powered by continuous AI optimization"
+        subtitle=" “Shops using Skody cut late orders by **15 %** and freed **10–15 %** capacity — without adding overtime.”
+"
+      />
+    </div>
+      <div className={`homePageContainer ${styles.whySkodySection}`}>
+        <CommonText
+          newDescription={OptimizationContent.newHeading}
+          size="title-h3"
+        />
+        <Optimization OptimizationContent={OptimizationContent} />
+        <CommonText smallDescription="See How Skody Thinks" size="body-other" weight="font-weight-500" fontFamily='SF Pro' />
+        <SimpleButton
+          className={`buttonText regular  ${styles.watchDemoButton}`}
+          href={OptimizationContent.button.action}
+        >
+          {OptimizationContent.button.label}
+        </SimpleButton>
+      </div>
+    </>
+  );
+};
 
-                    <CommonText heading={WhySkodyDetails.heading} size='title-h1' weight='bold' />
-                </div>
-                <div className={styles.whySkodyContainer}>
-                  {
-                      !isshowImage? <img src={WhySkodyDetails.detail.image.src} alt={WhySkodyDetails.detail.image.alt} className={styles.whySkodyImage} />: <img src={WhySkodyDetails.detail.mobile.src} alt={WhySkodyDetails.detail.mobile.alt} className={styles.whySkodyImage} />
-                  }
-                    <div className={styles.floatingPoints}>
-
-                       {
-                        !isshowImage? <ImageSlider />:<MobileImageComponent />
-                       }
-                    </div>
-                </div>
-            </div>
-            <Optimization OptimizationContent={OptimizationContent} />
-            <DemoSkodyAi DemoSkodyAiContent={DemoSkodyAiContent} />
-            <CardList CardsDetails={CardsDetails} />
-
-        </>
-    )
-}
-
-export default WhySkody
+export default WhySkody;

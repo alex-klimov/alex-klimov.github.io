@@ -1,7 +1,7 @@
 {
   "header": {
-    "title": "Schedule Smarter, Build Faster",
-    "description": "Skody AI is an advanced planning and scheduling (APS) tool that transforms your ERP data into fully optimized, conflict-free production plans — respecting every sequence, every step, every time."
+    "title": "Your ERP shows you jobs. Skody tells you what to run — and why.",
+    "description": "AI-powered Scheduler + KPI Dashboard that connects to your ERP, auto-optimizes production, and surfaces potential schedule errors — no spreadsheets, no IT setup. Most shops see 10–15% more capacity and 15% fewer late jobs within 30 days."
   },
   "schedule": {
     "image": "/assets/images/machine-schedule-new-version.png"

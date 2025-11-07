@@ -1,9 +1,51 @@
-.skodyImpactContainer{
+.skodyImpactContainer {
     margin-top: 5rem;
 }
-.skodyCalendlySection{
+
+.skodyCalendlySection {
     padding: 1rem 0 0rem;
 }
-.whySkody{
+.whyskodyHeader :global(.common){
+    margin-bottom: 2.2rem;
+}
+.whyskodyHeader :global(.common) div{
+    font-style: italic;
+}
+.whySkody {
     padding: 4rem 0 0;
+}
+
+.whySkodySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-blue);
+    padding: 2.7rem 0rem;
+    border-radius: 1rem;
+}
+.whySkodySection :global(.commonText) p p{
+    font-size: 32px;
+    padding: 0rem 6rem;
+    text-align: center;
+    font-family: 'SF Pro';
+    margin-bottom: 1rem;
+}
+
+.dashBoardSection {
+    background-color: var(--jordyblue);
+}
+
+.schedulerSection {
+    background-color: var(--light-blue);
+    margin: 2rem auto;
+}
+.watchDemoButton{
+    margin-top: 0.6rem;
+    background: var(--violet) !important;
+    border-radius: 0.4rem !important;
+    padding: 12px 24px !important;
+    font-family: 'Prompt' !important;
+}
+.getInTouch{
+    background: linear-gradient(to bottom, white 50%, black 50%);
 }

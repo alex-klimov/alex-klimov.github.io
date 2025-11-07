@@ -1,0 +1,36 @@
+{
+  "faqSection": {
+    "tag": "FAQS",
+    "title": "Have Questions?",
+    "faqs": [
+      {
+        "question": "Do I need to change my ERP or process?",
+        "answer": "No — Skody sits on top of your ERP and reads your existing data.No — Skody sits on top of your ERP and reads your existing data.No — Skody sits on top of your ERP and reads your existing data.No — Skody sits on top of your ERP and reads your existing data."
+      },
+      {
+        "question": "Do you track machine utilization?",
+        "answer": "Yes — via API from Amper, Datanomix, or directly from CNC telemetry."
+      },
+      {
+        "question": "How long does setup take?",
+        "answer": "Most shops go live in under a week."
+      },
+      {
+        "question": "Is it secure?",
+        "answer": "Hosted in ITAR-ready AWS Gov Cloud with role-based access controls."
+      },
+      {
+        "question": "What if we run rush jobs daily?",
+        "answer": "Skody re-optimizes in seconds and updates dispatch boards automatically."
+      }
+    ],
+    "footer": {
+      "subtitle": "**Still have questions?**",
+      "desc": "Can't find the answer you're looking for? Please chat with our friendly team.",
+      "cta": {
+        "text": "Chat Now",
+        "action": "openChat"
+      }
+    }
+  }
+}

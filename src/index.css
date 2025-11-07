@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Prompt';
+  font-family: 'SF Pro';
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,6 +26,9 @@ body {
   margin: 0rem auto;
   overflow: hidden;
   padding: 0 1rem;
+}
+.margin{
+  padding: 4rem 0;
 }
 
 html,

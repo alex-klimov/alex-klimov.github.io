@@ -1,0 +1,84 @@
+.slider {
+  margin: 0 auto;
+}
+
+.slide {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background: var(--primary-white);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.avatar {
+  object-fit: cover;
+  /* margin-right: 16px; */
+  height: 100%;
+}
+
+.logo {
+  min-width: 50px;
+  max-width: 80px;
+  /* margin-left: auto; */
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin: 24px 0 18px 0;
+}
+.content{
+  padding: 1rem;
+}
+
+.name {
+  font-weight: 600;
+  color: #1b2130;
+}
+
+.role {
+  margin-left: 8px;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.arrow {
+  background: #f8911a;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow:first-child{
+  background-color:var(--primary-white) ;
+}
+
+.annonationContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

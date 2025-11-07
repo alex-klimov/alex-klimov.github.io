@@ -1,9 +1,13 @@
 .outerContainer {
-    margin: 6rem auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.8rem;
+    background: var(--primary-white);
+    border-radius: 1rem;
+    width: 90%;
+    padding: 2.2rem 1rem;
 }
 
 .headingContainer {
@@ -22,8 +26,6 @@
 
 .description :global(.commonText) p {
     color: var(--grey-color-800);
-    max-width: 560px;
-
     text-align: center;
 
 }
@@ -32,7 +34,7 @@
 }
 
 .imageContainer {
-    width: 72%
+    width: 95%
 }
 
 .image {

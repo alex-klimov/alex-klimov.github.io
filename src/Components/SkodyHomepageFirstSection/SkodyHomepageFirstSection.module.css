@@ -1,26 +1,59 @@
 .backgroundImageContainer {
     width: 100%;
-    background-color: #F6F6F7;
-   
+    background: radial-gradient(ellipse at center, #1740cf 9%, #000218 87%);
+
 }
+
 .imageContainerNew {
     margin: 0 auto;
     height: auto;
-    background-image: url('/public/assets/images/machineworkimagenew.png');
-    background-size: contain;  
-    background-position: right center; 
     position: relative;
-    background-repeat: no-repeat;
     z-index: 0;
     max-width: 1700px;
 }
+.imageSection{
+    background: #202021;
+    padding:  1rem 1rem 0rem 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
 
+.mySpecialButton {
+    background: var(--primary-white) !important;
+    color: var(--primary-black) !important;
+    font-size: 20px !important;
+    border-radius: 8px;
+    font-family: 'Prompt', sans-serif !important;
+    padding: 12px 24px;
+
+}
+.watchDemoButton{
+    background: transparent !important;
+    color: var(--primary-white) !important;
+    border: 2px solid var(--primary-white) !important;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: 'Prompt', sans-serif !important;
+}
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.4rem;
+}
+.imageContainer2{
+    height: 462px;
+    border-radius: 1rem 1rem 0rem 0rem;
+    overflow: hidden;
+}
 .outerContainer {
+    padding-top: 5.8rem;
     overflow: unset;
 }
 
 .headingContainer {
-    width: 52%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .movingBar {
@@ -41,21 +74,22 @@
 }
 
 .heading :global(.commonText) h2 {
-    color: var(--grey-color-800);
-    padding-top: 6rem;
-    text-align: start;
+    color: var(--primary-white);
+    padding-top: 2rem;
+    text-align: center;
     padding-right: 1rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
     z-index: 1;
     position: relative;
 
 }
 
 .description :global(.commonText) p {
-    color: var(--grey-color-800);
+    color: var(--primary-white);
     letter-spacing: 0.2px;
     position: relative;
-    text-align: start;
+    margin-bottom: 2rem;
+    text-align: center;
 
 }
 
@@ -93,39 +127,44 @@
 }
 
 @media screen and (max-width:1300px) {
-   .movingBar{
-    position: absolute;
-    width: 23%;
-    height: 23%;
-    top: 12%;
-    right: 24%;
-    background-size: 100% 100%;
-    background-position: center;
-   }
-  
+    .movingBar {
+        position: absolute;
+        width: 23%;
+        height: 23%;
+        top: 12%;
+        right: 24%;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
 }
+
 @media screen and (max-width:1200px) {
-   .movingBar{
-    position: absolute;
+    .movingBar {
+        position: absolute;
         width: 23%;
         height: 18%;
         top: 16.3%;
         left: 53.1%;
-   }
-   .heading :global(.commonText) h2 {
-    padding-top: 4rem;
-    padding-right: 0rem;
-   }
+    }
+
+    .heading :global(.commonText) h2 {
+        padding-top: 2rem;
+        padding-right: 0rem;
+    }
 }
+
 @media screen and (max-width:1100px) {
-    .movingBar{
+    .movingBar {
         top: 18.3%;
     }
-    .arrow{
-        top:9rem;
+
+    .arrow {
+        top: 9rem;
     }
-    
+
 }
+
 @media screen and (max-width:1046px) {
     .imageContainer {
         margin-top: 3rem;
@@ -135,10 +174,7 @@
 
 @media screen and (max-width:1024px) {
 
-    .headingContainer {
-        width: 74%;
-    }
-    .heading :global(.commonText) h2{
+    .heading :global(.commonText) h2 {
         padding-top: 2rem;
     }
 
@@ -146,26 +182,27 @@
         top: 16%;
     }
 }
+
 @media screen and (max-width:940px) {
     .movingBar {
         top: 17.3%;
     }
-    .arrow{
+
+    .arrow {
         right: 25px;
     }
 }
+
 @media screen and (max-width:860px) {
-    .movingBar{
+    .movingBar {
         height: 15%;
         top: 21.7%;
     }
-    
+
 }
+
 @media screen and (max-width:768px) {
-    .headingContainer {
-        width: 90%;
-    }
-    .imageContainerNew{
+    .imageContainerNew {
         background: none;
     }
 
@@ -208,11 +245,18 @@
 }
 
 @media screen and (max-width:640px) {
-    .headingContainer {
-        width: 90%;
-    }
+
     .heading :global(.commonText) h2 {
         padding-top: 2rem;
+    }
+    .buttonContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .watchDemoButton,.mySpecialButton{
+        width: 100%;
+        padding: 12px 0;
     }
 
     .imageContainer {

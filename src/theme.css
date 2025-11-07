@@ -1,11 +1,35 @@
 body {
+    /* New colors */
+    --violet: #002BC4;
+    --zaffra: #00229D;
+    --jordyblue: #89B2EF;
+    --light-blue: #DEE7F4;
+    --floralwhite: #FFF6E5;
+    --Outerspace: #848BA3;
+    --charcoal: #343436;
+    --xanthous: #F4A508;
+    --footer-text:#b2b2b2;
+    --blue-100: #F0F6FF;
+    --blue-200:#F0F6FFB5;
+    --blue-50:#f0f5fd;
+
+
+
+
+
+
+
+
+
+
+
     --primary-white: #ffffff;
     --primary-black: #222222;
     --primary-black-dark: #000000;
 
-    --card-background:#E2E4EA;
-    --card-days:#FAFAFA;
-    --card-bar-background:#EBECEF;
+    --card-background: #E2E4EA;
+    --card-days: #FAFAFA;
+    --card-bar-background: #EBECEF;
 
     /* Light Mode */
 
@@ -126,9 +150,11 @@ body.dark {
 .bold {
     font-weight: bold;
 }
-.font-weight-500{
+
+.font-weight-500 {
     font-weight: 500;
 }
+
 .medium {
     font-weight: 600;
 }
@@ -137,28 +163,77 @@ body.dark {
     font-weight: 400;
 }
 
+/* New Desing  */
+.title-64 {
+    font-size: 64px;
+}
+
+.title-24 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+}
+
+
 /* Title/H1 */
 .title-h1 {
     font-size: 56px;
     line-height: 72.8px;
 }
+
+.buttonText {
+    font-size: 20px;
+    line-height: auto;
+}
+
+.navText {
+    font-size: 18px;
+    line-height: auto;
+}
+
 .title-h1-multi {
-    font-size: 56px;
-    line-height: 72.8px;
+    font-size: 61px;
+    line-height: 74.8px;
+}
+
+.label-H1-sub1 {
+    font-size: 24px;
+    line-height: 38px;
 }
 
 /* Title/H2 */
 .title-h2 {
-    font-size: 40px;
+    font-size: 44px;
     line-height: 56px;
+}
+
+.label-H2-sub2 {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.label-H2-sub2-bold {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.lable-new-1 {
+    font-size: 24px;
+    line-height: 2=30px;
 }
 
 /* Title/H3 */
 .title-h3 {
     font-size: 32px;
-    line-height: 44.8px;
+    line-height: 38px;
 }
 
+.label-H3-sub3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/* ___________________________________________- */
 .title-h4 {
     font-size: 24px;
     line-height: 33.6px;
@@ -167,8 +242,9 @@ body.dark {
 /* Label/Sub1 - Bold */
 .label-sub1 {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 38px;
 }
+
 .label-sub1-new {
     font-size: 22px;
     line-height: 33px;
@@ -193,7 +269,7 @@ body.dark {
 }
 
 .body-other {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 36.4px;
 }
 
@@ -203,17 +279,32 @@ body.dark {
 }
 
 @media screen and (max-width:640px) {
-    .title-h1-multi {
+    .title-64 {
         font-size: 32px;
-        line-height: 38px;
     }
+
+    .title-h1-multi {
+        font-size: 40px;
+        line-height: 41px;
+    }
+
+    .title-24 {
+        font-size: 12px !important;
+        line-height: 24px !important;
+    }
+
+    .label-H1-sub1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     .title-h1 {
         font-size: 26px;
         line-height: 32px;
     }
 
     .title-h2 {
-        font-size: 26px;
+        font-size: 32px;
         line-height: 32px;
     }
 
@@ -228,7 +319,7 @@ body.dark {
     }
 
     .label-sub1 {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 24px;
     }
 
@@ -238,7 +329,7 @@ body.dark {
     }
 
     .body-lg {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 24px;
     }
 
@@ -256,6 +347,7 @@ body.dark {
         line-height: 28px;
         font-size: 22px;
     }
+
     .label-sub1-new {
         font-size: 18px;
         line-height: 24px;

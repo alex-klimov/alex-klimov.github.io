@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { useScroll } from "../ScrollContext/ScrollContext";
 import { Link } from "react-router-dom";
+import SimpleButton from "../../Buttons/SimpleButton";
 
 const Header = () => {
   const { scrollToSection, productRef, whyRef, impactRef, demoRef } =
@@ -18,20 +19,17 @@ const Header = () => {
 
   const renderDesktopNav = () => (
     <>
-      <li className="medium" onClick={() => scrollToSection(productRef)}>
-        <Link to="/#product">Product</Link>
+      <li className="navText" onClick={() => scrollToSection(productRef)}>
+        <Link to="/#product">Scheduleer</Link>
       </li>
-      <li className="medium" onClick={() => scrollToSection(whyRef)}>
-        <Link to="/#why">Why</Link>
+      <li className="navText" onClick={() => scrollToSection(whyRef)}>
+        <Link to="/#why">Dashboard</Link>
       </li>
-      <li className="medium" onClick={() => scrollToSection(impactRef)}>
-        <Link to="/#impact">Impact</Link>
+      <li className="mednavTextium" onClick={() => scrollToSection(impactRef)}>
+        <Link to="/#impact">Pricing</Link>
       </li>
-      <li
-        className={`medium ${styles.sch}`}
-        onClick={() => scrollToSection(demoRef)}
-      >
-        <Link to="/#demo">Schedule Demo</Link>
+      <li className="navText" onClick={() => scrollToSection(impactRef)}>
+        <Link to="/#impact">FAQ</Link>
       </li>
     </>
   );
@@ -40,8 +38,7 @@ const Header = () => {
     <header className={styles.stickyHeader}>
       <div className={`${styles.homePageContainer} ${styles.header}`}>
         <div className={styles.barrierPoint}>
-            <Link to="/">
-
+          <Link to="/">
             {isMobile ? (
               <>
                 <img
@@ -53,13 +50,13 @@ const Header = () => {
             ) : (
               <>
                 <img
-                  src="/assets/images/skodyAitextlogo.png"
+                  src="/assets/images/skodyLight.png"
                   alt="SkodyAi Logo"
                   className={styles.logo}
                 />
               </>
             )}
-            </Link>
+          </Link>
 
           <nav>
             <ul>
@@ -94,6 +91,18 @@ const Header = () => {
               {!isMobile && renderDesktopNav()}
             </ul>
           </nav>
+          <div
+            className={`medium ${styles.sch}`}
+            onClick={() => scrollToSection(demoRef)}
+          >
+            {/* <Link to="/#demo">Schedule Demo</Link> */}
+            <SimpleButton
+            to="https://calendly.com/alexl-skody/30min"
+              className={`buttonText regular buttonText  ${styles.faqButton}`}
+            >
+              Book Free Demo
+            </SimpleButton>
+          </div>
         </div>
         <div
           className={`${styles.mobileHeader} ${menuOpen ? styles.open : ""}`}

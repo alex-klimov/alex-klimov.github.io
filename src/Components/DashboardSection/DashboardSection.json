@@ -1,0 +1,52 @@
+{
+  "Chaos": {
+    "tag": "DASHBOARD",
+    "title": "From Chaos to Clarity.",
+    "subtitle": "Out-of-the-box dashboards for CEOs, planners, and supervisors — no Power BI, no IT setup, live in one day.",
+    "cta": {
+      "text": "See Full Dashboard",
+      "action":"skody.ai"
+    }
+  },
+  "dashboardSection": {
+    "title": "Customer Dashboard",
+    "subtitle": "Your customers get the same clarity — without logins or extra work for your team.",
+    "image": [
+      {
+        "image": "customDashboard.png",
+        "alt": "Dashboard Slide 1"
+      },
+      {
+        "image": "customDashboard.png",
+        "alt": "Dashboard Slide 2"
+      },
+      {
+        "image": "customDashboard.png",
+        "alt": "Dashboard Slide 3"
+      }
+    ],
+    "features": [
+      {
+        "title": "Email-first experience",
+        "description": "customers receive clean, branded updates automatically"
+      },
+      {
+        "title": "Live status view",
+        "description": "Secure link to order, shipment, and invoice updates"
+      },
+      {
+        "title": "No new portal",
+        "description": "Everything works through their inbox"
+      },
+      {
+        "title": "Transparency control",
+        "description": "You decide what data each customer can see"
+      }
+    ],
+    "footerText": "This keeps your customers informed, your team focused, and your shop looking world-class.",
+    "cta": {
+      "text": "See Dashboard in Action",
+      "action": "https://portal.skody.ai/acme-cnc-corp"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.sectionContainer {
+    padding: 48px 32px;
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 715px;
+}
+
+.leftImageContainer {
+    width: 50%;
+}
+
+.rightContentContainer {
+    width: 50%;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.leftImage {
+    border-radius: 18px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.rightContent {
+    gap: 3rem;
+    display: flex;
+}
+
+.tagLabel {
+    background: #e6ecfa;
+    color: #2d3a5f;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 4px 16px;
+    margin-bottom: 18px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1b2b52;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #2d3a5f;
+    margin-bottom: 32px;
+}
+
+.infoTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b2b52;
+    margin-bottom: 20px;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.featuresList li {
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #343436;
+
+}
+
+.checkIcon {
+    width: 26px;
+    height: 26px;
+}
+
+.ctaButton {
+    background: var(--violet);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.note {
+    color: #343436;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+.note :global(.commonText) p {
+    font-style: italic;
+
+}

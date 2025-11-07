@@ -27,6 +27,7 @@
 
 .barrierPoint {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -46,10 +47,12 @@
 .header nav ul li {
     display: inline-block;
     cursor: pointer;
+    font-family: 'prompt';
     padding: 0.5rem 1rem;
 
 }
-.header nav ul li a{
+
+.header nav ul li a {
     all: unset
 }
 
@@ -58,15 +61,15 @@
     border-radius: 2rem;
 }
 
-.header nav ul li:last-child {
+/* .header nav ul li:last-child {
     background-color: var(--blue-color-500);
     border-radius: 2rem;
     
-}
+} */
 
 .sch {
     color: var(--primary-white);
-    font-family:'Inter';
+    font-family: 'Inter';
     font-size: 1rem;
     letter-spacing: 0.5px;
 }
@@ -118,7 +121,8 @@
     .header nav ul {
         align-items: center;
     }
-    .mobileNavigation li a{
+
+    .mobileNavigation li a {
         all: unset;
     }
 
@@ -159,9 +163,11 @@
     }
 
 }
+
 @media screen and (max-width:445px) {
-    .mobileNavigation li{
-        padding: 1rem 2rem;;
+    .mobileNavigation li {
+        padding: 1rem 2rem;
+        ;
     }
-    
+
 }

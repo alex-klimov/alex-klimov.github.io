@@ -1,0 +1,17 @@
+{
+  "backgroundColor": "#002bc4",
+  "headline": "Stop Firefighting the Schedule. Let Skody Think for You.",
+  "subheadline": "Recover hidden capacity, deliver on time, and run smoother every shift.",
+  "ctaButtons": [
+    {
+      "text": "GET IN TOUCH",
+      "variant": "primary",
+      "action": "contact"
+    },
+    {
+      "text": "Book 30-Minute Demo",
+      "variant": "outline",
+      "action": "https://calendly.com/alexl-skody/30min"
+    }
+  ]
+}

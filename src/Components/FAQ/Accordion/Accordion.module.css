@@ -1,0 +1,51 @@
+.accordion {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+.item {
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(40, 60, 120, 0.04);
+  background: var(--light-blue);
+}
+
+.shortAnswer {
+  display: flex;
+  gap: 4px;
+}
+
+.title {
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 1.14em;
+  font-weight: 600;
+  padding: 20px 26px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #131f44;
+}
+
+.plus {
+  font-size: 1.4em;
+  margin-left: 8px;
+  color: var(--violet);
+  padding: 1rem;
+  background: white;
+  line-height: 0.9rem;
+  border-radius: 50%;
+}
+
+.content {
+  padding: 0 26px 18px 26px;
+  font-size: 0.98em;
+  color: #414a5c;
+}

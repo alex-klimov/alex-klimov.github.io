@@ -1,0 +1,57 @@
+/* ChasoSlider.module.css */
+
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 40s linear infinite;
+}
+
+.imageBox {
+  max-width: 524px;
+  height: 564px;
+  margin: 0 16px;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.imageBox:hover .image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  padding: 1.7rem;
+  bottom: 8px;
+  left: 10px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+.overlay :global(.commonText) h3 ,.overlay :global(.commonText) p {
+    color: var(--primary-white);
+
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

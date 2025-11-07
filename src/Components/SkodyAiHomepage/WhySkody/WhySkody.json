@@ -11,6 +11,7 @@
   },
   "sections": [
     {
+      "newHeading":"**Skody** is like **Google Map** for **manufacturing-automatically rerouting**  production as things change, so your schedule stays conflict-free.",
       "heading": [
         {
           "title": "Google Maps:",
@@ -26,13 +27,18 @@
         "alt": "navigation"
       },
       "content": {
-        "description": "Skody is the Google maps of manufacturing - auto-rerouting production on every change, conflict-free and effortless."
+        "description": "Just like Maps reroutes your drive, Skody reroutes your production."
+      },
+      "button":{
+        "action":"skody.ai",
+        "label":"Watch Demo"
       }
     },
     {
       "heading":"Skody AI APS tackles these challenges with smart, automated scheduling.",
       "button":{
-        "label":"Demo Skody AI"
+        "label":"Demo Skody AI",
+        "action":"skody.ai"
       },
       "bannerImage":{
         "src":"/assets/images/demoSystemcogs.png",

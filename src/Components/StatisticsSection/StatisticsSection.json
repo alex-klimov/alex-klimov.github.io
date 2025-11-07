@@ -1,0 +1,21 @@
+{
+  "statisticsSection": {
+    "tag": "STATISTICS",
+    "title": "Don't take our word for it!*",
+    "subtitle": "*Data based on 2025 results from pilot studies in **CNC** shops with **50–150** machines.",
+    "stats": [
+      {
+        "value": "99%",
+        "description": "Planning Time Saved"
+      },
+      {
+        "value": "15%",
+        "description": "Reduction in Delays"
+      },
+      {
+        "value": "10–15%",
+        "description": "Extra Capacity"
+      }
+    ]
+  }
+}

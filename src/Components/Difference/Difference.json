@@ -1,0 +1,26 @@
+{
+  "erpVsSkodySection": {
+    "tag": "GENERIC ERP VS SKODY AI",
+    "title": "Your ERP shows jobs. Skody makes the plan.",
+    "subtitle": "Most ERPs stop at listing work orders. Skody's AI keeps every job, operator, and machine in sync — automatically.",
+    "comparison": {
+      "headers": ["ERP Schedulers", "Skody AI Scheduler"],
+      "erpSchedulers": [
+        "Manual drag-and-drop planning",
+        "Static snapshot of work",
+        "Shows what's late",
+        "One planner juggling chaos",
+        "Ignores setups & outside processes",
+        "Tells you what happened"
+      ],
+      "skodyScheduler": [
+        "Auto-optimizes across machines & shifts",
+        "Live, self-adjusting plan in real time",
+        "Predicts lateness before it happens",
+        "AI keeps balance; planner reviews alerts",
+        "Setup-aware, routing-true scheduling",
+        "Tells you what to do next"
+      ]
+    }
+  }
+}

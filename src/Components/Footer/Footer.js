@@ -95,10 +95,11 @@ const Footer = () => {
 
           </div>
         </div>
-        <div className={styles.copyRight}>
+      
+      </div>
+        <div className={`homePageContainer ${styles.copyRight}`}>
           <CommonText smallDescription={footerInfo.copyright} size='body-sm' />
         </div>
-      </div>
     </footer>
   );
 };

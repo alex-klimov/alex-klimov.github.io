@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import data from './SkodyHomepageFirstSection.json'
-import styles from './SkodyHomepageFirstSection.module.css'
-import ProductDetails from './Product/ProductDetails';
-import CommonText from '../CommonText/CommonText';
-import Gear from '../Animation/geat';
-import ArrowAnimation from '../Animation/Arrow/ArrowAnimation';
-import OptimizationCard from '../Animation/OptimizationCard/OptimizationCard';
-import Bars from '../Animation/Bars/Bars';
-import { useCallback } from 'react';
+import React, { useEffect, useState } from "react";
+import data from "./SkodyHomepageFirstSection.json";
+import styles from "./SkodyHomepageFirstSection.module.css";
+import CommonText from "../CommonText/CommonText";
+import { useCallback } from "react";
+import StartCard from "./Card/startCard";
+import SimpleButton from "../../Buttons/SimpleButton";
 
 function SkodyHomepageFirstSection() {
-  const skodyProductDetails = data.section[0]
-  const [arrow, setArrowCount] = useState(4)
-  const [first, second] = data.header.title.split(',');
+  const skodyProductDetails = data.section[0];
+  const [arrow, setArrowCount] = useState(4);
+  const [first, second] = data.header.title.split(",");
   const checkMobileView = useCallback(() => {
     if (window.innerWidth <= 940) {
       setArrowCount(2);
@@ -21,79 +18,68 @@ function SkodyHomepageFirstSection() {
     } else if (window.innerWidth > 1320) {
       setArrowCount(4);
     }
-  }, []); 
-  
+  }, []);
+
+  // Array of image paths
+  const images = [
+    "/assets/newDesign/StartComponent/startComponent.png",
+    "/assets/newDesign/StartComponent/startComponent2.png",
+    "/assets/newDesign/StartComponent/startComponent3.png",
+    "/assets/newDesign/StartComponent/startComponent4.png"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     checkMobileView();
-    window.addEventListener('resize', checkMobileView);
+    window.addEventListener("resize", checkMobileView);
+
+    // Set interval to change image every second
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
 
     return () => {
-      window.removeEventListener('resize', checkMobileView);
+      window.removeEventListener("resize", checkMobileView);
+      clearInterval(interval);
     };
-  }, [checkMobileView]);
+  }, [checkMobileView, images.length]);
 
   return (
     <>
-
-      <div
-        className={styles.backgroundImageContainer}
-      >
+      <div className={styles.backgroundImageContainer}>
         <div className={styles.imageContainerNew}>
-
-          <div className={styles.movingBar}>
-            <Bars />
-
-          </div>
-          <div className={styles.bannerImageContainerGear}>
-              <Gear
-                gear1="/assets/icons/greysystem.svg"
-                gear2="/assets/icons/greysystem.svg"
-                gear3="/assets/icons/greysystem.svg"
-                size1={{ width: '395', height: '395' }}
-                size2={{ width: '489', height: '489' }}
-                size3={{ width: '222', height: '243' }}
-                position1={{ top: '-46px', left: '-42px' }}
-                position2={{ top: '203px', left: '98px' }}
-                position3={{ bottom: '93px', left: '290px' }}
-              />
-          </div>
-          <div className={styles.arrow}>
-
-            <ArrowAnimation count={arrow} reverse={false} />
-          </div>
           <div className={`homePageContainer ${styles.outerContainer}`}>
             <div className={styles.headingContainer}>
-
-              <div className={styles.heading}>
+              <StartCard />
+              <div className={styles.heading} style={{ fontFamily: "SF Pro" }}>
                 <CommonText
-                  heading={
-                    <>
-                      {first},{<br />}
-                      {second.trim()}
-                    </>
-                  }
+                  heading={<>{data.header.title}</>}
                   size="title-h1-multi"
+                  weight="font-weight-500"
                 />
               </div>
               <div className={styles.description}>
-                <CommonText smallDescription={data.header.description} size='label-sub1-new' weight='regular' />
+                <CommonText
+                  smallDescription={data.header.description}
+                  size="label-H1-sub1"
+                  weight="font-weight-500"
+                  fontFamily="SF Pro"
+                />
+              </div>
+              <div className={styles.buttonContainer}>
+                <SimpleButton className={`buttonText regular  ${styles.mySpecialButton}`} href="skody.ai">See Optimized Schedule</SimpleButton>
+                <SimpleButton className={`buttonText regular ${styles.watchDemoButton}`} href='skody.ai'>Watch 1-min Demo</SimpleButton>
               </div>
             </div>
-            <div className={styles.imageContainer}>
-                <OptimizationCard />
+            <div className={styles.imageSection}>
+              <div className={styles.imageContainer2}>
+                <img src={images[currentIndex]} style={{ width: "100%", height: "auto" }} alt="carousel" />
+              </div>
             </div>
           </div>
-          <div className={styles.animatedImageArrow}>
-
-                    <ArrowAnimation count={20} reverse={false} />
-                  </div>
         </div>
-
-
       </div>
-
-      <ProductDetails skodyProductDetails={skodyProductDetails} />
     </>
   );
 }
