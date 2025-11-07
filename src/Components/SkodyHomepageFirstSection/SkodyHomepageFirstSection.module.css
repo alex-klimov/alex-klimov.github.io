@@ -252,7 +252,10 @@
     .buttonContainer{
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
+    }
+    .buttonContainer a{
+        padding: 10px 0;
     }
     .watchDemoButton,.mySpecialButton{
         width: 100%;

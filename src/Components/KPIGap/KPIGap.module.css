@@ -120,5 +120,12 @@
         flex-direction: column;
     align-items: center;
     }
-    
+    .leftImageContainer{
+        width: 90%;
+    }
+    .rightContentContainer{
+        width: 85%;
+    align-items: unset;
+
+    }
 }

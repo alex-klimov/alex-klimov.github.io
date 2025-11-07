@@ -21,6 +21,9 @@ const TestimonialSlider = ({ testimonials }) => {
       "(max-width: 992px)": {
         slides: { perView: 1, spacing: 10 },
       },
+       "(max-width:640px)": {
+        slides: { perView: 2, spacing: 10 },
+      },
     },
   });
 

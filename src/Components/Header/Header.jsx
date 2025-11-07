@@ -12,8 +12,6 @@ const Header = () => {
     priceRef,
     faqRef,
     productRef,
-    whyRef,
-    impactRef,
     demoRef,
   } = useScroll();
   const [isMobile, setIsMobile] = useState(false);
@@ -127,15 +125,18 @@ const Header = () => {
           className={`${styles.mobileHeader} ${menuOpen ? styles.open : ""}`}
         >
           <nav className={styles.mobileNavigation}>
-            <li className="medium" onClick={() => scrollToSection(productRef)}>
-              <Link to="/#product">Product</Link>
-            </li>
-            <li className="medium" onClick={() => scrollToSection(whyRef)}>
-              <Link to="/#why">Why</Link>
-            </li>
-            <li className="medium" onClick={() => scrollToSection(impactRef)}>
-              <Link to="/#impact">Impact</Link>
-            </li>
+             <li className="medium" onClick={() => scrollToSection(productRef)}>
+        <Link to="/#product">Scheduler</Link>
+      </li>
+      <li className="medium" onClick={() => scrollToSection(dashboard)}>
+        <Link to="/#dashboard">Dashboard</Link>
+      </li>
+      <li className="medium" onClick={() => scrollToSection(priceRef)}>
+        <Link to="/#price">Pricing</Link>
+      </li>
+      <li className="medium" onClick={() => scrollToSection(faqRef)}>
+        <Link to="/#faq">FAQ</Link>
+        </li>
           </nav>
         </div>
       </div>
