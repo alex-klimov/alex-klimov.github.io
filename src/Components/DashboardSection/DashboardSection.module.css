@@ -2,28 +2,47 @@
     padding: 2rem 0;
 }
 
+.chaosDashboardContainer :global(.sub) {
+    color: var(--charcoal);
+}
+
 .cardDashboardContainer {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
+    overflow: unset !important;
 
 }
-.chaosButtonContainer{
+
+.customDashboardContainer .subHeading :global(.commonText) p {
+    color: var(--charcoal);
+}
+
+.chaosButtonContainer {
     text-align: center;
 }
-.chaosButton{
+
+.chaosButton {
     background-color: transparent;
     border-color: var(--charcoal);
-    color: var(--charcoal) ;
+    color: var(--charcoal);
     margin-top: 2.2rem;
+}
+
+.dashSlider {
+    width: 37.7%;
 }
 
 .featureItem {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 1.5rem;
 
 
+}
+
+.iconDash {
+    padding-top: 0.3rem;
 }
 
 .customDashboardContainer {
@@ -33,16 +52,27 @@
     flex-direction: column;
     align-items: center;
 }
-.dashboardFeaturesContainerRight{
+
+.dashboardFeaturesContainerRight {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 50%;
 }
-.dashboardFooterContainer{
+
+.dashboardFooterContainer {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     align-items: center;
-   padding: 2.7rem 0;
+    padding: 2.7rem 0;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardDashboardContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
 }

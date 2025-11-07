@@ -10,6 +10,12 @@ export const ScrollProvider = ({ children }) => {
   const whyRef = useRef(null);
   const impactRef = useRef(null);
   const demoRef = useRef(null);
+  const dashboard = useRef(null);
+  const priceRef = useRef(null);
+  const faqRef = useRef(null);
+
+
+
   const [isImpactInView, setIsImpactInView] = useState(false);
   const location = useLocation();
 
@@ -28,6 +34,11 @@ export const ScrollProvider = ({ children }) => {
       '#why': whyRef,
       '#impact': impactRef,
       '#demo': demoRef,
+      '#dashboard':dashboard,
+      '#price':priceRef,
+      '#fap':faqRef,
+
+
     };
     if (hash && scrollMap[hash]) {
       setTimeout(() => {
@@ -62,7 +73,10 @@ export const ScrollProvider = ({ children }) => {
         productRef,
         whyRef,
         impactRef,
+        dashboard,
         demoRef,
+        faqRef,
+        priceRef,
         scrollToSection,
         isImpactInView,
       }}

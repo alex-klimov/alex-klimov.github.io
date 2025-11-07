@@ -14,3 +14,6 @@
 .statBox:last-child{
     border-right: unset;
 }
+.statBox :global(.commonText) p{
+    color: var(--charcoal);
+}

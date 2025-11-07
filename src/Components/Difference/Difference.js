@@ -23,7 +23,7 @@ const Difference = () => {
               <div className={styles.comparisonRows}>
                 {data.comparison.erpSchedulers.map((erpItem, erpIndex) => (
                   <div className={styles.row}>
-                    {index===0?<img src="/assets/newDesign/cross.png"/>:<img src="/assets/newDesign/tick.png"/>}
+                    {index===0?<img src="/assets/newDesign/cross.png" alt="cross"/>:<img src="/assets/newDesign/tick.png" alt="tick"/>}
                     <CommonText smallDescription={erpItem} size="label-H2-sub2-bold" fontFamily="SF Pro" />
                   </div>
                 ))}

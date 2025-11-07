@@ -23,7 +23,7 @@ const SchedulerSection = () => {
             {customDashboard.dashboardSection.features.map((feature, index) => (
               <div key={index} className={styles.featureItem}>
                 <div className={styles.featureIconContainer}>
-                  <img src={feature.icon} className={styles.featureIcon}/>
+                  <img src={feature.icon} className={styles.featureIcon} alt="featureICon"/>
                 </div>
                 <div>
                   <CommonText

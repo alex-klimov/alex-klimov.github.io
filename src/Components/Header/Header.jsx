@@ -2,11 +2,20 @@ import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { useScroll } from "../ScrollContext/ScrollContext";
 import { Link } from "react-router-dom";
-import SimpleButton from "../../Buttons/SimpleButton";
+import {  PopupButton } from "react-calendly";
 
 const Header = () => {
-  const { scrollToSection, productRef, whyRef, impactRef, demoRef } =
-    useScroll();
+  const CalendlyLink = process.env.REACT_APP_CALENDLY_CONNECTION_LINK;
+  const {
+    scrollToSection,
+    dashboard,
+    priceRef,
+    faqRef,
+    productRef,
+    whyRef,
+    impactRef,
+    demoRef,
+  } = useScroll();
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,16 +29,16 @@ const Header = () => {
   const renderDesktopNav = () => (
     <>
       <li className="navText" onClick={() => scrollToSection(productRef)}>
-        <Link to="/#product">Scheduleer</Link>
+        <Link to="/#product">Scheduler</Link>
       </li>
-      <li className="navText" onClick={() => scrollToSection(whyRef)}>
-        <Link to="/#why">Dashboard</Link>
+      <li className="navText" onClick={() => scrollToSection(dashboard)}>
+        <Link to="/#dashboard">Dashboard</Link>
       </li>
-      <li className="mednavTextium" onClick={() => scrollToSection(impactRef)}>
-        <Link to="/#impact">Pricing</Link>
+      <li className="mednavTextium" onClick={() => scrollToSection(priceRef)}>
+        <Link to="/#price">Pricing</Link>
       </li>
-      <li className="navText" onClick={() => scrollToSection(impactRef)}>
-        <Link to="/#impact">FAQ</Link>
+      <li className="navText" onClick={() => scrollToSection(faqRef)}>
+        <Link to="/#faq">FAQ</Link>
       </li>
     </>
   );
@@ -96,12 +105,22 @@ const Header = () => {
             onClick={() => scrollToSection(demoRef)}
           >
             {/* <Link to="/#demo">Schedule Demo</Link> */}
-            <SimpleButton
+            {/* <SimpleButton
             to="https://calendly.com/alexl-skody/30min"
               className={`buttonText regular buttonText  ${styles.faqButton}`}
             >
               Book Free Demo
-            </SimpleButton>
+            </SimpleButton> */}
+            {/* <div
+             className={`buttonText regular buttonText  ${styles.faqButton}`}> */}
+
+            <PopupButton
+              className={`buttonText regular buttonText ${styles.button}`}
+              url={CalendlyLink}
+              rootElement={document.getElementById("root")}
+              text="Schedule Demo"
+            />
+            {/* </div> */}
           </div>
         </div>
         <div

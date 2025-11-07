@@ -2,7 +2,7 @@
   "dashboardSection": {
     "tag": "SCHEDULER",
     "title": "Stop putting out fire after fire in your schedule.",
-    "subtitle": "Your **ERP** lists work orders — **Skody builds the plan.** \n It simulates thousands of routing, constraints, and optimal shifts to find the best sequence automatically.",
+    "subtitle": "Your **ERP** lists work orders — **Skody builds the plan.**  \n It simulates thousands of routing, constraints, and optimal shifts to find the best sequence automatically.",
     "description": "It simulates thousands of routing, constraints, and optimal shifts to find the best sequence automatically.",
     "image": [
       {

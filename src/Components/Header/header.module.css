@@ -51,7 +51,15 @@
     padding: 0.5rem 1rem;
 
 }
-
+.button {
+    background-color: var(--violet);
+    color: var(--primary-white);
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'prompt';
+    border-radius: 0.4rem;
+}
 .header nav ul li a {
     all: unset
 }

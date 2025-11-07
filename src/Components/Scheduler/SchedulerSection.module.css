@@ -1,10 +1,12 @@
-.mainContainer {
-    padding: 4rem 0;
+/* .mainContainer {
+    padding: 4.5rem 0 3rem 0rem;
+} */
+.mainContainer :global(.sub){
+    color: var(--charcoal);
 }
-
 .cardDashboardContainer {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     gap: 1rem;
 }
@@ -17,6 +19,7 @@
 }
 .schedulerButtonContainer{
     text-align: center;
+    margin-top: 3rem;
 
 }
 .schedulerButton{
@@ -30,7 +33,7 @@
 }
 .featuresContainerRight {
     width: 54%;
-    height: 100%;
+    height: auto;
 }
 
 .featureIconContainer {
@@ -50,4 +53,14 @@
 .customDashboardContainer {
     padding-top: 3rem;
     border-radius: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardDashboardContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .featuresContainer{
+    width: 80%;
+}
 }

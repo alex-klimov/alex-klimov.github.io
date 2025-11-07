@@ -5,15 +5,19 @@ import styles from "./GetInTouch.module.css";
 import SimpleButton from "../../Buttons/SimpleButton";
 
 const GetInTouch = () => {
+  const bgImageUrl = "/assets/newDesign/getIntoBackground.png";
   return (
     <div
-      className={`homePageContainer ${styles.mainContainer}`}
-      style={{
-        background: sectionData.backgroundColor,
-      }}
-    >
+  className={`homePageContainer ${styles.mainContainer}`}
+  style={{
+    backgroundImage: `url(${bgImageUrl})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
        <SimpleButton
-        className={`regular body-lg  ${styles.getInTouchButton}`}
+        className={`regular ${styles.getInTouchButton}`}
       >
         {sectionData.ctaButtons[0].text}
       </SimpleButton>

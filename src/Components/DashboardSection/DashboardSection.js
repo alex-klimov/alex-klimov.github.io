@@ -12,42 +12,42 @@ const DashboardSection = () => {
     <>
       <div>
         <div className={`homePageContainer ${styles.chaosDashboardContainer}`}>
-          <div>
-            <HeaderSection
-              tag={customDashboard.Chaos.tag}
-              title={customDashboard.Chaos.title}
-              subtitle={customDashboard.Chaos.subtitle}
-            />
-          </div>
+          <HeaderSection
+            tag={customDashboard.Chaos.tag}
+            title={customDashboard.Chaos.title}
+            subtitle={customDashboard.Chaos.subtitle}
+          />
         </div>
         <div>
           <ChasoSlider />
         </div>
         <div className={`homePageContainer ${styles.chaosButtonContainer}`}>
-           <SimpleButton
-           href={customDashboard.Chaos.cta.action}
-              className={`buttonText regular buttonText  ${styles.chaosButton}`}
-            >
-             {customDashboard.Chaos.cta.text}
-            </SimpleButton>
+          <SimpleButton
+            href={customDashboard.Chaos.cta.action}
+            className={`buttonText regular buttonText  ${styles.chaosButton}`}
+          >
+            {customDashboard.Chaos.cta.text}
+          </SimpleButton>
         </div>
       </div>
       <div className={`homePageContainer ${styles.mainContainer}`}>
         <div className={styles.customDashboardContainer}>
-          <div className="margin">
+          <div className={`margin ${styles.subHeading}`}>
             <CommonText
               heading={customDashboard.dashboardSection.title}
               size="title-h2"
               weight="font-weight-500"
             />
             <CommonText
-              heading={customDashboard.dashboardSection.subtitle}
+              smallDescription={customDashboard.dashboardSection.subtitle}
               size="label-H2-sub2"
               weight="font-weight-500"
             />
           </div>
-          <div className={styles.cardDashboardContainer}>
-            <div>
+          <div
+            className={` homePageContainer ${styles.cardDashboardContainer}`}
+          >
+            <div className={styles.dashSlider}>
               <DashboardSlider
                 imageData={customDashboard.dashboardSection.image}
               />
@@ -57,7 +57,11 @@ const DashboardSection = () => {
                 (feature, index) => (
                   <div key={index} className={styles.featureItem}>
                     <div>
-                      <img src="/assets/newDesign/CustomDashboard/ticketIcon.png" />
+                      <img
+                        src="/assets/newDesign/CustomDashboard/ticketIcon.png"
+                        alt="dashBoardSectionImages"
+                        className={styles.iconDash}
+                      />
                     </div>
                     <div>
                       <CommonText
@@ -86,7 +90,7 @@ const DashboardSection = () => {
               fontFamily="prompt"
             />
             <SimpleButton
-            href={customDashboard.dashboardSection.cta.action}
+              href={customDashboard.dashboardSection.cta.action}
               className={`buttonText regular buttonText  ${styles.faqButton}`}
             >
               {customDashboard.dashboardSection.cta.text}

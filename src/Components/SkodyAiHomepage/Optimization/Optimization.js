@@ -23,7 +23,7 @@ const Optimization = ({OptimizationContent}) => {
             <img src={image.src} alt={image.alt} className={styles.image}/>
         </div>
         <div className={`font-weight-500 ${styles.description}`}>
-            <CommonText smallDescription={description.description} size='body-other' />
+            <CommonText smallDescription={description.description} size='body-other' fontFamily='SF Pro' />
         </div>
       </div>
     </>

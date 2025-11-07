@@ -1,5 +1,6 @@
 {
   "footer": {
+    "description":"AI-powered scheduling and KPI dashboards for manufacturing shops.",
     "logo": {
       "image": "/assets/images/skodyAitextlogo.png",
       "alt": "SkodyAI"
@@ -7,15 +8,22 @@
     "socialLinks": [
       {
         "platform": {
-          "src": "/assets/icons/LinkedIn.png",
+          "src": "/assets/newDesign/SocialIcons/lindedIn.png",
           "alt": "LinkedIn"
         },
         "url": "https://www.linkedin.com/company/skody-ai/posts/?feedView=all"
       },
       {
         "platform": {
-          "src": "/assets/icons/XLogo.png",
+          "src": "/assets/newDesign/SocialIcons/X.png",
           "alt": "X"
+        },
+        "url": "https://x.com/skody_ai"
+      },
+      {
+        "platform": {
+          "src": "/assets/newDesign/SocialIcons/youtube.png",
+          "alt": "youtube"
         },
         "url": "https://x.com/skody_ai"
       }
@@ -39,6 +47,14 @@
     "contact": {
       "email": "info@skody.ai"
     },
+    "contact1":  [
+      { "name": "About", "url": "/privacy-policy" },
+      { "name": "Contact", "url": "https://blog.skody.ai/" }
+,
+      { "name": "Case Studies", "url": "https://blog.skody.ai/" }
+,
+      { "name": "Blogs", "url": "https://blog.skody.ai/" }
+    ],
     "copyright": "© 2025 Skody AI. All rights reserved."
   }
 }

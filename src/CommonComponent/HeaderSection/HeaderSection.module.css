@@ -30,7 +30,7 @@
 .subtitle {
   font-family: 'SF Pro';
 
-  color: var(--charcoal);
+  color: var(--charcoal-light);
 }
 
 .subtitle p {

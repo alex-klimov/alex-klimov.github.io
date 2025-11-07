@@ -8,7 +8,8 @@
     margin-bottom: 2.2rem;
 }
 .comparisonColumn {
-    width: 50%
+    width: 50%;
+    padding-bottom: 3rem;
 }
 
 .comparisonColumn:first-child {

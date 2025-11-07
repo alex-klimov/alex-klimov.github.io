@@ -43,7 +43,7 @@ const Gear = ({
         animate={{ rotate: rotationDirection }}
         transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
       >
-        <img src={gear1} alt="gear" width={size1.width} height={size1.height} />
+        <img src={gear1} alt="gear" width={size1.width} height={size1.height}/>
       </motion.div>
 
       <motion.div

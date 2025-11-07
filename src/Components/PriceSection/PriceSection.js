@@ -26,7 +26,7 @@ export default function PricingSection() {
             <div className={styles.cardHeader}>
               <div className={styles.iconContainer}>
                 <div className={styles.priceIconContainer} >
-                  <img src={plan.icon}/>
+                  <img src={plan.icon} alt="icon"/>
                   </div>
                 <CommonText
                   subHeading={plan.name}

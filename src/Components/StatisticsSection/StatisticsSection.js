@@ -20,10 +20,13 @@ const StatisticsSection = () => {
               smallDescription={value.value}
               size="title-64"
               weight="font-weight-500"
+              fontFamily='SF Pro'
             />
             <CommonText
               smallDescription={value.description}
               size="title-24"
+              fontFamily='SF Pro'
+
 
             />
           </div>

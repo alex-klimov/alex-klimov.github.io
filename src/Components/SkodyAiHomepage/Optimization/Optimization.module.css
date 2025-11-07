@@ -11,6 +11,7 @@
 }
 
 .headingContainer {
+    width: 85%;
     display: flex;
     justify-content: space-around;
     gap: 10rem;

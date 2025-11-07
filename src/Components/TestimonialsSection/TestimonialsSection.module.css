@@ -1,6 +1,6 @@
 .testimonialContainer {
   background-color: var(--violet);
-  padding-top: 3.7rem;
+  padding-top: 4.5rem;
 }
 
 .testimonialContainer :global(.common) h2 {
@@ -50,6 +50,7 @@
 .statsBox h2 {
   font-size: 2rem;
   margin: 0;
+  text-align: start;
 }
 
 .statsBox p {

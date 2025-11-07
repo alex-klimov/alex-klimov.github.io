@@ -20,9 +20,11 @@ const WhySkody = () => {
       <div className={`homePageContainer ${styles.whySkodySection}`}>
         <CommonText
           newDescription={OptimizationContent.newHeading}
-          size="title-h3"
+          size="demo-title"
         />
         <Optimization OptimizationContent={OptimizationContent} />
+        <div className={styles.whyButtonContainer}>
+
         <CommonText smallDescription="See How Skody Thinks" size="body-other" weight="font-weight-500" fontFamily='SF Pro' />
         <SimpleButton
           className={`buttonText regular  ${styles.watchDemoButton}`}
@@ -30,6 +32,7 @@ const WhySkody = () => {
         >
           {OptimizationContent.button.label}
         </SimpleButton>
+        </div>
       </div>
     </>
   );

@@ -2,24 +2,10 @@ import React, { useEffect, useState } from "react";
 import data from "./SkodyHomepageFirstSection.json";
 import styles from "./SkodyHomepageFirstSection.module.css";
 import CommonText from "../CommonText/CommonText";
-import { useCallback } from "react";
 import StartCard from "./Card/startCard";
 import SimpleButton from "../../Buttons/SimpleButton";
 
 function SkodyHomepageFirstSection() {
-  const skodyProductDetails = data.section[0];
-  const [arrow, setArrowCount] = useState(4);
-  const [first, second] = data.header.title.split(",");
-  const checkMobileView = useCallback(() => {
-    if (window.innerWidth <= 940) {
-      setArrowCount(2);
-    } else if (window.innerWidth <= 1320) {
-      setArrowCount(3);
-    } else if (window.innerWidth > 1320) {
-      setArrowCount(4);
-    }
-  }, []);
-
   // Array of image paths
   const images = [
     "/assets/newDesign/StartComponent/startComponent.png",
@@ -31,19 +17,15 @@ function SkodyHomepageFirstSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    checkMobileView();
-    window.addEventListener("resize", checkMobileView);
-
     // Set interval to change image every second
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 2000);
 
     return () => {
-      window.removeEventListener("resize", checkMobileView);
       clearInterval(interval);
     };
-  }, [checkMobileView, images.length]);
+  }, [ images.length]);
 
   return (
     <>

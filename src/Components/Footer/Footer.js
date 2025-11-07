@@ -25,6 +25,9 @@ const Footer = () => {
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
             <img src={footerInfo.logo.image} alt={footerInfo.logo.image} />
+          <div className={styles.footerDescription}>
+            <CommonText smallDescription={footerInfo.description}/>
+          </div>
           </div>
           <div className={styles.socialLinks}>
             {footerInfo.socialLinks.map((link) => (
@@ -90,10 +93,31 @@ const Footer = () => {
             <div className={styles.heading}>
               <CommonText smallDescription='Contact' size='label-sub2' fontFamily="Prompt" />
             </div>
-
-            <div className={styles.email}>Email: <a href={`mailto:${footerInfo.contact.email}`}><CommonText smallDescription={footerInfo.contact.email} size='body-sm' /></a></div>
-
-          </div>
+          <div className={styles.socialLink}>
+              {footerInfo.contact1.map((link) =>
+                link.url.startsWith("/") || link.url.startsWith("#/")
+                  ? (
+                    <Link
+                      to={link.url} // Remove # if present
+                      key={link.name}
+                      className={styles.link}
+                    >
+                      <CommonText smallDescription={link.name} size="body-sm" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.url}
+                      key={link.name}
+                      className={styles.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CommonText smallDescription={link.name} size="body-sm" />
+                    </a>
+                  )
+              )}
+            </div>
+            </div>
         </div>
       
       </div>

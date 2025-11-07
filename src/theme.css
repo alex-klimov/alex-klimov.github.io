@@ -7,6 +7,8 @@ body {
     --floralwhite: #FFF6E5;
     --Outerspace: #848BA3;
     --charcoal: #343436;
+    --charcoal-light: #5D5D5E;
+
     --xanthous: #F4A508;
     --footer-text:#b2b2b2;
     --blue-100: #F0F6FF;
@@ -276,6 +278,11 @@ body.dark {
 .title-h2-v2 {
     line-height: 56px;
     font-size: 40px;
+}
+/* Title/H3 */
+.demo-title {
+    font-size: 32px;
+    line-height: 46px;
 }
 
 @media screen and (max-width:640px) {

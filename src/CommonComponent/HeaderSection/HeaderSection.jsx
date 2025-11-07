@@ -17,7 +17,7 @@ const HeaderSection = ({ tag, title, subtitle, description }) => {
           </h2>
         )}
         {subtitle && (
-          <div className={`label-sub1 ${styles.subtitle}`}>
+          <div className={`label-sub1 sub ${styles.subtitle}`}>
             <ReactMarkdown>{subtitle}</ReactMarkdown>
           </div>
         )}

@@ -5,6 +5,7 @@ import styles from "./TestimonialSlider.module.css";
 
 const TestimonialSlider = ({ testimonials }) => {
   const [current, setCurrent] = useState(0);
+  console.log(current)
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     mode: "free-snap", // allows smooth both-way snapping
@@ -53,13 +54,13 @@ const TestimonialSlider = ({ testimonials }) => {
           onClick={() => instanceRef.current?.prev()}
           className={styles.arrow}
         >
-          <img src="/assets/newDesign/arrowLeft.png"/>
+          <img src="/assets/newDesign/arrowLeft.png" alt="arrowleft"/>
         </button>
         <button
           onClick={() => instanceRef.current?.next()}
           className={styles.arrow}
         >
-         <img src="/assets/newDesign/arrowRight.png"/>
+         <img src="/assets/newDesign/arrowRight.png" alt="right"/>
         </button>
       </div>
       <div className={styles.statsSection}>

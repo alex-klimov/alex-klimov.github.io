@@ -14,41 +14,41 @@ import TestimonialsSection from '../TestimonialsSection/TestimonialsSection';
 import FAQ from '../FAQ/FAQ';
 
 const SkodyAiHomepage = () => {
-  const { productRef, whyRef, impactRef, demoRef } = useScroll();
+  // const { productRef, whyRef, impactRef, demoRef } = useScroll();
+  const { productRef,dashboard,priceRef,faqRef} = useScroll();
+  
 
   return (
     <div>
-      <div ref={productRef}>
+      <div >
         <SkodyHomepageFirstSection />
       </div>
       <div className='margin'>
         <StatisticsSection/>
       </div>
-      <div className={` ${styles.schedulerSection}`}>
+      <div ref={productRef} className={`margin ${styles.schedulerSection}`}>
         <SchedulerSection/>
       </div>
-      <div style={{margin:"2rem auto"}} >
+      <div className='margin' >
         <Difference/>
-      </div>
-       <div className='margin'>
          <WhySkody />
       </div>
-      <div className={`margin ${styles.dashBoardSection}`}>
+      <div ref={dashboard} className={`margin ${styles.dashBoardSection}`}>
         <DashboardSection/>
       </div>
        <div>
         <ContineslySlider />
       </div>
-      <div>
+      <div ref={priceRef} className='margin'>
         <PricingSection/>
       </div>
       <div>
         <TestimonialsSection/>
       </div>
-      <div className='margin'>
+      <div ref={faqRef} className='margin'>
         <FAQ/>
       </div>
-      <div style={{backgroundColor:'#F5F8FC'}}>
+      <div className='margin' style={{backgroundColor:'#F5F8FC'}}>
         <KpiSection/>
       </div>
       <div className={`margin ${styles.getInTouch}`}>

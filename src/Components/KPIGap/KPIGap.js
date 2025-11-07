@@ -31,8 +31,9 @@ const KpiSection = () => {
               <li key={idx}>
                 <span className={styles.checkIcon}>
                   <img
+                  alt="bullPoint"
                     src="/assets/newDesign/KPISection/bulletPoint.png"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "24px%", height: "24px" ,paddingTop:"10px"}}
                   />
                 </span>
                 <span className={`label-H2-sub2 ${styles.feature}`}>

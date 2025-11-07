@@ -1,4 +1,4 @@
-.mainContainer{
+.mainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,29 +6,38 @@
     padding: 4rem 1rem;
     gap: 1rem;
     text-align: center;
+
 }
-.getInTouchButton{
+
+.getInTouchButton {
     color: var(--zaffra);
     background-color: var(--blue-200);
     border-radius: 0.4rem;
     border: 1px solid var(--zaffra);
     padding: 8px 16px;
-    margin-bottom: 0.7rem;
     cursor: pointer;
+    font-size: 18px;
+    font-family: 'SF Pro';
 }
-.headlineContainer{
+
+.headlineContainer {
     max-width: 873px;
 }
-.headlineContainer :global(.commonText) h2,.headlineContainer :global(.commonText) p{
+
+.headlineContainer :global(.commonText) h2,
+.headlineContainer :global(.commonText) p {
     color: var(--primary-white);
+    padding-bottom: 0.4rem;
 }
-.book30MinButton{
+
+.book30MinButton {
     margin-top: 2.2rem;
     background-color: var(--primary-white);
     padding: 12px 24px;
     border-radius: 8px;
 }
-.getInTouch{
+
+.getInTouch {
     background-color: var(--primary-white);
     color: var(--violet);
 }
