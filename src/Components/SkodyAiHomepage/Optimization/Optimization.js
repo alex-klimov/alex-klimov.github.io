@@ -49,7 +49,7 @@ const Optimization = ({ OptimizationContent }) => {
           </>
         ) : (
           <>
-            <img src="/assets/newDesign/skodywhytemp.png" style={{width:"80%"}}/>
+            <img src="/assets/newDesign/skodywhytemp.png" alt="tempSkody" style={{width:"80%"}}/>
           </>
         )}
       </div>

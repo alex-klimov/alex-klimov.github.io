@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./SchedulerSection.module.css";
 import customDashboard from "./SchedulerSection.json";
 import CommonText from "../CommonText/CommonText";
-import DashboardSlider from "../DashboardSection/DashboardSlider/DashboardSlider";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import SimpleButton from "../../Buttons/SimpleButton";
 import { PointClickSlider } from "../DashboardSection/PointClickSlider/PointClickSlider";
