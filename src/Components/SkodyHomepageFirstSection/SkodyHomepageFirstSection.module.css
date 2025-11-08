@@ -20,19 +20,12 @@
 .mySpecialButton {
     background: var(--primary-white) !important;
     color: var(--primary-black) !important;
-    font-size: 20px !important;
-    border-radius: 8px;
-    font-family: 'Prompt', sans-serif !important;
-    padding: 12px 24px;
 
 }
 .watchDemoButton{
     background: transparent !important;
     color: var(--primary-white) !important;
-    border: 2px solid var(--primary-white) !important;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-family: 'Prompt', sans-serif !important;
+    border-color:var(--primary-white) !important;
 }
 .buttonContainer {
     display: flex;

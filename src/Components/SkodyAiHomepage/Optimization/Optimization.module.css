@@ -66,5 +66,8 @@
         text-align: center;
         /* line-height: 24px; */
     }
+    .outerContainer{
+        width: 75%;
+    }
     
 }

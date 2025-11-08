@@ -189,7 +189,7 @@ body.dark {
 
 .navText {
     font-size: 18px;
-    line-height: auto;
+    line-height: 100%;
 }
 
 .title-h1-multi {
@@ -263,6 +263,10 @@ body.dark {
     font-size: 18px;
     line-height: 27px;
 }
+.body-lg-type2 {
+    font-size: 18px;
+    line-height: 27px;
+}
 
 /* Body sm - Regular */
 .body-sm {
@@ -289,7 +293,14 @@ body.dark {
     .title-64 {
         font-size: 32px;
     }
-
+    .label-H2-sub2{
+        font-size: 20px;
+        line-height: 26.6px;
+    }
+    .label-H3-sub3{
+        font-size: 16px;
+        line-height: 19.6px;
+    }
     .title-h1-multi {
         font-size: 40px;
         line-height: 41px;
@@ -339,6 +350,10 @@ body.dark {
         font-size: 12px;
         line-height: 24px;
     }
+    .body-lg-type2 {
+    font-size: 16px;
+    line-height: 20px;
+}
 
     .body-sm {
         font-size: 14px;
@@ -346,7 +361,7 @@ body.dark {
     }
 
     .body-other {
-        font-size: 17px;
+        font-size: 22px;
         line-height: 24px;
     }
 

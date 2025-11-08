@@ -48,10 +48,10 @@
       "email": "info@skody.ai"
     },
     "contact1":  [
-      { "name": "About", "url": "/privacy-policy" },
-      { "name": "Contact", "url": "https://blog.skody.ai/" }
+      { "name": "Privacy Policy", "url": "/privacy-policy" },
+      { "name": "Terms of Service", "url": "/term-condition" }
 ,
-      { "name": "Case Studies", "url": "https://blog.skody.ai/" }
+      { "name": "Help Center", "url": "https://blog.skody.ai/" }
 ,
       { "name": "Blogs", "url": "https://blog.skody.ai/" }
     ],

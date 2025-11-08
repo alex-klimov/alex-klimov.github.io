@@ -50,8 +50,8 @@ function SkodyHomepageFirstSection() {
                 />
               </div>
               <div className={styles.buttonContainer}>
-                <SimpleButton className={`buttonText regular  ${styles.mySpecialButton}`} href="skody.ai">See Optimized Schedule</SimpleButton>
-                <SimpleButton className={`buttonText regular ${styles.watchDemoButton}`} href='skody.ai'>Watch 1-min Demo</SimpleButton>
+                <SimpleButton className={`buttonText  ${styles.mySpecialButton}`} href="skody.ai">See Optimized Schedule</SimpleButton>
+                <SimpleButton className={`buttonText ${styles.watchDemoButton}`} href='skody.ai'>Watch 1-min Demo</SimpleButton>
               </div>
             </div>
             <div className={styles.imageSection}>

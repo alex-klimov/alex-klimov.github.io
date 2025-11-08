@@ -40,7 +40,7 @@ const Accordion = ({ items }) => {
           >
             {openIndex === idx && (
               <CommonText
-                subHeading={item.answer}
+                newDescription={item.answer}
                 size="label-H3-sub3"
                 fontFamily="prompt"
               />

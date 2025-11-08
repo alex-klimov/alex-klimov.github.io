@@ -54,3 +54,15 @@
     text-align: center;
     margin-top: 2.5rem;
 }
+@media screen and (max-width:640px) {
+    .whySkodySection :global(.commonText) p p{
+    font-size: 20px;
+    padding: 0rem 2rem;
+    line-height: 26.6px;
+    text-align: center;
+    font-family: 'SF Pro';
+    margin-bottom: 1rem;    
+    color: var(--charcoal);
+}
+    
+}

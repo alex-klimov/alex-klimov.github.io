@@ -32,7 +32,7 @@ const Header = () => {
       <li className="navText" onClick={() => scrollToSection(dashboard)}>
         <Link to="/#dashboard">Dashboard</Link>
       </li>
-      <li className="mednavTextium" onClick={() => scrollToSection(priceRef)}>
+      <li className="navText" onClick={() => scrollToSection(priceRef)}>
         <Link to="/#price">Pricing</Link>
       </li>
       <li className="navText" onClick={() => scrollToSection(faqRef)}>
@@ -69,12 +69,6 @@ const Header = () => {
             <ul>
               {isMobile && (
                 <>
-                  <li
-                    className={`medium ${styles.demo}`}
-                    onClick={() => scrollToSection(demoRef)}
-                  >
-                    <Link to="/#demo">Schedule Demo</Link>
-                  </li>
                   <div
                     className={styles.hambuger}
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -98,28 +92,19 @@ const Header = () => {
               {!isMobile && renderDesktopNav()}
             </ul>
           </nav>
+          {!isMobile&&
           <div
             className={`medium ${styles.sch}`}
             onClick={() => scrollToSection(demoRef)}
           >
-            {/* <Link to="/#demo">Schedule Demo</Link> */}
-            {/* <SimpleButton
-            to="https://calendly.com/alexl-skody/30min"
-              className={`buttonText regular buttonText  ${styles.faqButton}`}
-            >
-              Book Free Demo
-            </SimpleButton> */}
-            {/* <div
-             className={`buttonText regular buttonText  ${styles.faqButton}`}> */}
-
             <PopupButton
               className={`buttonText regular buttonText ${styles.button}`}
               url={CalendlyLink}
               rootElement={document.getElementById("root")}
               text="Schedule Demo"
             />
-            {/* </div> */}
-          </div>
+          </div>}
+          
         </div>
         <div
           className={`${styles.mobileHeader} ${menuOpen ? styles.open : ""}`}
@@ -137,6 +122,17 @@ const Header = () => {
       <li className="medium" onClick={() => scrollToSection(faqRef)}>
         <Link to="/#faq">FAQ</Link>
         </li>
+         <div
+            className={`medium ${styles.sch}`}
+            onClick={() => scrollToSection(demoRef)}
+          >
+            <PopupButton
+              className={`buttonText regular buttonText ${styles.button}`}
+              url={CalendlyLink}
+              rootElement={document.getElementById("root")}
+              text="Schedule Demo"
+            />
+          </div>
           </nav>
         </div>
       </div>

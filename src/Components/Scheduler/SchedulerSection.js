@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SchedulerSection.module.css";
 import customDashboard from "./SchedulerSection.json";
 import CommonText from "../CommonText/CommonText";
 import DashboardSlider from "../DashboardSection/DashboardSlider/DashboardSlider";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import SimpleButton from "../../Buttons/SimpleButton";
+import { PointClickSlider } from "../DashboardSection/PointClickSlider/PointClickSlider";
 
 const SchedulerSection = () => {
-  const ctaButton=customDashboard.dashboardSection.cta;
+  const ctaButton = customDashboard.dashboardSection.cta;
+  const [sliderInstance, setSliderInstance] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Handles click on feature items, changes slider and active index
+  const handleFeatureClick = (index) => {
+    if (sliderInstance?.current && typeof sliderInstance.current.moveToIdx === "function") {
+      sliderInstance.current.moveToIdx(index);
+      setActiveIndex(index);
+    }
+  };
+
+  // Called by DashboardSlider on slide changes (swipe, manual navigation)
+  const handleSlideChange = (index) => {
+    setActiveIndex(index);
+  };
+
   return (
     <div className={`homePageContainer ${styles.mainContainer}`}>
       <HeaderSection
@@ -19,16 +36,31 @@ const SchedulerSection = () => {
       <div className={styles.customDashboardContainer}>
         <div className={styles.cardDashboardContainer}>
           <div className={styles.featuresContainer}>
-            <CommonText smallDescription="Features:" weight="font-weight-500" size="body-other" />
+            <CommonText
+              smallDescription="Features:"
+              weight="font-weight-500"
+              size="body-other"
+            />
             {customDashboard.dashboardSection.features.map((feature, index) => (
-              <div key={index} className={styles.featureItem}>
+              <div
+                key={index}
+                className={`${styles.featureItem} ${
+                  activeIndex === index ? styles.activeFeature : ""
+                }`}
+                onClick={() => handleFeatureClick(index)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className={styles.featureIconContainer}>
-                  <img src={feature.icon} className={styles.featureIcon} alt="featureICon"/>
+                  <img
+                    src={feature.icon}
+                    className={styles.featureIcon}
+                    alt="featureIcon"
+                  />
                 </div>
                 <div>
                   <CommonText
                     subHeading={feature.title}
-                    size="lable-new-1"
+                    size="label-H3-sub3"
                     weight="font-weight-500"
                     fontFamily="SF Pro"
                   />
@@ -36,21 +68,24 @@ const SchedulerSection = () => {
               </div>
             ))}
           </div>
+
           <div className={styles.featuresContainerRight}>
-            <DashboardSlider
+            <PointClickSlider
               imageData={customDashboard.dashboardSection.image}
+              sliderRefCallback={setSliderInstance}
+              onSlideChange={handleSlideChange}
             />
           </div>
         </div>
-        <div className={styles.schedulerButtonContainer}>
 
-        <SimpleButton
-        href={ctaButton.action}
-              className={`buttonText regular buttonText  ${styles.schedulerButton}`}
-            >
-              {ctaButton.text}
-            </SimpleButton>
-        </div >
+        <div className={styles.schedulerButtonContainer}>
+          <SimpleButton
+            href={ctaButton.action}
+            className={`buttonText regular buttonText  ${styles.schedulerButton}`}
+          >
+            {ctaButton.text}
+          </SimpleButton>
+        </div>
       </div>
     </div>
   );

@@ -13,16 +13,16 @@ const TestimonialsSection = () => {
       <TestimonialSlider testimonials={testimonials} />
       <div className={styles.statsBox}>
           <div>
-            <h2 className="title-h2 regular">15%</h2>
-            <p className="label-sub2">Fewer<br />late jobs</p>
+            <h2 className={`title-h2 regular ${styles.colTesti}`}>15%</h2>
+            <p className={`label-sub2 ${styles.colTesti}`}>Fewer<br />late jobs</p>
           </div>
           <div>
-            <h2 className="title-h2 regular">12%</h2>
-            <p className="label-sub2">Higher<br />throughput</p>
+            <h2 className={`title-h2 regular ${styles.colTesti}`}>12%</h2>
+            <p className={`label-sub2 ${styles.colTesti}`}>Higher<br />throughput</p>
           </div>
           <div>
-            <h2 className="title-h2 regular">30%</h2>
-            <p className="label-sub2"> Setup variance<br />reduced</p>
+            <h2 className={`title-h2 regular ${styles.colTesti}`}>30%</h2>
+            <p className={`label-sub2 ${styles.colTesti}`}> Setup variance<br />reduced</p>
           </div>
         </div>
     </div>

@@ -1,19 +1,18 @@
-import React from 'react';
-import footerData from './Footer.json';
-import styles from './Footer.module.css';
-import CommonText from '../CommonText/CommonText';
-import { useScroll } from '../ScrollContext/ScrollContext';
-import { Link } from 'react-router-dom';
+import React from "react";
+import footerData from "./Footer.json";
+import styles from "./Footer.module.css";
+import CommonText from "../CommonText/CommonText";
+import { useScroll } from "../ScrollContext/ScrollContext";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const { scrollToSection, productRef, whyRef, impactRef } =
-    useScroll();
+  const { scrollToSection, productRef, whyRef, impactRef } = useScroll();
   const footerInfo = footerData.footer;
 
   const sectionRefs = {
     Product: productRef,
     "Why Skody": whyRef,
-    "Impact": impactRef,
+    Impact: impactRef,
   };
 
   if (!footerInfo) return null;
@@ -21,27 +20,22 @@ const Footer = () => {
   return (
     <footer className={`${styles.container}`}>
       <div className={`homePageContainer ${styles.content}`}>
-
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
             <img src={footerInfo.logo.image} alt={footerInfo.logo.image} />
-          <div className={styles.footerDescription}>
-            <CommonText smallDescription={footerInfo.description}/>
-          </div>
-          </div>
-          <div className={styles.socialLinks}>
-            {footerInfo.socialLinks.map((link) => (
-              <a href={link.url} key={link.platform.alt} className={styles.socialLink} target='_blank' rel="noreferrer" >
-                <img src={link.platform.src} alt={link.platform.alt} className={styles.socialIcon} />
-              </a>
-            ))}
+            <div className={styles.footerDescription}>
+              <CommonText smallDescription={footerInfo.description} />
+            </div>
           </div>
         </div>
         <div className={styles.links}>
           <div className={styles.productLinksContainer}>
             <div className={styles.heading}>
-
-              <CommonText smallDescription='Product' size='label-sub2' fontFamily="Prompt" />
+              <CommonText
+                smallDescription="Product"
+                size="label-sub2"
+                fontFamily="Prompt"
+              />
             </div>
             <div className={styles.productLinks}>
               {footerInfo.productLinks.map((link) => (
@@ -52,7 +46,6 @@ const Footer = () => {
                 >
                   <Link to={link.url} key={link.name} className={styles.link}>
                     <CommonText smallDescription={link.name} size="body-sm" />
-
                   </Link>
                 </div>
               ))}
@@ -60,70 +53,91 @@ const Footer = () => {
           </div>
           <div className={styles.socialLinkContainer}>
             <div className={styles.heading}>
-
-              <CommonText smallDescription='Links' size='label-sub2' fontFamily="Prompt" />
+              <CommonText
+                smallDescription="Company"
+                size="label-sub2"
+                fontFamily="Prompt"
+              />
             </div>
 
             <div className={styles.socialLink}>
               {footerInfo.links.map((link) =>
-                link.url.startsWith("/") || link.url.startsWith("#/")
-                  ? (
-                    <Link
-                      to={link.url} // Remove # if present
-                      key={link.name}
-                      className={styles.link}
-                    >
-                      <CommonText smallDescription={link.name} size="body-sm" />
-                    </Link>
-                  ) : (
-                    <a
-                      href={link.url}
-                      key={link.name}
-                      className={styles.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <CommonText smallDescription={link.name} size="body-sm" />
-                    </a>
-                  )
+                link.url.startsWith("/") || link.url.startsWith("#/") ? (
+                  <Link
+                    to={link.url} // Remove # if present
+                    key={link.name}
+                    className={styles.link}
+                  >
+                    <CommonText smallDescription={link.name} size="body-sm" />
+                  </Link>
+                ) : (
+                  <a
+                    href={link.url}
+                    key={link.name}
+                    className={styles.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <CommonText smallDescription={link.name} size="body-sm" />
+                  </a>
+                )
               )}
             </div>
           </div>
           <div className={styles.contact}>
             <div className={styles.heading}>
-              <CommonText smallDescription='Contact' size='label-sub2' fontFamily="Prompt" />
+              <CommonText
+                smallDescription="Legal"
+                size="label-sub2"
+                fontFamily="Prompt"
+              />
             </div>
-          <div className={styles.socialLink}>
+            <div className={styles.socialLink}>
               {footerInfo.contact1.map((link) =>
-                link.url.startsWith("/") || link.url.startsWith("#/")
-                  ? (
-                    <Link
-                      to={link.url} // Remove # if present
-                      key={link.name}
-                      className={styles.link}
-                    >
-                      <CommonText smallDescription={link.name} size="body-sm" />
-                    </Link>
-                  ) : (
-                    <a
-                      href={link.url}
-                      key={link.name}
-                      className={styles.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <CommonText smallDescription={link.name} size="body-sm" />
-                    </a>
-                  )
+                link.url.startsWith("/") || link.url.startsWith("#/") ? (
+                  <Link
+                    to={link.url} // Remove # if present
+                    key={link.name}
+                    className={styles.link}
+                  >
+                    <CommonText smallDescription={link.name} size="body-sm" />
+                  </Link>
+                ) : (
+                  <a
+                    href={link.url}
+                    key={link.name}
+                    className={styles.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <CommonText smallDescription={link.name} size="body-sm" />
+                  </a>
+                )
               )}
             </div>
-            </div>
+          </div>
         </div>
-      
       </div>
-        <div className={`homePageContainer ${styles.copyRight}`}>
-          <CommonText smallDescription={footerInfo.copyright} size='body-sm' />
-        </div>
+      <div className={`homePageContainer ${styles.socialLinks}`}>
+        {footerInfo.socialLinks.map((link) => (
+          <a
+            href={link.url}
+            key={link.platform.alt}
+            className={styles.socialLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={link.platform.src}
+              alt={link.platform.alt}
+              className={styles.socialIcon}
+            />
+          </a>
+        ))}
+      </div>
+      <div className={`homePageContainer ${styles.copyRight}`}>
+        <CommonText smallDescription={footerInfo.copyright} size="body-sm" />
+      </div>
     </footer>
   );
 };

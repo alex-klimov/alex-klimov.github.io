@@ -5,41 +5,54 @@
     "subtitle": "Your **ERP** lists work orders — **Skody builds the plan.**  \n It simulates thousands of routing, constraints, and optimal shifts to find the best sequence automatically.",
     "description": "It simulates thousands of routing, constraints, and optimal shifts to find the best sequence automatically.",
     "image": [
-      {
-        "image": "SS1.png",
-        "alt": "Dashboard Slide 1"
-      },
-      {
-        "image": "SS2.png",
-        "alt": "Dashboard Slide 2"
-      },
-      {
-        "image": "SS3.png",
-        "alt": "Dashboard Slide 3"
-      }
-    ],
+    {
+      "id": 1,
+      "image": "SS1.png",
+      "alt": "Dashboard Slide 1"
+    },
+    {
+      "id": 2,
+      "image": "SS2.png",
+      "alt": "Dashboard Slide 2"
+    },
+    {
+      "id": 3,
+      "image": "SS3.png",
+      "alt": "Dashboard Slide 3"
+    }
+  ],
     "features": [
-      {
-        "icon": "/assets/newDesign/SchedulerSection/SI1.png",
-        "title": "Real-Time Machine + Operator + Vendor Load Balancing"
-      },
-      {
-        "icon": "/assets/newDesign/SchedulerSection/SI2.png",
-        "title": "Auto-Reschedule for Downtime and Rush Jobs"
-      },
-      {
-        "icon": "/assets/newDesign/SchedulerSection/SI3.png",
-        "title": "Lights-Out and Multi-Shift Compatible"
-      },
-      {
-        "icon": "/assets/newDesign/SchedulerSection/SI4.png",
-        "title": "Messenger + Pin Notes on Works Orders"
-      },
-      {
-        "icon": "/assets/newDesign/SchedulerSection/SI5.png",
-        "title": "'What-if' simulation "
-      }
-    ],
+    {
+      "id": 1,
+      "icon": "/assets/newDesign/SchedulerSection/SI1.png",
+      "title": "Real-Time Machine + Operator + Vendor Load Balancing",
+      "description": "Detailed explanation if needed"
+    },
+    {
+      "id": 2,
+      "icon": "/assets/newDesign/SchedulerSection/SI2.png",
+      "title": "Auto-Reschedule for Downtime and Rush Jobs",
+      "description": "Detailed explanation if needed"
+    },
+    {
+      "id": 3,
+      "icon": "/assets/newDesign/SchedulerSection/SI3.png",
+      "title": "Lights-Out and Multi-Shift Compatible",
+      "description": "Detailed explanation if needed"
+    },
+    {
+      "id": 4,
+      "icon": "/assets/newDesign/SchedulerSection/SI4.png",
+      "title": "Messenger + Pin Notes on Works Orders",
+      "description": "Detailed explanation if needed"
+    },
+    {
+      "id": 5,
+      "icon": "/assets/newDesign/SchedulerSection/SI5.png",
+      "title": "'What-if' simulation",
+      "description": "Detailed explanation if needed"
+    }
+  ],
     "footerText": "This keeps your customers informed, your team focused, and your shop looking world-class.",
     "cta": {
       "text": "Optimize My Schedule",

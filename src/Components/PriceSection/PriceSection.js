@@ -56,7 +56,7 @@ export default function PricingSection() {
                     <li>
                       <CommonText
                         smallDescription={f}
-                        size="body-lg"
+                        size="body-lg-type2"
                         fontFamily="prompt"
                       />
                     </li>

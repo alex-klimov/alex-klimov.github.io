@@ -6,20 +6,16 @@
     "comparison": {
       "headers": ["ERP Schedulers", "Skody AI Scheduler"],
       "erpSchedulers": [
-        "Manual drag-and-drop planning",
-        "Static snapshot of work",
-        "Shows what's late",
-        "One planner juggling chaos",
-        "Ignores setups & outside processes",
-        "Tells you what happened"
+        "Manual drag-and-drop",
+        "Static snapshots",
+        " Ignores setups & outside processes",
+        "One planner juggling chaos"
       ],
       "skodyScheduler": [
-        "Auto-optimizes across machines & shifts",
-        "Live, self-adjusting plan in real time",
-        "Predicts lateness before it happens",
-        "AI keeps balance; planner reviews alerts",
-        "Setup-aware, routing-true scheduling",
-        "Tells you what to do next"
+        "Continuous AI optimization",
+        "Shift & operator aware",
+        "Handles vendors, setups, inspections",
+        "Clear “at-risk” and one-click Optimize"
       ]
     }
   }
