@@ -12,7 +12,7 @@ const Footer = () => {
       dashboard,
       priceRef,
       productRef,
-    } = useScroll();
+     } = useScroll();
     
   const footerInfo = footerData.footer;
 
@@ -132,7 +132,7 @@ const Footer = () => {
           <a
             href={link.url}
             key={link.platform.alt}
-            className={styles.socialLink}
+            className={styles.socialLinkImage}
             target="_blank"
             rel="noreferrer"
           >
