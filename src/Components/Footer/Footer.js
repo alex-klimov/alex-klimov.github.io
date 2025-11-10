@@ -33,7 +33,7 @@ const Footer = () => {
           <div className={styles.logo}>
             <img src={footerInfo.logo.image} alt={footerInfo.logo.image} />
             <div className={styles.footerDescription}>
-              <CommonText smallDescription={footerInfo.description} />
+              <CommonText smallDescription={footerInfo.description} size="label-H3-sub3"/>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
             <div className={styles.heading}>
               <CommonText
                 smallDescription="Product"
-                size="label-sub2"
+                size="title-h3"
                 fontFamily="Prompt"
               />
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                   onClick={() => scrollToSection(sectionRefs[link.name])}
                 >
                   <Link to={link.url} key={link.name} className={styles.link}>
-                    <CommonText smallDescription={link.name} size="body-sm" />
+                    <CommonText smallDescription={link.name} size="label-H3-sub3" />
                   </Link>
                 </div>
               ))}
@@ -64,7 +64,7 @@ const Footer = () => {
             <div className={styles.heading}>
               <CommonText
                 smallDescription="Company"
-                size="label-sub2"
+                size="title-h3"
                 fontFamily="Prompt"
               />
             </div>
@@ -77,7 +77,7 @@ const Footer = () => {
                     key={link.name}
                     className={styles.link}
                   >
-                    <CommonText smallDescription={link.name} size="body-sm" />
+                    <CommonText smallDescription={link.name} size="label-H3-sub3" />
                   </Link>
                 ) : (
                   <a
@@ -87,7 +87,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <CommonText smallDescription={link.name} size="body-sm" />
+                    <CommonText smallDescription={link.name} size="label-H3-sub3" />
                   </a>
                 )
               )}
@@ -97,7 +97,7 @@ const Footer = () => {
             <div className={styles.heading}>
               <CommonText
                 smallDescription="Legal"
-                size="label-sub2"
+                size="title-h3"
                 fontFamily="Prompt"
               />
             </div>
@@ -109,7 +109,7 @@ const Footer = () => {
                     key={link.name}
                     className={styles.link}
                   >
-                    <CommonText smallDescription={link.name} size="body-sm" />
+                    <CommonText smallDescription={link.name} size="label-H3-sub3" />
                   </Link>
                 ) : (
                   <a
@@ -119,7 +119,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <CommonText smallDescription={link.name} size="body-sm" />
+                    <CommonText smallDescription={link.name} size="label-H3-sub3" />
                   </a>
                 )
               )}
@@ -145,7 +145,7 @@ const Footer = () => {
         ))}
       </div>
       <div className={`homePageContainer ${styles.copyRight}`}>
-        <CommonText smallDescription={footerInfo.copyright} size="body-sm" />
+        <CommonText smallDescription={footerInfo.copyright} size="label-H3-sub3"/>
       </div>
     </footer>
   );

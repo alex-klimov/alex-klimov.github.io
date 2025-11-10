@@ -258,7 +258,10 @@
     .imageContainer {
         margin-top: 3.2rem;
     }
-
+    .imageSection{
+        height: 235px;
+    overflow: hidden;
+    }
     .imageContainer img {
         width: 100%;
     }
