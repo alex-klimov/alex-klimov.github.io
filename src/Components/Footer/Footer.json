@@ -11,7 +11,7 @@
           "src": "/assets/newDesign/SocialIcons/lindedIn.png",
           "alt": "LinkedIn"
         },
-        "url": "https://www.linkedin.com/company/skody-ai/posts/?feedView=all"
+        "url": "https://www.linkedin.com/company/skody-ai/"
       },
       {
         "platform": {
@@ -25,22 +25,22 @@
           "src": "/assets/newDesign/SocialIcons/youtube.png",
           "alt": "youtube"
         },
-        "url": "https://x.com/skody_ai"
+        "url": "https://www.youtube.com/@SkodyAI"
       }
     ],
     "productLinks": [
-      { "name": "Scheduler", "url": "/#why" },
-      { "name": "Dashboard", "url": "/#impact" },
-      { "name": "Pricing", "url": "/#impact" }
+      { "name": "Scheduler", "url": "/#scheduler" },
+      { "name": "Dashboard", "url": "/#dashboard" },
+      { "name": "Pricing", "url": "/#pricing" }
 ,
-      { "name": "Integrations", "url": "/#impact" }
+      { "name": "Integrations", "url": "/#integrations" }
 
     ],
     "links": [
-      { "name": "About", "url": "/privacy-policy" },
-      { "name": "Contact", "url": "https://blog.skody.ai/" }
+      { "name": "About", "url": "/coming-soon" },
+      { "name": "Contact", "url": "/coming-soon" }
 ,
-      { "name": "Case Studies", "url": "https://blog.skody.ai/" }
+      { "name": "Case Studies", "url": "/coming-soon" }
 ,
       { "name": "Blogs", "url": "https://blog.skody.ai/" }
     ],
@@ -51,10 +51,7 @@
       { "name": "Privacy Policy", "url": "/privacy-policy" },
       { "name": "Terms of Service", "url": "/term-condition" }
 ,
-      { "name": "Help Center", "url": "https://blog.skody.ai/" }
-,
-      { "name": "Blogs", "url": "https://blog.skody.ai/" }
-    ],
+      { "name": "Help Center", "url": "/coming-soon" }   ],
     "copyright": "© 2025 Skody AI. All rights reserved."
   }
 }

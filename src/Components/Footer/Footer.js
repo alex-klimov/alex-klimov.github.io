@@ -6,13 +6,22 @@ import { useScroll } from "../ScrollContext/ScrollContext";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const { scrollToSection, productRef, whyRef, impactRef } = useScroll();
+  // const { scrollToSection, productRef, whyRef, impactRef } = useScroll();
+  const {
+      scrollToSection,
+      dashboard,
+      priceRef,
+      productRef,
+    } = useScroll();
+    
   const footerInfo = footerData.footer;
 
   const sectionRefs = {
-    Product: productRef,
-    "Why Skody": whyRef,
-    Impact: impactRef,
+    Scheduler: productRef,
+    Dashboard: dashboard,
+    Integrations: productRef,
+    Pricing:priceRef,
+    
   };
 
   if (!footerInfo) return null;

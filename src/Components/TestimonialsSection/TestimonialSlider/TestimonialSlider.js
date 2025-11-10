@@ -34,7 +34,10 @@ const TestimonialSlider = ({ testimonials }) => {
           <div key={i} className={`keen-slider__slide ${styles.slide}`}>
             <div className={styles.card}>
               <div className={styles.top}>
+                <div className={styles.avatarImage}>
                 <img src={t.avatar} alt={t.name} className={styles.avatar} />
+
+                  </div>
                 <div className={styles.content}>
                   <div className={styles.annonationContainer}>
                   <img src="/assets/newDesign/annotation.png" alt={t.role} className={styles.logo} />

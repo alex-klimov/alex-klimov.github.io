@@ -23,6 +23,10 @@
     gap: 1rem;
     padding: 1rem 1rem;
 }
+.socialLink a{
+    width: 18px;
+    height: 18px;
+}
 
 .links {
     display: flex;
@@ -49,8 +53,8 @@
 }
 
 .socialIcon {
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
