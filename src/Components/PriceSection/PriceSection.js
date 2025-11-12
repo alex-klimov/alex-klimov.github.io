@@ -4,6 +4,7 @@ import styles from "./PriceSection.module.css";
 import plans from "./PriceSection.json";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import CommonText from "../CommonText/CommonText";
+import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
 export default function PricingSection() {
   return (
     <section className={styles.pricingSection}>
@@ -63,7 +64,11 @@ export default function PricingSection() {
                   </div>
                 ))}
               </ul>
-              <button className={styles.cta}>{plan.cta}</button>
+                    <CalendlyPopup 
+  text={plan.cta} 
+  className={styles.cta}
+/>
+              {/* <button className={styles.cta}>{plan.cta}</button> */}
             </div>
           </div>
         ))}

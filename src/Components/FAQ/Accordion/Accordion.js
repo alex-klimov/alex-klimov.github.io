@@ -22,12 +22,11 @@ const Accordion = ({ items }) => {
             <div>
               <CommonText
                 subHeading={item.question}
-                size="label-H3"
+                size="title-h3"
+                fontFamily="SF Pro"
+
                 weight="font-weight-500"
               />
-              <p className={styles.shortAnswer}>
-                {/* You can add a short preview/summary here if needed */}
-              </p>
             </div>
             <span className={styles.plus}>{openIndex === idx ? "−" : "+"}</span>
           </button>

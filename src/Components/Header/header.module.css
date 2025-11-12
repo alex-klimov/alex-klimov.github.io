@@ -58,6 +58,7 @@
     cursor: pointer;
     border: none;
     font-family: 'prompt';
+    font-size: 20px;
     border-radius: 0.4rem;
 }
 .header nav ul li a {
@@ -166,11 +167,17 @@
     }
 
     .logo {
-        width: 65px;
+        /* width: 65px; */
 
         height: 38px;
     }
 
+}
+@media screen and (max-width:640px) {
+    .button {
+    font-size: 12px;
+}
+    
 }
 
 @media screen and (max-width:445px) {

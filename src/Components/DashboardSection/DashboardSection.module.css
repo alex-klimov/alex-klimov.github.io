@@ -28,10 +28,10 @@
 }
 
 .chaosButton {
-    background-color: transparent;
-    border-color: var(--charcoal);
-    color: var(--charcoal);
-    margin-top: 2.2rem;
+    background-color: transparent !important; 
+    border-color: var(--charcoal) !important;
+    color: var(--charcoal) !important;
+    margin-top: 2.2rem !important;
 }
 
 .dashSlider {
@@ -75,7 +75,9 @@
     padding: 2.7rem 1rem;
     justify-content: center;
 }
-
+.dashboardFooterContainer :global(.commonText) p{
+    text-align: center;
+}
 @media screen and (max-width: 1024px) {
     .cardDashboardContainer {
         flex-direction: column;

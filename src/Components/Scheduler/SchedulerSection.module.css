@@ -23,6 +23,18 @@
 
 }
 .schedulerButton{
+      display: inline-block;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--violet);
+  border: 2px solid  var(--violet);
+  font-family: 'Prompt';
+  color: var(--primary-white);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 0.4rem;
     text-align: center;
 }
 .featuresContainer {
@@ -61,9 +73,9 @@
         align-items: center;
     }
     .featuresContainer{
-    width: 80%;
+    width: 100%;
 }
 .featuresContainerRight{
-    width: 80%;
+    width: 100%;
 }
 }

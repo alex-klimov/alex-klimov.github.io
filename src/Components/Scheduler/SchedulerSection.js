@@ -3,8 +3,8 @@ import styles from "./SchedulerSection.module.css";
 import customDashboard from "./SchedulerSection.json";
 import CommonText from "../CommonText/CommonText";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
-import SimpleButton from "../../Buttons/SimpleButton";
 import { PointClickSlider } from "../DashboardSection/PointClickSlider/PointClickSlider";
+import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
 
 const SchedulerSection = () => {
   const ctaButton = customDashboard.dashboardSection.cta;
@@ -78,12 +78,8 @@ const SchedulerSection = () => {
         </div>
 
         <div className={styles.schedulerButtonContainer}>
-          <SimpleButton
-            href={ctaButton.action}
-            className={`buttonText regular buttonText  ${styles.schedulerButton}`}
-          >
-            {ctaButton.text}
-          </SimpleButton>
+          
+           <CalendlyPopup text={ctaButton.text}/>
         </div>
       </div>
     </div>

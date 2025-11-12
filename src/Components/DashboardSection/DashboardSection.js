@@ -6,6 +6,7 @@ import DashboardSlider from "./DashboardSlider/DashboardSlider";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import ChasoSlider from "./ChasoSlider/ChasoSlider";
 import SimpleButton from "../../Buttons/SimpleButton";
+import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
 
 const DashboardSection = () => {
   return (
@@ -22,12 +23,10 @@ const DashboardSection = () => {
           <ChasoSlider />
         </div>
         <div className={`homePageContainer ${styles.chaosButtonContainer}`}>
-          <SimpleButton
-            href={customDashboard.Chaos.cta.action}
-            className={`buttonText regular buttonText  ${styles.chaosButton}`}
-          >
-            {customDashboard.Chaos.cta.text}
-          </SimpleButton>
+          <CalendlyPopup
+            text={customDashboard.Chaos.cta.text}
+            className={styles.chaosButton}
+          />
         </div>
       </div>
       <div className={`homePageContainer ${styles.mainContainer}`}>

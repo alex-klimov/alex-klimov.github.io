@@ -8,7 +8,7 @@ import SimpleButton from "../../Buttons/SimpleButton";
 function SkodyHomepageFirstSection() {
   // Array of image paths
   const images = [
-    "/assets/newDesign/StartComponent/startComponent.png",
+    "/assets/newDesign/StartComponent/startComponent1.png",
     "/assets/newDesign/StartComponent/startComponent2.png",
     "/assets/newDesign/StartComponent/startComponent3.png",
     "/assets/newDesign/StartComponent/startComponent4.png"
@@ -50,8 +50,8 @@ function SkodyHomepageFirstSection() {
                 />
               </div>
               <div className={styles.buttonContainer}>
-                <SimpleButton className={`buttonText  ${styles.mySpecialButton}`} href="skody.ai">See Optimized Schedule</SimpleButton>
-                <SimpleButton className={`buttonText ${styles.watchDemoButton}`} href='skody.ai'>Watch 1-min Demo</SimpleButton>
+                <SimpleButton className={`buttonText  ${styles.mySpecialButton}`} href="https://app.skody.dev/#/sdemo">See Optimized Schedule</SimpleButton>
+                <SimpleButton className={`buttonText ${styles.watchDemoButton}`} href='https://www.youtube.com/watch?v=bPo1-RFnTC0'>Watch 1-min Demo</SimpleButton>
               </div>
             </div>
             <div className={styles.imageSection}>

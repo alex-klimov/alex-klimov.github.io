@@ -58,9 +58,17 @@
   max-height: 300px; /* adjust as needed for your content */
   transition: max-height 0.5s ease-in-out ;
 }
-
+.content :global(.commonText) p p{
+    font-size: 20px;
+  }
 @media screen and (max-width:720px) {
   .accordion{
     grid-template-columns:unset;
   }
+}
+@media screen and (max-width:640px) {
+  .content :global(.commonText) p p{
+    font-size: 16px;
+  }
+  
 }

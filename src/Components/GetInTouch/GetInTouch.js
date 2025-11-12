@@ -3,6 +3,7 @@ import sectionData from "./GetInTouch.json";
 import CommonText from "../CommonText/CommonText";
 import styles from "./GetInTouch.module.css";
 import SimpleButton from "../../Buttons/SimpleButton";
+import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
 
 const GetInTouch = () => {
   const bgImageUrl = "/assets/newDesign/getIntoBackground.png";
@@ -35,12 +36,10 @@ const GetInTouch = () => {
           fontFamily="SF Pro"
         />
       </div>
-      <SimpleButton
-      to={sectionData.ctaButtons[1].action}
-        className={`buttonText regular buttonText  ${styles.getInTouch}`}
-      >
-        {sectionData.ctaButtons[1].text}
-      </SimpleButton>
+      <CalendlyPopup 
+  text={sectionData.ctaButtons[1].text} 
+  className={styles.getInTouch} 
+/>
     </div>
   );
 };
