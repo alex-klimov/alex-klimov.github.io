@@ -1,0 +1,20 @@
+{
+  "tag": "Analysis",
+  "title": "FREE Shop KPI Gap Analysis",
+  "subtitle": "We just built the **Skody KPI Intake Form** — an AI-powered tool that compares your current metrics to top-performing CNC shops.",
+  "image": {
+    "src": "/assets/newDesign/KPISection/Factory Image.png",
+    "alt": "Factory with KPI charts"
+  },
+  "infoTitle": "In under 10 minutes, you'll get:",
+  "features": [
+    "A personalized AI GAP Analysis of your Schedule, Quality, and Delivery KPIs",
+    "Benchmarks vs. similar shops (by size, industry, and digital maturity)",
+    "A short list of metrics that matter most to improve first"
+  ],
+  "cta": {
+    "text": "Start here",
+    "action": "https://agent.skody.ai"
+  },
+  "note": "Once you complete it, you’ll receive a detailed report and a custom preview showing how Skody visualizes those gaps automatically."
+}

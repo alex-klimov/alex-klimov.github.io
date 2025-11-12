@@ -1,0 +1,12 @@
+.faqButtonContainer{
+    text-align: center;
+}
+.faqButton {
+    background: var(--violet) !important;
+    border-color:  var(--violet) !important;
+    color: var(--primary-white) !important;
+    border-radius: 8px;
+    font-family: 'Prompt', sans-serif !important;
+    padding: 12px 24px;
+    margin-top: 1.2rem;
+}

@@ -1,0 +1,110 @@
+.backgroundImage {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0rem;
+    z-index: 1;
+    background: url('/public/assets/images/backgroundOfImpact.png');
+}
+
+.bannerImageContainer {
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    right: 14%;
+    top: 66%;
+    z-index: -1;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    line-height: 130%;
+    width: 20%;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    text-align: center;
+    letter-spacing: -0.2px;
+
+}
+
+.mainContainer :global(.commonText) h3 {
+    text-align: center;
+    font-family: 'Inter';
+    padding: 1rem 0rem 3.4rem;
+}
+
+.card:nth-child(odd) {
+    background: var(--blue-color-600);
+    color: var(--grey-color-200)
+}
+
+
+.card:nth-child(even) {
+    background: var(--blue-color-100);
+    color: var(--grey-color-800);
+}
+
+
+@media screen and (max-width:1024px) {
+    .bannerImageContainer {
+        scale: 0.6;
+        top: 52%;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+    .card {
+        width: 40%;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .mainContainer :global(.commonText) h3 {
+        text-align: center;
+        font-size: 16px;
+        
+        line-height: 24px;
+    }
+    .mainContainer :global(.commonText) h2 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .bannerImageContainer {
+        display: none;
+    }
+
+}
+@media screen and (max-width:620px) {
+    .card {
+        width: 70%;
+        max-width: 240px;
+    }
+
+}

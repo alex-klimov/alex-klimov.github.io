@@ -1,0 +1,27 @@
+{
+  "testimonialsSection": {
+    "tag": "TESTIMONIALS",
+    "title": "Real Results from Real Shops",
+    "testimonials": [
+      {
+        "avatar": "/assets/newDesign/Testimonials/testimonial1pre.png",
+        "logo": "/assets/newDesign/Testimonials/person1logo.png",
+        "quote": "With Skody’s scheduler and dashboard, the plan finally works—no chaos, no surprises, just jobs done right.",
+        "name": "Zachary Yeager",
+        "role": "CEO, Yeager Manufacturing"
+      },
+      {
+        "avatar": "/assets/newDesign/Testimonials/testimonial.png",
+        "logo": "/assets/newDesign/Testimonials/testimoniallogo.png",
+        "quote": "Skody cut our late jobs by 15% in the first month.",
+        "name": "Ken Frankel",
+        "role": "CEO, Three Sigma Mfg"
+      }
+    ],
+    "results": [
+      { "value": "15%", "desc": "Fewer late jobs" },
+      { "value": "12%", "desc": "Higher throughput" },
+      { "value": "30%", "desc": "Setup variance reduced" }
+    ]
+  }
+}

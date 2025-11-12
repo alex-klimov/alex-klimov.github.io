@@ -1,0 +1,83 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 7rem auto 2rem;
+}
+
+:global(.calendly-inline-widget) {
+    border-radius: 2rem;
+    border: 1px solid;
+    padding: 2rem 2rem 0rem;
+    height: 600px;
+    width: 450px;
+    min-width: 200px;
+}
+
+.scheduleDemoContainer {
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    padding: 1.2rem;
+    width: 30%;
+
+}
+
+.button {
+    background-color: var(--blue-color-600);
+    color: var(--primary-white);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    line-height: 140%;
+    margin-top: 1rem;
+    border-radius: 3rem;
+}
+:global(.calendly-popup-content){
+    height: 700px !important;
+    scale: 0.9;
+}
+
+@media screen and (max-width:1024px) {
+    .mainContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    :global(.calendly-inline-widget) {
+        width: 400px;
+    }
+
+    .scheduleDemoContainer {
+        width: 60%;
+    }
+    .button{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainContainer{
+        margin: 0rem auto 2rem;
+    }
+
+}
+@media screen and (max-width:540px) {
+    :global(.calendly-inline-widget) {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    :global(.calendly-inline-widget) {
+        padding: 2rem 1rem 0rem;
+        overflow: hidden;
+    }
+
+}

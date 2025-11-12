@@ -1,0 +1,57 @@
+.comparisonContainer {
+    display: flex;
+    background: #89B2EF;
+    border-radius: 0.8rem;
+    padding: unset !important;
+}
+.differenceHeader :global(.common){
+    margin-bottom: 2.2rem;
+}
+.comparisonColumn {
+    width: 50%;
+    padding-bottom: 3rem;
+}
+
+.comparisonColumn:first-child {
+    background: #FFF6E5;
+}
+
+.comparisonColumn :global(.commonText) h3 {
+    padding: 1rem 4rem !important;
+    background-color: var(--violet);
+    color: var(--primary-white);
+}
+
+.comparisonColumn:first-child :global(.commonText) h3 {
+    background-color: var(--light-blue);
+    color: var(--primary-black);
+
+}
+
+.row {
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+@media screen and (max-width:840px) {
+    .comparisonContainer{
+        flex-direction: column;
+
+    }
+    .comparisonColumn{
+        width: 100%;
+    }
+    .comparisonColumn :global(.commonText) h3 {
+        padding: 1rem 2rem !important;
+
+    }
+    .row{
+        padding: 1rem 2rem !important; 
+    }
+    .icontickCross{
+        width: 10px;
+        height: 10px;
+    }
+    
+}

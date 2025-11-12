@@ -1,0 +1,78 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10rem 0rem;
+    overflow: unset;
+    position: relative;
+}
+
+
+.headingContainer :global(.commonText) h2 {
+
+    padding: 0rem 2rem;
+    color: var(--blue-color-500);
+}
+
+.button {
+    background-color: var(--blue-color-500);
+    border: var(--blue-color-500);
+    border-radius: 2rem;
+    padding: 1rem 3.5rem;
+    color: var(--primary-white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bannerImageContainer {
+    position: absolute;
+    height: 50%;
+    width: 23%;
+    bottom: 48%;
+    right: 91%;
+
+    z-index: -1;
+}
+
+@media screen and (max-width:1024px) {
+    .bannerImageContainer {
+        scale: 0.7;
+        width: 23%;
+        bottom: 54%;
+        right: 95%;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .bannerImageContainer {
+        scale: 0.5;
+        width: 23%;
+        bottom: 54%;
+        right: 97%;
+    }
+
+}
+@media screen and (max-width:640px) {
+    .button{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 1rem 5.5rem;
+    }
+    .mainContainer{
+        gap: 2rem;
+    }
+    .bannerImageContainer {
+
+
+        right: 100%;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .bannerImageContainer {
+        right: 110%;
+    }
+
+}

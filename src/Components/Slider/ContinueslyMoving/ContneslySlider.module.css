@@ -1,0 +1,30 @@
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #f9fbff;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 25s linear infinite;
+}
+
+.image {
+  width: 249px;
+  height: 83px;
+  margin: 0 16px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
