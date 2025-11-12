@@ -9,6 +9,8 @@ const TestimonialSlider = ({ testimonials }) => {
     useEffect(() => {
       const checkMobileView = () => setIsMobile(window.innerWidth <= 1024);
       checkMobileView();
+      window.addEventListener("resize", checkMobileView);
+
       return () => window.removeEventListener("resize", checkMobileView);
     }, []);
   const [current, setCurrent] = useState(0);
@@ -60,7 +62,7 @@ const TestimonialSlider = ({ testimonials }) => {
                     <span className={styles.name}>{t.name}</span>
                     <span className={styles.role}>{t.role}</span>
                   </div>
-                  {isMobile&&
+                  {isMobile &&
                     <img src={t.logo} alt={t.role} className={styles.logo} />
                     }
                 </div>
