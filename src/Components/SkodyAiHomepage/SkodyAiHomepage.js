@@ -23,13 +23,13 @@ const SkodyAiHomepage = () => {
       <div >
         <SkodyHomepageFirstSection />
       </div>
-      <div className='margin'>
+      <div className='marginHeading'>
         <StatisticsSection/>
       </div>
       <div ref={productRef} className={`margin ${styles.schedulerSection}`}>
         <SchedulerSection/>
       </div>
-      <div className='margin' >
+      <div className='marginHeading' >
         <Difference/>
          <WhySkody />
       </div>

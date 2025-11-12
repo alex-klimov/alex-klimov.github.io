@@ -72,7 +72,7 @@ const DashboardSection = () => {
                         smallDescription={feature.description}
                         size="label-sub1"
                         fontFamily="prompt"
-                        weight="label-H3-sub3"
+                        weight="light"
                       />
                     </div>
                   </div>

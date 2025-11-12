@@ -24,9 +24,9 @@ const Difference = () => {
       {(index === 0 ? data.comparison.erpSchedulers : data.comparison.skodyScheduler).map((itemText, itemIndex) => (
         <div className={styles.row} key={itemIndex}>
           {index === 0 ? (
-            <img src="/assets/newDesign/cross.png" alt="cross" />
+            <img src="/assets/newDesign/cross.png" alt="cross"  className={styles.icontickCross}/>
           ) : (
-            <img src="/assets/newDesign/tick.png" alt="tick" />
+            <img src="/assets/newDesign/tick.png" alt="tick" className={styles.icontickCross}/>
           )}
           <CommonText
             smallDescription={itemText}

@@ -1,30 +1,30 @@
-/* MarqueeSlider.module.css */
 .marqueeContainer {
   width: 100%;
-  padding: 5rem 0rem;
   overflow: hidden;
   background: #f9fbff;
+  padding: 5rem 0;
+  position: relative;
 }
 
 .marquee {
   display: flex;
-  animation: scrollMarquee 14s linear infinite;
+  width: max-content;
+  animation: scrollMarquee 25s linear infinite;
 }
 
 .image {
-  min-width: 249px;
+  width: 249px;
   height: 83px;
   margin: 0 16px;
-  object-fit: none;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 @keyframes scrollMarquee {
-  0% {
+  from {
     transform: translateX(0);
   }
-
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }

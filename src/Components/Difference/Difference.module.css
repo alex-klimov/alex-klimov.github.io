@@ -49,5 +49,9 @@
     .row{
         padding: 1rem 2rem !important; 
     }
+    .icontickCross{
+        width: 10px;
+        height: 10px;
+    }
     
 }

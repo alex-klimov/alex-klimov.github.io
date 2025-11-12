@@ -152,6 +152,9 @@ body.dark {
 .bold {
     font-weight: bold;
 }
+.light{
+    font-weight: 300;
+}
 
 .font-weight-500 {
     font-weight: 500;
@@ -292,6 +295,10 @@ body.dark {
 @media screen and (max-width:640px) {
     .title-64 {
         font-size: 28px;
+    }
+    .label-H2-sub2-bold {
+        font-size: 16px;
+        line-height: 19.6px;
     }
     .label-H2-sub2{
         font-size: 20px;

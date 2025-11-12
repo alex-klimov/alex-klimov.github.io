@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 
 const HeaderSection = ({ tag, title, subtitle, description }) => {
   return (
-    // <section className={styles.sectionBg}>
       <div className={`common ${styles.container}`}>
         {tag && (
           <div className={`body-lg font-weight-500 ${styles.tagLabel}`}>
@@ -27,7 +26,6 @@ const HeaderSection = ({ tag, title, subtitle, description }) => {
           </div>
         )}
       </div>
-    // </section>
   );
 };
 
