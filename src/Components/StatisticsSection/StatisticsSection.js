@@ -26,8 +26,6 @@ const StatisticsSection = () => {
               smallDescription={value.description}
               size="title-24"
               fontFamily='SF Pro'
-
-
             />
           </div>
           

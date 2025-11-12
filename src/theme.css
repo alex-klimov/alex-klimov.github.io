@@ -291,7 +291,7 @@ body.dark {
 
 @media screen and (max-width:640px) {
     .title-64 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .label-H2-sub2{
         font-size: 20px;
