@@ -7,7 +7,7 @@
     "image": [
     {
       "id": 1,
-      "image": "SS1.png",
+      "image": "SS1new.png",
       "alt": "Dashboard Slide 1"
     },
     {
@@ -15,11 +15,22 @@
       "image": "SS2.png",
       "alt": "Dashboard Slide 2"
     },
-    {
+     {
       "id": 3,
+      "image": "SS3new.png",
+      "alt": "Dashboard Slide 2"
+    },
+    {
+      "id": 4,
       "image": "SS3.png",
       "alt": "Dashboard Slide 3"
+    },
+     {
+      "id": 5,
+      "image": "SS6new.png",
+      "alt": "Dashboard Slide 3"
     }
+    
   ],
     "features": [
     {

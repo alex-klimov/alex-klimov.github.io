@@ -13,7 +13,7 @@ const StatisticsSection = () => {
         title={statistics.statisticsSection.title}
         subtitle={statistics.statisticsSection.subtitle}
       />
-      <div className={`homePageContainer ${styles.performanceStatsContainer}`}>
+      <div className={` ${styles.performanceStatsContainer}`}>
         {statisticsData.map((value,index)=>(
           <div key={index} className={styles.statBox}>
             <CommonText

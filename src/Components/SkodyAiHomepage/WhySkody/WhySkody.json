@@ -15,11 +15,14 @@
       "heading": [
         {
           "title": "Google Maps:",
-          "subheading": "Real-Time Route Optimization"
+          "subheading": "Real-Time Route Optimization",
+          "image":"/assets/newDesign/Whyskody/skodywhy1.png"
         },
         {
           "title": "Skody:",
-          "subheading": "Real-Time Schedule Optimization"
+          "subheading": "Real-Time Schedule Optimization",
+          "image":"/assets/newDesign/Whyskody/skodywhy2.png"
+
         }
       ],
       "imageContainer": {

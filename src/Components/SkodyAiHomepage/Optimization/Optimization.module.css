@@ -69,5 +69,7 @@
     .outerContainer{
         width: 75%;
     }
-    
+    .titleContainer{
+        width: 100%;
+    }
 }

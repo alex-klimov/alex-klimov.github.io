@@ -49,7 +49,21 @@ const Optimization = ({ OptimizationContent }) => {
           </>
         ) : (
           <>
-            <img src="/assets/newDesign/skodywhytemp.png" alt="tempSkody" style={{width:"80%"}}/>
+          {heading.map((item, index) => (
+                <div key={index} className={styles.titleContainer}>
+                  <CommonText
+                    heading={item.title}
+                    size="title-h2-v2"
+                    weight="bold"
+                  />
+
+                  <CommonText
+                    smallDescription={item.subheading}
+                    size="label-sub1"
+                  />
+                  <img src={item.image} alt="tempSkody" style={{width:"100%",paddingTop:'1rem'}}/>
+                </div>
+              ))}
           </>
         )}
       </div>
