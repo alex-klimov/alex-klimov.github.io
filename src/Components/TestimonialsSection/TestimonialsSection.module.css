@@ -15,12 +15,11 @@
 
 .statsBox {
   min-width: 1400px;
-  max-width: 1400px;
   background-color: #fff;
   display: flex;
   align-items: flex-start;
   gap: 80px;
-  padding: 19px 60px;
+  padding: 2rem 3rem;
   border-radius: 0 40px 0 0;
   position: relative;
   z-index: 1;
@@ -59,15 +58,29 @@
 }
 
 @media screen and (max-width:768px) {
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+  .statsBox p{
+    text-align: center;
+  }
+  .statsBox h2{
+        font-weight: 600;
+  }
   .statsBox {
+    padding: 2rem 1rem;
     clip-path: unset;
     background: var(--violet);
     max-width: unset;
     min-width: unset;
     display: flex;
-    justify-content: space-evenly;
+    gap: unset;
+    justify-content: space-around;
   }
   .colTesti{
+    text-align: center;
     color: var(--primary-white) !important;
   }
 }

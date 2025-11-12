@@ -16,7 +16,7 @@ const KpiSection = () => {
     }, []);
   
   return (
-    <div className={`homePageContainer ${styles.sectionContainer}`}>
+    <div className={` ${styles.sectionContainer}`}>
       <HeaderSection
         tag={data.tag}
         title={data.title}
