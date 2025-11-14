@@ -1,0 +1,67 @@
+.skodyImpactContainer {
+    margin-top: 5rem;
+}
+
+.skodyCalendlySection {
+    padding: 1rem 0 0rem;
+}
+.whyskodyHeader :global(.common){
+    margin: 2.2rem auto;
+}
+.whyskodyHeader :global(.common) div{
+    font-style: italic;
+}
+.whySkody {
+    padding: 4rem 0 0;
+}
+
+.whySkodySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-blue);
+    padding: 2.7rem 0rem;
+    border-radius: 1rem;
+}
+.whySkodySection :global(.commonText) p p{
+    font-size: 32px;
+    padding: 0rem 6rem;
+    text-align: center;
+    font-family: 'SF Pro';
+    margin-bottom: 1rem;    
+    color: var(--charcoal);
+}
+
+.dashBoardSection {
+    background-color: var(--jordyblue);
+}
+
+.schedulerSection {
+    background-color: var(--light-blue);
+}
+.watchDemoButton{
+    margin-top: 0.6rem;
+    background: var(--violet) !important;
+    border-radius: 0.4rem !important;
+    padding: 12px 24px !important;
+    font-family: 'Prompt' !important;
+}
+.getInTouch{
+    background: linear-gradient(to bottom, white 50%, black 50%);
+}
+.whyButtonContainer{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+@media screen and (max-width:640px) {
+    .whySkodySection :global(.commonText) p p{
+    font-size: 20px;
+    padding: 0rem 2rem;
+    line-height: 26.6px;
+    text-align: center;
+    font-family: 'SF Pro';
+    margin-bottom: 1rem;    
+    color: var(--charcoal);
+}
+    
+}

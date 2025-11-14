@@ -1,0 +1,267 @@
+body {
+    /* New colors */
+    --violet: #002BC4;
+    --zaffra: #00229D;
+    --jordyblue: #89B2EF;
+    --light-blue: #DEE7F4;
+    --floralwhite: #FFF6E5;
+    --Outerspace: #848BA3;
+    --charcoal: #343436;
+    --charcoal-light: #5D5D5E;
+
+    --xanthous: #F4A508;
+    --footer-text: #b2b2b2;
+    --blue-100: #F0F6FF;
+    --blue-200: #F0F6FFB5;
+    --blue-50: #f0f5fd;
+    
+    --primary-white: #ffffff;
+    --primary-black: #222222;
+    --primary-black-dark: #000000;
+
+    --card-background: #E2E4EA;
+    --card-days: #FAFAFA;
+    --card-bar-background: #EBECEF;
+
+    /* Grey Color */
+
+    --grey-color-100: #FFFFFF;
+    --grey-color-200: #FAFAFA;
+    --grey-color-300: #EFEFEF;
+    --grey-color-300-border: #D9D9D9;
+    --grey-color-400: #BEBEBE;
+    --grey-color-500: #757575;
+    --grey-color-600: #525252;
+    --grey-color-700: #343434;
+    --grey-color-800: #131313;
+    --grey-color-900: #111111;
+
+    /* Blue Color Scale */
+    --blue-color-500: #0038B1;
+    --blue-color-600: #0038B1;
+    --blue-color-600-hover: #4476e2;
+
+    --blue-background: #D4E7FF;
+
+    /* border color Blue */
+    --border-color-blue: #002BC4;
+    --border-color-grey: #EEE;
+
+
+}
+
+body.dark {
+
+    --primary-white: #ffff;
+    --primary-black-dark: #000000;
+
+    /* Light Mode */
+
+    --Light-1: #091334;
+    --Light-2: #FFFFFF;
+    --Light-3: #FFFFFF;
+    --dark-1: #FFFFFF;
+    --dark-2: #FFFFFF;
+    --dark-3: #FFFFFF;
+
+    /* Grey Color */
+
+    --grey-color-100: #131313;
+    --grey-color-200: #343434;
+    --grey-color-300: #525252;
+    --grey-color-700: #FAFAFA;
+    --grey-color-800: #FFFFFF;
+
+    /* Blue Color Scale */
+    --blue-color-100: #0A3E8C;
+    --blue-color-200: #2660B7;
+    --blue-color-300: #89B2EF;
+    --blue-color-400: #DEE7F4;
+    --blue-color-500: #FFFFFF;
+    --blue-color-600: #FFFFFF;
+    --blue-color-700: #00229D;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.medium {
+    font-weight: 600;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+/* New Desing  */
+.title-64 {
+    font-size: 64px;
+}
+
+.title-24 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+}
+
+
+.buttonText {
+    font-size: 20px;
+    line-height: auto;
+}
+
+.navText {
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.title-h1-multi {
+    font-size: 61px;
+    line-height: 74.8px;
+}
+
+.label-H1-sub1 {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+/* Title/H2 */
+.title-h2 {
+    font-size: 44px;
+    line-height: 56px;
+}
+
+.label-H2-sub2 {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.label-H2-sub2-bold {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+
+/* Title/H3 */
+.title-h3 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.label-H3-sub3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* Label/Sub1 - Bold */
+.label-sub1 {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.label-sub2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Body/Lg - Medium */
+.body-lg {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.body-lg-type2 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.body-other {
+    font-size: 24px;
+    line-height: 36.4px;
+}
+
+.title-h2-v2 {
+    line-height: 56px;
+    font-size: 40px;
+}
+
+/* Title/H3 */
+.demo-title {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+@media screen and (max-width:640px) {
+    .title-64 {
+        font-size: 32px;
+    }
+
+    .label-H2-sub2 {
+        font-size: 20px;
+        line-height: 26.6px;
+    }
+
+    .label-H3-sub3 {
+        font-size: 16px;
+        line-height: 19.6px;
+    }
+
+    .title-h1-multi {
+        font-size: 40px;
+        line-height: 41px;
+    }
+
+    .title-24 {
+        font-size: 12px !important;
+        line-height: 24px !important;
+    }
+
+    .label-H1-sub1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .title-h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .title-h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .label-sub1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .label-sub2 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .body-lg {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .body-lg-type2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .body-other {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .title-h2-v2 {
+        line-height: 28px;
+        font-size: 22px;
+    }
+}
