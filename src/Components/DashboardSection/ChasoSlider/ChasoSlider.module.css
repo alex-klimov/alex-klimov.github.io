@@ -13,8 +13,6 @@
 
 .imageBox {
   width: 37vw;
-  /* responsive width based on screen */
-  /* max-width: 300px; */
   margin: 0 12px;
   border-radius: 1rem;
   overflow: hidden;
@@ -27,7 +25,6 @@
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
-  /* maintain proportions */
   object-fit: cover;
   opacity: 0.9;
   transition: transform 0.3s ease;

@@ -32,7 +32,6 @@
 
 .avatar {
   object-fit: cover;
-  /* margin-right: 16px; */
   height: 100%;
   width: 100%;
 }
@@ -40,7 +39,6 @@
 .logo {
   min-width: 50px;
   max-width: 80px;
-  /* margin-left: auto; */
 }
 
 .quote {
@@ -59,7 +57,7 @@
 .name {
   font-weight: 500;
   font-size: 17px;
-  color: #1b2130;
+  color: var(--testimonial-name);
 }
 .person{
   display: flex;
@@ -77,7 +75,7 @@
 }
 
 .arrow {
-  background: #f8911a;
+  background: var(--orange-arrow);
   border: none;
   width: 60px;
   height: 60px;

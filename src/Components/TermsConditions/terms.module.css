@@ -1,6 +1,6 @@
 .markdown {
   line-height: 1.7;
-  color: #333;
+  color: var(--charcoal);
   padding: 1rem;
 }
 

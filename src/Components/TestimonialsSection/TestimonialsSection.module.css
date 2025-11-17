@@ -16,7 +16,7 @@
 .statsBox {
   min-width: 1400px;
   max-width: 1400px;
-  background-color: #fff;
+  background-color: var(--primary-white);
   display: flex;
   align-items: flex-start;
   gap: 80px;
@@ -54,7 +54,7 @@
 .statsBox p {
   margin: 8px 0 0 0;
   line-height: 1.3;
-  color: #333;
+  color: var(--charcoal);
   text-align: start;
 }
 

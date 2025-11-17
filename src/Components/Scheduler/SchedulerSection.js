@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./SchedulerSection.module.css";
 import customDashboard from "./SchedulerSection.json";
 import CommonText from "../CommonText/CommonText";

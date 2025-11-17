@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./TestimonialsSection.module.css";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import testimonialData from "./TestimonialsSection.json";

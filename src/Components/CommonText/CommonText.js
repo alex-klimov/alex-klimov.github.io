@@ -9,7 +9,6 @@ export default function CommonText({
     subHeadingh4,
     weight,
     newDescription,
-    detail,
     fontFamily,  
 }) {
     const combinedClass = `${[size]} ${[weight]}`;

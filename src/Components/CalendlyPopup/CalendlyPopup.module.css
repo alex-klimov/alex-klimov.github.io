@@ -14,12 +14,6 @@
   margin-top: 0.4rem;
 }
 
-.primary {
-  background-color: var(--violet);
-
-  color: #fff;
-}
-
 .button:disabled,
 .button[aria-disabled="true"] {
   background-color: #dbe7fd;

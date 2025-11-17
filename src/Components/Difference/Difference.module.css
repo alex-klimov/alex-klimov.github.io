@@ -1,6 +1,6 @@
 .comparisonContainer {
     display: flex;
-    background: #89B2EF;
+    background: var(--jordyblue);
     border-radius: 0.8rem;
     padding: unset !important;
 }
@@ -13,7 +13,7 @@
 }
 
 .comparisonColumn:first-child {
-    background: #FFF6E5;
+    background: var(--yellow);
 }
 
 .comparisonColumn :global(.commonText) h3 {

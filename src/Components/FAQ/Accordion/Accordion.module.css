@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #131f44;
+  color: var(--primary-black-dark);
 }
 
 .plus {
@@ -55,19 +55,22 @@
 .open {
   padding: 0 26px 18px 26px;
   max-height: 300px;
-  transition: max-height 0.5s ease-in-out ;
+  transition: max-height 0.5s ease-in-out;
 }
-.content :global(.commonText) p p{
-    font-size: 20px;
-  }
+
+.content :global(.commonText) p p {
+  font-size: 20px;
+}
+
 @media screen and (max-width:720px) {
-  .accordion{
-    grid-template-columns:unset;
+  .accordion {
+    grid-template-columns: unset;
   }
 }
+
 @media screen and (max-width:640px) {
-  .content :global(.commonText) p p{
+  .content :global(.commonText) p p {
     font-size: 16px;
   }
-  
+
 }

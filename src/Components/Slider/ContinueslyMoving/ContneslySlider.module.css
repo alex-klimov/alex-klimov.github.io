@@ -3,7 +3,7 @@
   width: 100%;
   padding: 5rem 0rem;
   overflow: hidden;
-  background: #f9fbff;
+  background: var(--marquee-bg);
 }
 
 .marquee {
