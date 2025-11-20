@@ -11,8 +11,8 @@ const StartCard = () => {
           <img key={index} className={styles.star} src="/assets/newDesign/StartComponent/Star.png" alt="star" />
         ))}
         </div>
-        <div className={styles.description}>"Skody cut our late jobs by 15% in the first month."          </div>
-        <div className={styles.writer}>- Three Sigma Mfg</div>
+        <div className={styles.description}>"12-day schedule dropped to 10 — without overtime."</div>
+        <div className={styles.writer}>– Zach, Yeager Mfg</div>
       </div>
     </>
   );

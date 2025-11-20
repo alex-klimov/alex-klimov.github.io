@@ -1,5 +1,5 @@
 .outerContainer {
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +59,9 @@
     .imageContainer{
         width: 100%;
     }
+    .outerContainer{
+        flex-direction: row;
+    }
 }
 @media screen and (max-width:640px) {
     .titleContainer :global(.commonText) p {
@@ -67,7 +70,9 @@
         /* line-height: 24px; */
     }
     .outerContainer{
-        width: 75%;
+        /* width: 75%; */
     }
-    
+    .titleContainer{
+        width: 100%;
+    }
 }

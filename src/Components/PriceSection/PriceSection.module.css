@@ -11,6 +11,12 @@
   width: -webkit-fill-available;
   border-bottom: 1px solid var(--light-blue);
 }
+.sliderWrapper{
+  width: 70%;
+}
+.sliderWrapper :global(.keen-slider){
+  overflow: unset !important;
+}
 
 .cardBody {
   padding: 0rem 2rem;
@@ -52,6 +58,27 @@
   /* align-items: flex-start; */
   position: relative;
   height: fit-content;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dotActive {
+  background: rgb(37, 37, 37);
+  transform: scale(1.25);
 }
 
 .mostPopular {

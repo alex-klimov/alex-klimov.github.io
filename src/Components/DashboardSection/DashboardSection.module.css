@@ -48,7 +48,7 @@
 }
 
 .customDashboardContainer {
-    background: var(--primary-white);
+    background: var(--light-blue);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;

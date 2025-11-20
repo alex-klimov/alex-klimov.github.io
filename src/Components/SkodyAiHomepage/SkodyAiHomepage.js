@@ -5,7 +5,6 @@ import GetInTouch from "../GetInTouch/GetInTouch";
 import KpiSection from "../KPIGap/KPIGap";
 import DashboardSection from "../DashboardSection/DashboardSection";
 import SchedulerSection from "../Scheduler/SchedulerSection";
-import StatisticsSection from "../StatisticsSection/StatisticsSection";
 import PricingSection from "../PriceSection/PriceSection";
 import ContineslySlider from "../Slider/ContinueslyMoving/ContineslySlider";
 import Difference from "../Difference/Difference";
@@ -20,9 +19,6 @@ const SkodyAiHomepage = () => {
     <div>
       <div>
         <SkodyHomepageFirstSection />
-      </div>
-      <div className="margin">
-        <StatisticsSection />
       </div>
       <div ref={productRef} className={`margin ${styles.schedulerSection}`}>
         <SchedulerSection />
@@ -46,7 +42,7 @@ const SkodyAiHomepage = () => {
       <div ref={faqRef} className="margin">
         <FAQ />
       </div>
-      <div className="margin" style={{ backgroundColor: "#F5F8FC" }}>
+      <div className="margin">
         <KpiSection />
       </div>
       <div className={`margin ${styles.getInTouch}`}>

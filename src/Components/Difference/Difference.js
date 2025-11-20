@@ -2,9 +2,19 @@ import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import difference from "./Difference.json";
 import styles from "./Difference.module.css";
 import CommonText from "../CommonText/CommonText";
+import { useEffect, useState } from "react";
 
 const data = difference.erpVsSkodySection;
 const Difference = () => {
+    const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const checkMobileView = () => setIsMobile(window.innerWidth <= 768);
+      checkMobileView();
+      window.addEventListener("resize", checkMobileView);
+      return () => window.removeEventListener("resize", checkMobileView);
+    }, []);
+  
   return (
     <>
       <div className={styles.differenceHeader}>
@@ -18,7 +28,14 @@ const Difference = () => {
         <div className={`homePageContainer ${styles.comparisonContainer}`}>
           {data.comparison.headers.map((item, index) => (
             <div className={styles.comparisonColumn} key={index}>
+              {isMobile ? (
+                <CommonText
+                  subHeading={data.comparison.mobileHeader[index]}
+                  size="title-h3"
+                />
+              ) : (
               <CommonText subHeading={item} size="title-h3" />
+              )}
               <div className={styles.comparisonRows}>
                 {(index === 0
                   ? data.comparison.erpSchedulers

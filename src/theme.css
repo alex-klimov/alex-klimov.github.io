@@ -3,6 +3,7 @@ body {
     --violet: #002BC4;
     --zaffra: #00229D;
     --jordyblue: #89B2EF;
+    --jordyblue-whyskody: #89B2EF;
     --light-blue: #DEE7F4;
     --floralwhite: #FFF6E5;
     --Outerspace: #848BA3;
@@ -105,6 +106,10 @@ body {
     font-size: 32px;
     line-height: 38px;
 }
+.title-h3-difference-section {
+    font-size: 32px;
+    line-height: 38px;
+}
 
 .label-H3-sub3 {
     font-size: 20px;
@@ -150,6 +155,9 @@ body {
 }
 
 @media screen and (max-width:640px) {
+    body{
+        --jordyblue-whyskody:#DEE7F4;
+    }
     .title-64 {
         font-size: 32px;
     }
@@ -188,6 +196,14 @@ body {
         font-size: 20px;
         line-height: 26px;
     }
+    .title-h3-difference-section {
+    font-size: 16px;
+    line-height: 38px;
+}
+.label-H2-sub2-bold{
+    font-size: 16px;
+    line-height: 38px;
+}
 
     .label-sub1 {
         font-size: 20px;

@@ -36,31 +36,31 @@
     {
       "id": 1,
       "icon": "/assets/newDesign/SchedulerSection/SI1.png",
-      "title": "Real-Time Machine + Operator + Vendor Load Balancing",
+      "title": "Real-time load balancing",
       "description": "Detailed explanation if needed"
     },
     {
       "id": 2,
       "icon": "/assets/newDesign/SchedulerSection/SI2.png",
-      "title": "Auto-Reschedule for Downtime and Rush Jobs",
+      "title": "Auto-reschedule",
       "description": "Detailed explanation if needed"
     },
     {
       "id": 3,
       "icon": "/assets/newDesign/SchedulerSection/SI3.png",
-      "title": "Lights-Out and Multi-Shift Compatible",
+      "title": "Lights-out shifts",
       "description": "Detailed explanation if needed"
     },
     {
       "id": 4,
       "icon": "/assets/newDesign/SchedulerSection/SI4.png",
-      "title": "Messenger + Pin Notes on Works Orders",
+      "title": "Messenger + pinned notes",
       "description": "Detailed explanation if needed"
     },
     {
       "id": 5,
       "icon": "/assets/newDesign/SchedulerSection/SI5.png",
-      "title": "'What-if' simulation",
+      "title": "What-if simulation",
       "description": "Detailed explanation if needed"
     }
   ],

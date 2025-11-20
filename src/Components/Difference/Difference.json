@@ -4,6 +4,7 @@
     "title": "Your ERP shows jobs. Skody makes the plan.",
     "subtitle": "Most ERPs stop at listing work orders. Skody's AI keeps every job, operator, and machine in sync — automatically.",
     "comparison": {
+      "mobileHeader":["ERP Schedulers", "Skody AI"],
       "headers": ["ERP Schedulers", "Skody AI Scheduler"],
       "erpSchedulers": [
         "Manual drag-and-drop",

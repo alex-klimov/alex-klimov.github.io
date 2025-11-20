@@ -75,7 +75,7 @@ const Header = () => {
                     ) : (
                       <>
                         <img
-                          src="/assets/icons/menu.png"
+                          src="/assets/images/menu.png"
                           alt="menu"
                           className={styles.hambugerMenu}
                         />

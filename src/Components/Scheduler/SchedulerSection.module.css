@@ -1,3 +1,5 @@
+
+/* ----=------------------- */
 .mainContainer :global(.sub){
     color: var(--charcoal);
 }
@@ -6,18 +8,20 @@
     justify-content: space-between;
     gap: 1rem;
 }
-
+.mainContainer{
+    overflow: unset !important;
+}
 .featureItem {
     display: flex;
     gap: 1.5rem;
     align-items: center;
 
 }
-.schedulerButtonContainer{
+/* .schedulerButtonContainer{
     text-align: center;
     margin-top: 3rem;
 
-}
+} */
 .schedulerButton{
       display: inline-block;
   cursor: pointer;
@@ -48,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 4rem;
     background-color: var(--jordyblue);
 }

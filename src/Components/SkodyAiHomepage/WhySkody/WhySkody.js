@@ -10,11 +10,8 @@ const WhySkody = () => {
   return (
     <>
     <div className={styles.whyskodyHeader}>
-
       <HeaderSection
-        title="⚡ Powered by continuous AI optimization"
-        subtitle=" “Shops using Skody cut late orders by **15 %** and freed **10–15 %** capacity — without adding overtime.”
-"
+        subtitle=" “Skody **auto-optimizes** your production schedule and highlights risks **— no spreadsheets, no manual drag & drop.**”"
       />
     </div>
       <div className={`homePageContainer ${styles.whySkodySection}`}>

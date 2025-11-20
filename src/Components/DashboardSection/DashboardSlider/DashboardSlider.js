@@ -22,7 +22,7 @@ const DashboardSlider = ({ imageData }) => {
             <img
              src={`/assets/newDesign/CustomDashboard/${slide.image}`}
               alt={slide.alt}
-              className={styles.slideImage}
+              className={`slideNew ${styles.slideImage}`}
             />
           </div>
         ))}

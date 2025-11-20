@@ -1,7 +1,7 @@
 {
   "header": {
-    "title": "Your ERP shows you jobs. Skody tells you what to run — and why.",
-    "description": "AI-powered Scheduler + KPI Dashboard that connects to your ERP, auto-optimizes production, and surfaces potential schedule errors — no spreadsheets, no IT setup. Most shops see 10–15% more capacity and 15% fewer late jobs within 30 days."
+    "title": "Your ERP shows you jobs. Skody builds the plan.",
+    "description": "AI Scheduler + KPI Dashboard that reflows production automatically."
   },
   "schedule": {
     "image": "/assets/images/machine-schedule-new-version.png"

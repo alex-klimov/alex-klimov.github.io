@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./SchedulerSection.module.css";
 import customDashboard from "./SchedulerSection.json";
 import CommonText from "../CommonText/CommonText";
@@ -67,6 +67,9 @@ const SchedulerSection = () => {
                 </div>
               </div>
             ))}
+            <div className={styles.schedulerButtonContainer}>
+          <CalendlyPopup text={ctaButton.text} />
+        </div>
           </div>
 
           <div className={styles.featuresContainerRight}>
@@ -76,10 +79,6 @@ const SchedulerSection = () => {
               onSlideChange={handleSlideChange}
             />
           </div>
-        </div>
-
-        <div className={styles.schedulerButtonContainer}>
-          <CalendlyPopup text={ctaButton.text} />
         </div>
       </div>
     </div>

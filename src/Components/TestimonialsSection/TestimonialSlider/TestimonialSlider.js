@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import styles from "./TestimonialSlider.module.css";
 
 const TestimonialSlider = ({ testimonials }) => {
+    const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const checkMobileView = () => setIsMobile(window.innerWidth <= 1024);
+      checkMobileView();
+      window.addEventListener("resize", checkMobileView);
+
+      return () => window.removeEventListener("resize", checkMobileView);
+    }, []);
   const [current, setCurrent] = useState(0);
-  console.log(current)
+  console.log(current);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
-    mode: "free-snap",
+    mode: "free-snap", // allows smooth both-way snapping
     renderMode: "precision",
     slides: {
       perView: 2,
@@ -18,11 +27,11 @@ const TestimonialSlider = ({ testimonials }) => {
       setCurrent(s.track.details.rel);
     },
     breakpoints: {
-      "(max-width: 992px)": {
-        slides: { perView: 1, spacing: 10 },
-      },
-       "(max-width:640px)": {
+      "(max-width:640px)": {
         slides: { perView: 2, spacing: 10 },
+      },
+       "(max-width:540px)": {
+        slides: { perView: 1, spacing: 10 },
       },
     },
   });
@@ -35,20 +44,27 @@ const TestimonialSlider = ({ testimonials }) => {
             <div className={styles.card}>
               <div className={styles.top}>
                 <div className={styles.avatarImage}>
-                <img src={t.avatar} alt={t.name} className={styles.avatar} />
-
-                  </div>
+                  <img src={t.avatar} alt={t.name} className={styles.avatar} />
+                </div>
                 <div className={styles.content}>
                   <div className={styles.annonationContainer}>
-                  <img src="/assets/newDesign/annotation.png" alt={t.role} className={styles.logo} />
-
-                  <img src={t.logo} alt={t.role} className={styles.logo} />
+                    <img
+                      src="/assets/newDesign/annotation.png"
+                      alt={t.role}
+                      className={styles.logo}
+                    />
+                    {!isMobile&&
+                    <img src={t.logo} alt={t.role} className={styles.logo} />
+                    }
                   </div>
                   <div className={` ${styles.quote}`}>“{t.quote}”</div>
                   <div className={styles.person}>
                     <span className={styles.name}>{t.name}</span>
                     <span className={styles.role}>{t.role}</span>
                   </div>
+                  {isMobile &&
+                    <img src={t.logo} alt={t.role} className={styles.logo} />
+                    }
                 </div>
               </div>
             </div>
@@ -60,19 +76,16 @@ const TestimonialSlider = ({ testimonials }) => {
           onClick={() => instanceRef.current?.prev()}
           className={styles.arrow}
         >
-          <img src="/assets/newDesign/arrowLeft.png" alt="arrowleft"/>
+          <img src="/assets/newDesign/arrowLeft.png" alt="arrowleft" />
         </button>
         <button
           onClick={() => instanceRef.current?.next()}
           className={styles.arrow}
         >
-         <img src="/assets/newDesign/arrowRight.png" alt="right"/>
+          <img src="/assets/newDesign/arrowRight.png" alt="right" />
         </button>
       </div>
-      <div className={styles.statsSection}>
-
-</div>
-
+      <div className={styles.statsSection}></div>
     </div>
   );
 };
