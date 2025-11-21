@@ -1,7 +1,7 @@
 // PricingSection.jsx
 import React, { useEffect } from "react";
 import styles from "./PriceSection.module.css";
-import plans from "./PriceSection.json";
+import plansData from "./PriceSection.json";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import CommonText from "../CommonText/CommonText";
 import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
@@ -40,6 +40,7 @@ export default function PricingSection() {
       },
     },
   );
+  const plans = !isMobile?plansData.desktop:plansData.mobile;
   return (
     <section className={styles.pricingSection}>
       <HeaderSection

@@ -1,5 +1,6 @@
 {
-  "heading": "Why Choose Skody?",
+  "desktop":{
+    "heading": "Why Choose Skody?",
   "detail": {
     "floatingImage": {
       "src": "/assets/images/floatingPainPoints.png",
@@ -81,4 +82,86 @@
     }
     
   ]
+
+  },
+  "mobile":{"heading": "Why Choose Skody?",
+  "detail": {
+    "floatingImage": {
+      "src": "/assets/images/floatingPainPoints.png",
+      "alt": ""
+    },
+    "mobile":{"src": "/assets/whyusmobile/media image.png", "alt": "WhySkody" },
+    "image": { "src": "/assets/dashboardImage/painPoint.png", "alt": "WhySkody" },
+    "slogan": "Scheduling Challenges Slow You Down"
+  },
+  "sections": [
+    {
+      "newHeading":"Skody reroutes your schedule like Maps reroutes traffic.",
+      "heading": [
+        {
+          "title": "Google Maps:",
+          "image":"/assets/newDesign/Whyskody/skodywhy1.png"
+        },
+        {
+          "title": "Skody:",
+          "image":"/assets/newDesign/Whyskody/skodywhy2.png"
+
+        }
+      ],
+      "imageContainer": {
+        "src": "/assets/images/whyimagenavigation.png",
+        "alt": "navigation"
+      },
+      "content": {
+        "description": "When things change, your plan adjusts automatically."
+      },
+      "button":{
+        "action":"skody.ai",
+        "label":"Book Free Demo"
+      }
+    },
+    {
+      "heading":"Skody AI APS tackles these challenges with smart, automated scheduling.",
+      "button":{
+        "label":"Demo Skody AI",
+        "action":"skody.ai"
+      },
+      "bannerImage":{
+        "src":"/assets/images/demoSystemcogs.png",
+        "alt":"demoSystemcogs"
+      }
+    },
+    {
+      "components": [
+        {
+          "type": "card",
+          "title": "ERP Integration",
+          "description": "Updates hit the factory floor, instantly",
+          "icon":{
+            "src":"/assets/images/Media2.png",
+            "alt":"card"
+          }
+        },
+        {
+          "type": "card",
+          "title": "AI-Driven",
+          "description": "AI-driven, solves NP-hard sequencing, dynamic",
+          "icon":{
+            "src":"/assets/images/Media3.png",
+            "alt":"card"
+          }
+        },
+        {
+          "type": "card",
+          "title": "Analytics",
+          "description": "Open-source, customizable, scalable, ITAR/CMMC",
+          "icon":{
+            "src":"/assets/images/Media.png",
+            "alt":"card"
+          }
+        }
+      ]
+    }
+    
+  ]}
 }

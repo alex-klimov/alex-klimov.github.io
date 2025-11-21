@@ -1,6 +1,6 @@
 import  { useEffect, useState } from "react";
 import styles from "./KPIGap.module.css";
-import data from "./KPIGap.json";
+import kpiData from "./KPIGap.json";
 import CommonText from "../CommonText/CommonText";
 import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import SimpleButton from "../../Buttons/SimpleButton";
@@ -9,14 +9,15 @@ const KpiSection = () => {
   const [isMobile, setIsMobile] = useState(false);
   
     useEffect(() => {
-      const checkMobileView = () => setIsMobile(window.innerWidth <= 768);
+      const checkMobileView = () => setIsMobile(window.innerWidth <= 640);
       checkMobileView();
       window.addEventListener("resize", checkMobileView);
       return () => window.removeEventListener("resize", checkMobileView);
     }, []);
-  
+  const data=isMobile? kpiData.mobile : kpiData.desktop;
+
   return (
-    <div className={`homePageContainer ${styles.sectionContainer}`}>
+    <div className={`${styles.sectionContainer}`}>
       <HeaderSection
         tag={data.tag}
         title={data.title}
@@ -44,7 +45,7 @@ const KpiSection = () => {
                    <img
                   alt="bullPoint"
                     src="/assets/newDesign/KPISection/blueTick.png"
-                    style={{ width: "24px%", height: "24px" ,paddingTop:"10px"}}
+                    style={{ width: "24px%", height: "24px" }}
                   />:
                    <img
                   alt="bullPoint"
@@ -59,6 +60,14 @@ const KpiSection = () => {
               </li>
             ))}
           </ul>
+          {isMobile &&
+           <SimpleButton
+              className={`buttonText regular buttonText  ${styles.kpiButton}`}
+              href={data.ctaBook.action}
+            >
+              {data.ctaBook.text}
+            </SimpleButton>
+            }
           <SimpleButton
               className={`buttonText regular buttonText  ${styles.kpiButton}`}
               href={data.cta.action}

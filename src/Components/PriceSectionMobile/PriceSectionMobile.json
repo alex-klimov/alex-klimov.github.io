@@ -1,0 +1,54 @@
+{
+  "tag": "Pricing",
+  "title": "Simple, transparent pricing.",
+  "subtitle": "All plans include **ITAR-ready Gov Cloud** hosting. **Cancel anytime.**",
+  "cards": [
+    {
+      "name": "Starter",
+      "users": "Under 30 ERP users",
+      "price": 500,
+      "icon":"/assets/newDesign/Price/PriceIcon.png",
+      "unit": "/month",
+      "features": [
+        "Scheduler + ERP automation",
+        "KPI dashboard",
+        "Smart setup-time reduction suggestions",
+        "Daily \"Schedule Health\" email",
+        "Cancel anytime",
+        "Gov Cloud hosting included"
+      ],
+      "cta": "Book a Demo"
+    },
+    {
+      "name": "Growth",
+      "icon":"/assets/newDesign/Price/PriceIcon2.png",
+      "users": "Under 30 ERP users",
+      "price": 1000,
+      "unit": "/month",
+      "mostPopular": true,
+      "features": [
+        "Everything in Starter",
+        "KPI dashboard",
+        "Prescriptive insights (bottlenecks, idle time, revenue at risk)",
+        "Customer Dashboard branded, email-first updates for your customers (orders, shipments, invoices)",
+        "Gov Cloud hosting included"
+      ],
+      "cta": "Start Evaluation"
+    },
+    {
+      "name": "Enterprise",
+      "icon":"/assets/newDesign/Price/PriceIcon3.png",
+      "users": "Over 30 ERP users",
+      "price": null,
+      "unit": "/month",
+      "features": [
+        "Multi-site scheduling",
+        "Dedicated support and SLA",
+        "Custom ERP & API integration",
+        "Secure Gov Cloud (GCC / GCC High) deployment",
+        "Encrypted file storage & audit-ready document workflow"
+      ],
+      "cta": "Talk to Sales"
+    }
+  ]
+}

@@ -59,9 +59,9 @@
     .imageContainer{
         width: 100%;
     }
-    .outerContainer{
+    /* .outerContainer{
         flex-direction: row;
-    }
+    } */
 }
 @media screen and (max-width:640px) {
     .titleContainer :global(.commonText) p {

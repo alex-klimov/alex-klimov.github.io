@@ -1,0 +1,68 @@
+.sliderContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+      padding: 1rem 0;
+  /* add responsive padding/margin if needed */
+}
+
+.keenSlider {
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 1px #00000045;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* padding: 16px 7px; */
+}
+.textContainer :global(.commonText) h3{
+  text-align: start;
+  color: var(--primary-white);
+}
+.slideImage {
+  width: 100%;
+  /* max-height: 240px; */
+  object-fit: contain;
+  border-radius: 0.2rem;
+  background: #f1f1f1;
+}
+
+.textContainer {
+  margin-top: 14px;
+  text-align: center;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 0 0;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #848BA3;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.dot.active {
+  background: #848BA3;
+  opacity: 1;
+}
+.imageWrapper{
+    width: 50%;
+        padding: 0.6rem;
+}

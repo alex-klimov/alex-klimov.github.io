@@ -11,10 +11,19 @@ import Difference from "../Difference/Difference";
 import WhySkody from "./WhySkody/WhySkody";
 import TestimonialsSection from "../TestimonialsSection/TestimonialsSection";
 import FAQ from "../FAQ/FAQ";
+import { useEffect, useState } from "react";
+import PriceSectionMobile from "../PriceSectionMobile/PriceSectionMobile";
 
 const SkodyAiHomepage = () => {
   const { productRef, dashboard, priceRef, faqRef } = useScroll();
+ const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkMobileView = () => setIsMobile(window.innerWidth <= 640);
+    checkMobileView();
+    window.addEventListener("resize", checkMobileView);
+    return () => window.removeEventListener("resize", checkMobileView);
+  }, []);
   return (
     <div>
       <div>
@@ -23,18 +32,19 @@ const SkodyAiHomepage = () => {
       <div ref={productRef} className={`margin ${styles.schedulerSection}`}>
         <SchedulerSection />
       </div>
-      <div className="margin">
+      <div className={styles.marginDifference}>
         <Difference />
         <WhySkody />
       </div>
-      <div ref={dashboard} className={`margin ${styles.dashBoardSection}`}>
+      <div ref={dashboard} className={` ${styles.dashBoardSection}`}>
         <DashboardSection />
       </div>
       <div>
         <ContineslySlider />
       </div>
-      <div ref={priceRef} className="margin">
-        <PricingSection />
+      <div ref={priceRef} className="">
+        {isMobile? <PriceSectionMobile /> :
+        <PricingSection/>}        
       </div>
       <div>
         <TestimonialsSection />
@@ -42,7 +52,7 @@ const SkodyAiHomepage = () => {
       <div ref={faqRef} className="margin">
         <FAQ />
       </div>
-      <div className="margin">
+      <div className="homePageContainer margin">
         <KpiSection />
       </div>
       <div className={`margin ${styles.getInTouch}`}>

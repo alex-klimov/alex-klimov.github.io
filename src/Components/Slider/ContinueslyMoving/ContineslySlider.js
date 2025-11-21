@@ -21,10 +21,10 @@ const images = [
 ];
 
 const ContineslySlider = () => (
-  <div className={styles.marqueeContainer}>
+  <div className={styles.marqueeContainer} aria-hidden="true">
     <div className={styles.marquee}>
-      {images.concat(images).map((img, idx) => (
-        <img key={idx} src={img} className={styles.image} alt={`slide-${idx}`} />
+      {images.map((item, idx) => (
+        <img key={idx} src={item} className={styles.image} alt={`slide-${idx}`} />
       ))}
     </div>
   </div>

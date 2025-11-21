@@ -9,7 +9,7 @@ const Optimization = ({ OptimizationContent }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-      const checkMobileView = () => setIsMobile(window.innerWidth <= 768);
+      const checkMobileView = () => setIsMobile(window.innerWidth <= 640);
       checkMobileView();
       window.addEventListener("resize", checkMobileView);
       return () => window.removeEventListener("resize", checkMobileView);
@@ -28,10 +28,13 @@ const Optimization = ({ OptimizationContent }) => {
                     size="title-h2-v2"
                     weight="bold"
                   />
-                  <CommonText
+                  {item.subheading&& (
+                     <CommonText
                     smallDescription={item.subheading}
                     size="label-sub1"
                   />
+                  )}
+                 
                 </div>
               ))}
             </div>
@@ -49,6 +52,8 @@ const Optimization = ({ OptimizationContent }) => {
           </>
         ) : (
           <>
+          <div style={{display:"flex"}}>
+
           {heading.map((item, index) => (
                 <div key={index} className={styles.titleContainer}>
                   <CommonText
@@ -62,8 +67,18 @@ const Optimization = ({ OptimizationContent }) => {
                     size="label-sub1"
                   />
                   <img src={item.image} alt="tempSkody" style={{width:"100%",paddingTop:'1rem'}}/>
+                  
                 </div>
+                
               ))}
+          </div>
+              <div className={`font-weight-500 ${styles.description}`}>
+              <CommonText
+                smallDescription={description.description}
+                size="body-other"
+                fontFamily="SF Pro"
+              />
+            </div>
           </>
         )}
       </div>

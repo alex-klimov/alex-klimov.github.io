@@ -1,4 +1,4 @@
-import customDashboard from "./DashboardSection.json";
+import customDashboard1 from "./DashboardSection.json";
 import styles from "./DashboardSection.module.css";
 import CommonText from "../CommonText/CommonText";
 import DashboardSlider from "./DashboardSlider/DashboardSlider";
@@ -6,8 +6,19 @@ import HeaderSection from "../../CommonComponent/HeaderSection/HeaderSection";
 import ChasoSlider from "./ChasoSlider/ChasoSlider";
 import SimpleButton from "../../Buttons/SimpleButton";
 import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
+import ChasoMobileSlider from "./ChasoMobileSlider/ChasoMobileSlider";
+import { useEffect, useState } from "react";
 
 const DashboardSection = () => {
+    const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const checkMobileView = () => setIsMobile(window.innerWidth <= 640);
+      checkMobileView();
+      window.addEventListener("resize", checkMobileView);
+      return () => window.removeEventListener("resize", checkMobileView);
+    }, []);
+    const customDashboard=isMobile ?customDashboard1.mobile :customDashboard1.desktop;
   return (
     <>
       <div>
@@ -18,8 +29,12 @@ const DashboardSection = () => {
             subtitle={customDashboard.Chaos.subtitle}
           />
         </div>
-        <div>
+        <div className={``}>
+          {isMobile?
+          <ChasoMobileSlider/>
+          :
           <ChasoSlider />
+          }
         </div>
         <div className={`homePageContainer ${styles.chaosButtonContainer}`}>
           <CalendlyPopup
@@ -30,7 +45,7 @@ const DashboardSection = () => {
       </div>
       <div className={`homePageContainer ${styles.mainContainer}`}>
         <div className={styles.customDashboardContainer}>
-          <div className={`margin ${styles.subHeading}`}>
+          <div className={`${styles.subHeading}`}>
             <CommonText
               heading={customDashboard.dashboardSection.title}
               size="title-h2"
@@ -67,20 +82,35 @@ const DashboardSection = () => {
                         size="title-h3"
                         weight="font-weight-500"
                       />
-                      <CommonText
+                      
+                      {/* <CommonText
                         smallDescription={feature.description}
                         size="label-sub1"
                         fontFamily="prompt"
                         weight="label-H3-sub3"
-                      />
+                      /> */}
                     </div>
+                    
                   </div>
+                  
                 )
               )}
+               <CommonText
+              smallDescription={customDashboard.dashboardSection.footerText}
+              size="label-sub1"
+              weight="label-H3-sub3"
+              fontFamily="prompt"
+            />
+              <SimpleButton
+              href={customDashboard.dashboardSection.cta.action}
+              className={`buttonText regular buttonText  ${styles.faqButton}`}
+            >
+              {customDashboard.dashboardSection.cta.text}
+            </SimpleButton>
             </div>
           </div>
 
-          <div className={styles.dashboardFooterContainer}>
+          {/* <div className={styles.dashboardFooterContainer}>
             <CommonText
               smallDescription={customDashboard.dashboardSection.footerText}
               size="label-sub1"
@@ -92,8 +122,8 @@ const DashboardSection = () => {
               className={`buttonText regular buttonText  ${styles.faqButton}`}
             >
               {customDashboard.dashboardSection.cta.text}
-            </SimpleButton>
-          </div>
+            </SimpleButton> 
+          </div> */}
         </div>
       </div>
     </>

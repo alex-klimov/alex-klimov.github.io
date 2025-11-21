@@ -29,7 +29,7 @@
 }
 
 .row {
-    padding: 1rem 4rem;
+    padding: 0.6rem 4rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -50,4 +50,20 @@
         padding: 1rem 1rem 0rem !important;
     }
     
+}
+@media screen and (max-width:640px) {
+    .comparisonColumn{
+        background:transparent !important;
+        padding-bottom: 0rem;
+    }
+    .comparisonContainer{
+        background:transparent !important;
+
+    }
+    .row{
+            align-items: baseline;
+    }
+     .comparisonContainer {
+        border-radius: unset;
+    }
 }

@@ -14,6 +14,7 @@
 .outerContainer {
     padding-top: 5.8rem;
     overflow: unset;
+    align-items: start;
     display: flex;
 }
 
@@ -90,11 +91,6 @@
    RESPONSIVE FIXES 
 ----------------------- */
 
-@media screen and (max-width:1200px) {
-    .heading :global(.commonText) h2 {
-        padding-top: 2rem;
-    }
-}
 
 @media screen and (max-width:1046px) {
     .imageContainer {
@@ -142,6 +138,7 @@
         text-align: center;
     }
     .outerContainer{
+        padding: 2.8rem 1rem;
         flex-direction: column;
         align-items: center;
     }

@@ -4,6 +4,9 @@ body {
     --zaffra: #00229D;
     --jordyblue: #89B2EF;
     --jordyblue-whyskody: #89B2EF;
+    --jordyblue-whyskody-section: #89B2EF;
+    --grey-dashboard-background:white;
+    --customDashboardContainer--light-blue:#DEE7F4;
     --light-blue: #DEE7F4;
     --floralwhite: #FFF6E5;
     --Outerspace: #848BA3;
@@ -13,7 +16,8 @@ body {
     --xanthous: #F4A508;
     --orange-arrow:#f8911a;
     --yellow:#FFF6E5;
-    --marquee-bg: #f9fbff;
+    --marquee-bg: white;
+
     --footer-text: #b2b2b2;
     --blue-100: #F0F6FF;
     --blue-200: #F0F6FFB5;
@@ -157,6 +161,10 @@ body {
 @media screen and (max-width:640px) {
     body{
         --jordyblue-whyskody:#DEE7F4;
+    --customDashboardContainer--light-blue:white;
+--marquee-bg: #f9fbff;
+        --jordyblue-whyskody-section:white;
+        --grey-dashboard-background:#DCDCDC;
     }
     .title-64 {
         font-size: 32px;

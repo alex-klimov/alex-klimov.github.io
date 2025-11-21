@@ -1,11 +1,24 @@
-import sectionData from "./GetInTouch.json";
+import sectionData1 from "./GetInTouch.json";
 import CommonText from "../CommonText/CommonText";
 import styles from "./GetInTouch.module.css";
 import SimpleButton from "../../Buttons/SimpleButton";
 import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
+import { useEffect, useState } from "react";
 
 const GetInTouch = () => {
-  const bgImageUrl = "/assets/newDesign/getIntoBackground.png";
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobileView = () => setIsMobile(window.innerWidth <= 640);
+    checkMobileView();
+    window.addEventListener("resize", checkMobileView);
+    return () => window.removeEventListener("resize", checkMobileView);
+  }, []);
+  const bgImageUrl = !isMobile
+    ? "/assets/newDesign/getIntoBackground.png"
+    : "/assets/newDesign/BackgroundShape.png";
+
+  const sectionData = isMobile ? sectionData1.mobile : sectionData1.desktop;
   return (
     <div
       className={`homePageContainer ${styles.mainContainer}`}
@@ -16,9 +29,11 @@ const GetInTouch = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <SimpleButton className={`regular ${styles.getInTouchButton}`}>
-        {sectionData.ctaButtons[0].text}
-      </SimpleButton>
+      {sectionData.ctaButtons[0]?.text && sectionData.ctaButtons[0]?.flag==="visible" && (
+        <SimpleButton className={`regular ${styles.getInTouchButton}`}>
+          {sectionData.ctaButtons[0].text}
+        </SimpleButton>
+      )}
 
       <div className={styles.headlineContainer}>
         <CommonText

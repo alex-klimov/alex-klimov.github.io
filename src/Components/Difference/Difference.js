@@ -4,7 +4,6 @@ import styles from "./Difference.module.css";
 import CommonText from "../CommonText/CommonText";
 import { useEffect, useState } from "react";
 
-const data = difference.erpVsSkodySection;
 const Difference = () => {
     const [isMobile, setIsMobile] = useState(false);
   
@@ -14,7 +13,10 @@ const Difference = () => {
       window.addEventListener("resize", checkMobileView);
       return () => window.removeEventListener("resize", checkMobileView);
     }, []);
-  
+  const data = isMobile
+    ? difference.mobileErpVsSkodySection
+    : difference.erpVsSkodySection;
+
   return (
     <>
       <div className={styles.differenceHeader}>

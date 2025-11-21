@@ -1,59 +1,122 @@
 {
-  "header": {
-    "title": "Your ERP shows you jobs. Skody builds the plan.",
-    "description": "AI Scheduler + KPI Dashboard that reflows production automatically."
-  },
-  "schedule": {
-    "image": "/assets/images/machine-schedule-new-version.png"
-  },
-  "background": {
-    "image": "/assets/images/machineworkimage.png"
-  },
-  "moblieschedule": {
-    "image": "/assets/images/mobile-Banner-image.png"
-  },
-  "actions": [
-    {
-      "type": "button",
-      "label": "Optimize",
-      "action": "optimizeSchedule"
-    }
-  ],
-  "section": [
-    {
-      "title": "Skody AI APS: Your Production Navigator",
-      "bannerImage":{
-        "src":"/assets/images/System-cogs-Icon.png",
-        "alt":"backgroundSystemCogs"
-
-      },
-      "bulletpointBannerImage":{
-        "src":"/assets/icons/System-cogs-Icon-small-blue.png",
-        "alt":"bulletpointBannerImage"
-      },
-      "bulletpoint": [
-        {
-          "text": "Skody AI APS is an AI-driven Advanced Planning and Scheduling software for manufacturers.",
-          "icon": {
-            "src": "/assets/icons/Icons_system-blue.png",
-            "alt": "bulletpoint"
-          }
+  "desktop": {
+    "header": {
+      "title": "Your ERP shows you jobs. Skody builds the plan.",
+      "mobileTitle": "Skody builds the plan your ERP can’t.",
+      "description": "AI Scheduler + KPI Dashboard that reflows production automatically.",
+      "mobileDescription": "Reflows your schedule instantly when things change — downtime, rush jobs, and capacity shifts."
+    },
+    "schedule": {
+      "image": "/assets/images/machine-schedule-new-version.png"
+    },
+    "background": {
+      "image": "/assets/images/machineworkimage.png"
+    },
+    "moblieschedule": {
+      "image": "/assets/images/mobile-Banner-image.png"
+    },
+    "actions": [
+      {
+        "type": "button",
+        "label": "Optimize",
+        "action": "optimizeSchedule"
+      }
+    ],
+    "section": [
+      {
+        "title": "Skody AI APS: Your Production Navigator",
+        "bannerImage": {
+          "src": "/assets/images/System-cogs-Icon.png",
+          "alt": "backgroundSystemCogs"
         },
-        {
-          "text": "Automates and optimizes complex scheduling and constraints, adapts in real-time, and integrates with any ERP.",
-          "icon": {
-            "src": "/assets/icons/Icon-access-data.png",
-            "alt": "bulletpoint"
-          }
+        "bulletpointBannerImage": {
+          "src": "/assets/icons/System-cogs-Icon-small-blue.png",
+          "alt": "bulletpointBannerImage"
         },
-        {
-          "text": "Enhances communication with real-time progress tracking.",
-          "icon": {
-            "src": "/assets/icons/message.png",
-            "alt": "bulletpoint"
+        "bulletpoint": [
+          {
+            "text": "Skody AI APS is an AI-driven Advanced Planning and Scheduling software for manufacturers.",
+            "icon": {
+              "src": "/assets/icons/Icons_system-blue.png",
+              "alt": "bulletpoint"
+            }
+          },
+          {
+            "text": "Automates and optimizes complex scheduling and constraints, adapts in real-time, and integrates with any ERP.",
+            "icon": {
+              "src": "/assets/icons/Icon-access-data.png",
+              "alt": "bulletpoint"
+            }
+          },
+          {
+            "text": "Enhances communication with real-time progress tracking.",
+            "icon": {
+              "src": "/assets/icons/message.png",
+              "alt": "bulletpoint"
+            }
           }
-        }
-      ]
-    }
-  ]
+        ]
+      }
+    ]
+  },
+   "mobile": {
+    "header": {
+      "title": "Skody builds the plan your ERP can’t.",
+      "mobileTitle": "Skody builds the plan your ERP can’t.",
+      "description": "Reflows your schedule instantly when things change — downtime, rush jobs, and capacity shifts.",
+      "mobileDescription": "Reflows your schedule instantly when things change — downtime, rush jobs, and capacity shifts."
+    },
+    "schedule": {
+      "image": "/assets/images/machine-schedule-new-version.png"
+    },
+    "background": {
+      "image": "/assets/images/machineworkimage.png"
+    },
+    "moblieschedule": {
+      "image": "/assets/images/mobile-Banner-image.png"
+    },
+    "actions": [
+      {
+        "type": "button",
+        "label": "Optimize",
+        "action": "optimizeSchedule"
+      }
+    ],
+    "section": [
+      {
+        "title": "Skody AI APS: Your Production Navigator",
+        "bannerImage": {
+          "src": "/assets/images/System-cogs-Icon.png",
+          "alt": "backgroundSystemCogs"
+        },
+        "bulletpointBannerImage": {
+          "src": "/assets/icons/System-cogs-Icon-small-blue.png",
+          "alt": "bulletpointBannerImage"
+        },
+        "bulletpoint": [
+          {
+            "text": "Skody AI APS is an AI-driven Advanced Planning and Scheduling software for manufacturers.",
+            "icon": {
+              "src": "/assets/icons/Icons_system-blue.png",
+              "alt": "bulletpoint"
+            }
+          },
+          {
+            "text": "Automates and optimizes complex scheduling and constraints, adapts in real-time, and integrates with any ERP.",
+            "icon": {
+              "src": "/assets/icons/Icon-access-data.png",
+              "alt": "bulletpoint"
+            }
+          },
+          {
+            "text": "Enhances communication with real-time progress tracking.",
+            "icon": {
+              "src": "/assets/icons/message.png",
+              "alt": "bulletpoint"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
