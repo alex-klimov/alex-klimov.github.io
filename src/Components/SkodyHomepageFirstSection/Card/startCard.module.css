@@ -9,7 +9,7 @@
 
 .description {
     font-style: italic;
-    font-size: 15px;
+    font-size: 18px;
 
 }
 
@@ -20,15 +20,20 @@
 
 .writer {
     font-size: 14px;
-
-    text-align: end;
+        padding-top: 0.5rem;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.63);
 }
 
 @media screen and (max-width:640px) {
+
     .description,
     .writer {
-        font-size: 9px;
+        font-size: 12px;
     }
 
+    .writer {
+        text-align: end;
 
+    }
 }

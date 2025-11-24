@@ -13,7 +13,7 @@ const ContineslySlider = () => (
         >
           <img src={item.image} alt={`slide-${idx}`} className={styles.image} />
           <div className={styles.overlay}>
-            <CommonText subHeading={item.title} size="title-h3"/>
+            <CommonText subHeading={item.title} size="title-h3" weight="font-weight-500"/>
             <CommonText subHeading={item.desc} size="label-sub2" fontFamily="prompt"/>
 
           </div>
@@ -27,7 +27,7 @@ const ContineslySlider = () => (
         >
           <img src={item.image} alt={`slide-dup-${idx}`} className={styles.image} />
           <div className={styles.overlay}>
-            <CommonText subHeading={item.title} size="title-h3"/>
+            <CommonText subHeading={item.title} size="title-h3" weight="font-weight-500"/>
             <CommonText subHeading={item.desc} size="label-sub2" fontFamily="prompt"/>
 
           </div>

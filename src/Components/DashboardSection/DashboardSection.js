@@ -21,7 +21,7 @@ const DashboardSection = () => {
     const customDashboard=isMobile ?customDashboard1.mobile :customDashboard1.desktop;
   return (
     <>
-      <div>
+      <div className="">
         <div className={`homePageContainer ${styles.chaosDashboardContainer}`}>
           <HeaderSection
             tag={customDashboard.Chaos.tag}
@@ -54,7 +54,7 @@ const DashboardSection = () => {
             <CommonText
               smallDescription={customDashboard.dashboardSection.subtitle}
               size="label-H2-sub2"
-              weight="font-weight-500"
+              // weight="font-weight-500"
             />
           </div>
           <div

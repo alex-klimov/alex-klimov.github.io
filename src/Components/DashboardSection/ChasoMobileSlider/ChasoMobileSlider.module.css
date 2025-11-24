@@ -3,7 +3,7 @@
   max-width: 600px;
   margin: 0 auto;
   height: 100%;
-      padding: 1rem 0;
+  padding: 1rem 0;
   /* add responsive padding/margin if needed */
 }
 
@@ -47,14 +47,13 @@
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
+    padding: 0.8rem;
+
   border-radius: 50%;
   background: #848BA3;
   margin: 0 5px;
   border: none;
   cursor: pointer;
-  opacity: 0.4;
   transition: background 0.3s, opacity 0.3s;
 }
 
@@ -65,4 +64,20 @@
 .imageWrapper{
     width: 50%;
         padding: 0.6rem;
+}
+@media screen and (max-width: 640px) {
+  .dot {
+  padding: 0.4rem;
+  border-radius: 50%;
+  background: var(--primary-white);
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, opacity 0.3s;
+}
+.dot.active {
+  background:rgba(255, 255, 255, 0.1);;
+  /* opacity: 1; */
+}
+  
 }

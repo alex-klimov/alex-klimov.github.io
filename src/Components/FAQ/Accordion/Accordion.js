@@ -18,10 +18,10 @@ const Accordion = ({ items }) => {
             aria-expanded={openIndex === idx}
             aria-controls={`faq-panel-${idx}`}
           >
-            <div>
+            <div className={styles.question}>
               <CommonText
                 subHeading={item.question}
-                size="title-h3"
+                size="title-h3-accordion"
                 fontFamily="SF Pro"
 
                 weight="font-weight-500"

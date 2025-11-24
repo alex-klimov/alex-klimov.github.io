@@ -1,7 +1,6 @@
 import sectionData1 from "./GetInTouch.json";
 import CommonText from "../CommonText/CommonText";
 import styles from "./GetInTouch.module.css";
-import SimpleButton from "../../Buttons/SimpleButton";
 import CalendlyPopup from "../CalendlyPopup/CalendlyPopup";
 import { useEffect, useState } from "react";
 
@@ -29,11 +28,11 @@ const GetInTouch = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {sectionData.ctaButtons[0]?.text && sectionData.ctaButtons[0]?.flag==="visible" && (
+      {/* {sectionData.ctaButtons[0]?.text && sectionData.ctaButtons[0]?.flag==="visible" && (
         <SimpleButton className={`regular ${styles.getInTouchButton}`}>
           {sectionData.ctaButtons[0].text}
         </SimpleButton>
-      )}
+      )} */}
 
       <div className={styles.headlineContainer}>
         <CommonText

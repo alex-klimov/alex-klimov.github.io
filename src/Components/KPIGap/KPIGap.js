@@ -60,7 +60,14 @@ const KpiSection = () => {
               </li>
             ))}
           </ul>
-          {isMobile &&
+         
+          <SimpleButton
+              className={`buttonText regular buttonText  ${styles.kpiButton}`}
+              href={data.cta.action}
+            >
+              {data.cta.text}
+            </SimpleButton>
+             {isMobile &&
            <SimpleButton
               className={`buttonText regular buttonText  ${styles.kpiButton}`}
               href={data.ctaBook.action}
@@ -68,12 +75,6 @@ const KpiSection = () => {
               {data.ctaBook.text}
             </SimpleButton>
             }
-          <SimpleButton
-              className={`buttonText regular buttonText  ${styles.kpiButton}`}
-              href={data.cta.action}
-            >
-              {data.cta.text}
-            </SimpleButton>
           <div className={styles.note}>
             <CommonText smallDescription={data.note} size="body-lg" />
           </div>

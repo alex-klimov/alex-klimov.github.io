@@ -19,6 +19,9 @@
 }
 .subHeading{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .customDashboardContainer .subHeading :global(.commonText) p {
@@ -61,6 +64,7 @@
 
 .dashboardFeaturesContainerRight {
     display: flex;
+    align-items: start;
     /* align-self: baseline; */
     flex-direction: column;
     gap: 1rem;
@@ -87,6 +91,8 @@
     }
     .dashboardFeaturesContainerRight{
         width: 90%;
+    align-items: unset;
+
         align-self: center;
     }
     .dashSlider{
@@ -100,5 +106,10 @@
     .featureItem{
         align-items: center;
     }
+    .customDashboardContainer .subHeading :global(.commonText) p,.customDashboardContainer .subHeading :global(.commonText) h2 {
+    text-align: start;
+    padding: 0 1rem;
+}
+
     
 }

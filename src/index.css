@@ -23,7 +23,7 @@ body {
   padding: 0 1rem;
 }
 .margin{
-  padding: 4.5rem 1rem 4rem 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 
 html,
@@ -44,4 +44,7 @@ body {
   :root {
     font-size: 16px; /* Default for mobile */
   }
+  /* .homePageContainer{
+    padding: 0rem;
+  } */
 }

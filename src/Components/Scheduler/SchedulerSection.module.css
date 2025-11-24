@@ -44,7 +44,7 @@
     gap: 1rem;
 }
 .featuresContainerRight {
-    width: 54%;
+    width: 100%;
     height: auto;
 }
 
@@ -78,4 +78,22 @@
 .featuresContainerRight{
     width: 100%;
 }
+
+}
+@media screen and (max-width: 640px) {
+    .mainContainer {
+        padding: unset !important;
+    }
+    .customDashboardContainer{
+        padding-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .schedulerButtonContainerMobile :global(.buttonText){
+        width: 100%;
+        margin-top: 1.5rem;
+
+    }
+    
 }

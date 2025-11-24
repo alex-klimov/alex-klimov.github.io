@@ -137,7 +137,6 @@
 }
 
 .features {
-  margin: 1rem 0 2rem 0;
   padding-left: 0rem;
   color: var(--charcoal);
   display: flex;
@@ -150,7 +149,6 @@
 }
 
 .cta {
-  margin-top: 4rem;
   margin-bottom: 2rem;
   padding: 0.75rem 2rem;
   width: 100%;

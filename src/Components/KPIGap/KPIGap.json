@@ -37,13 +37,14 @@
     "Delivery & scheduling insights",
     "Clear next steps"
   ],
-  "cta": {
+
+  "ctaBook":{
+    "text": "Book Free Demo",
+    "action": "https://calendly.com/skody-ai/demo"
+  },
+    "cta": {
     "text": "Start Free Analysis",
     "action": "https://agent.skody.ai"
-  },
-  "ctaBook":{
-    "text": "Book a Demo",
-    "action": "https://calendly.com/skody-ai/demo"
   },
   "note": "No login required. Instant results."
 

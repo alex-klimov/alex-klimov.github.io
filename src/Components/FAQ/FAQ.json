@@ -29,7 +29,7 @@
         "subtitle": "**Still have questions?**",
         "desc": "Can't find the answer you're looking for? Please chat with our friendly team.",
         "cta": {
-          "text": "Chat Now",
+          "text": "Email Us",
           "action": "openChat"
         }
       }

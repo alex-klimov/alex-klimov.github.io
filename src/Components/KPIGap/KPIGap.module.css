@@ -35,6 +35,7 @@
 
 .rightContent {
     gap: 3rem;
+    width: 100%;
     display: flex;
 }
 
@@ -105,11 +106,12 @@
 .note {
     color: #343436;
     margin-top: 6px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .note :global(.commonText) p {
     font-style: italic;
+    font-size: 18px;
 
 }
 @media screen and (max-width:840px) {
@@ -126,4 +128,18 @@
     align-items: unset;
 
     }
+}
+@media screen and (max-width:480px) {
+    .note :global(.commonText) p {
+    font-style: unset;
+    font-size: 16px;
+        text-align: center;
+}
+.rightContentContainer{
+    padding-top: unset;
+}
+.featuresList{
+    margin-bottom: unset;
+}
+    
 }

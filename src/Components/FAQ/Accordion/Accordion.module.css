@@ -12,6 +12,7 @@
   box-shadow: 0 2px 8px rgba(40, 60, 120, 0.04);
   background: var(--light-blue);
   height: fit-content;
+  border:1px solid #848BA3;
 }
 
 .shortAnswer {
@@ -71,6 +72,9 @@
 @media screen and (max-width:640px) {
   .content :global(.commonText) p p {
     font-size: 16px;
+  }
+  .question :global(.commonText) h3 {
+    font-weight: 600;
   }
 
 }

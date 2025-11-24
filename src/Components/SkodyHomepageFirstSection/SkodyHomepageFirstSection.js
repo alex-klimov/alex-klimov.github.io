@@ -62,7 +62,7 @@ function SkodyHomepageFirstSection() {
                   className={`buttonText ${styles.mySpecialButton}`}
                   href="https://www.youtube.com/watch?v=bPo1-RFnTC0"
                 >
-                  Watch Demo
+                  Demo Schedule
                 </SimpleButton>
               </div>
             ) : (

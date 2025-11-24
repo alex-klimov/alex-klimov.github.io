@@ -24,6 +24,7 @@ const SkodyAiHomepage = () => {
     window.addEventListener("resize", checkMobileView);
     return () => window.removeEventListener("resize", checkMobileView);
   }, []);
+  
   return (
     <div>
       <div>
@@ -52,7 +53,7 @@ const SkodyAiHomepage = () => {
       <div ref={faqRef} className="margin">
         <FAQ />
       </div>
-      <div className="homePageContainer margin">
+      <div className="margin homePageContainer ">
         <KpiSection />
       </div>
       <div className={`margin ${styles.getInTouch}`}>

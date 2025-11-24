@@ -28,4 +28,11 @@
     transform: translateX(-100%);
   }
 }
+@media screen and (max-width:640px) {
+  .marqueeContainer {
+    padding: 2rem 0rem;
+    
+  }
 
+  
+}

@@ -22,7 +22,7 @@ body {
     --blue-100: #F0F6FF;
     --blue-200: #F0F6FFB5;
     --blue-50: #f0f5fd;
-    
+    --text-color-getInTouch: #ffffff;
     --primary-white: #ffffff;
     --primary-black: #222222;
     --primary-black-dark: #000000;
@@ -110,6 +110,10 @@ body {
     font-size: 32px;
     line-height: 38px;
 }
+.title-h3-accordion {
+    font-size: 32px;
+    line-height: 38px;
+}
 .title-h3-difference-section {
     font-size: 32px;
     line-height: 38px;
@@ -165,6 +169,7 @@ body {
 --marquee-bg: #f9fbff;
         --jordyblue-whyskody-section:white;
         --grey-dashboard-background:#DCDCDC;
+        --text-color-getInTouch:var(--charcoal);
     }
     .title-64 {
         font-size: 32px;
@@ -174,7 +179,10 @@ body {
         font-size: 20px;
         line-height: 26.6px;
     }
-
+.title-h3-accordion {
+    font-size: 22px;
+    line-height: 24px;
+}
     .label-H3-sub3 {
         font-size: 16px;
         line-height: 19.6px;
