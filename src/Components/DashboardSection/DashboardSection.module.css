@@ -104,6 +104,7 @@
         margin: 0 1rem;
     }
     .featureItem{
+        gap:0.5rem;
         align-items: center;
     }
     .customDashboardContainer .subHeading :global(.commonText) p,.customDashboardContainer .subHeading :global(.commonText) h2 {

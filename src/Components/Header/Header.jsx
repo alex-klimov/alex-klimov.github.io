@@ -58,7 +58,7 @@ const Header = () => {
                     className={`regular buttonText ${styles.button}`}
                     url={CalendlyLink}
                     rootElement={document.getElementById("root")}
-                    text="Book Free Demo"
+                    text="Book Demo"
                   />
                 </div>
               )}
@@ -96,7 +96,7 @@ const Header = () => {
                 className={`buttonText regular buttonText ${styles.button}`}
                 url={CalendlyLink}
                 rootElement={document.getElementById("root")}
-                text="Book Free Demo"
+                text="Book Demo"
               />
             </div>
           )}

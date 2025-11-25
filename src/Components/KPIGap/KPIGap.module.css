@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
 }
+.sectionContainer :global(.common){
+    max-width:791px;
+}
 
 .headingContainer {
     display: flex;

@@ -34,7 +34,7 @@ const KpiSection = () => {
           />
         </div>
         <div className={styles.rightContentContainer}>
-          <CommonText subHeading={data.infoTitle} size="title-h3" />
+          <CommonText subHeading={data.infoTitle} size="title-h3" weight="font-weight-500"/>
 
           <ul className={styles.featuresList}>
             {data.features.map((feature, idx) => (

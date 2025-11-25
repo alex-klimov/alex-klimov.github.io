@@ -29,12 +29,26 @@ const StartCard = () => {
             ))}
         </div>
         <div className={styles.description}>
-          {isMobile
-            ? `"With Skodys scheduler and dashboard, the plan finally works—no chaos, no surprises, just jobs done right."`
-            : `"With Skody’s scheduler and dashboard, the plan finally works—no chaos, no surprises, just jobs done right."`}
+          {isMobile ? (
+            <div className={styles.descriptionContent}>
+              <span className={styles.italicPart}>
+                "With Skodys scheduler and dashboard, the plan finally works
+              </span>
+              —no chaos, no surprises, just jobs done right."
+            </div>
+          ) : (
+            <div className={styles.descriptionContent}>
+              <span className={styles.italicPart}>
+                "With Skody’s scheduler and dashboard, the plan finally works
+              </span>
+              —no chaos, no surprises, just jobs done right."
+            </div>
+          )}
         </div>
         <div className={styles.writer}>
-          {!isMobile ? "– Zachary Yeager, CEO, Yeager Manufacturing" : "- Three Sigma Mfg"}
+          {!isMobile
+            ? "– Zachary Yeager, CEO, Yeager Manufacturing"
+            : "- Three Sigma Mfg"}
         </div>
       </div>
     </>

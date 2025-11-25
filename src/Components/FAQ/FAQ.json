@@ -19,10 +19,6 @@
         {
           "question": "Is it secure?",
           "answer": "**A:** Gov Cloud hosting, SSO, and audit-ready logging. GCC/GCC High optional."
-        },
-        {
-          "question": "Rush jobs daily - can you handle it?",
-          "answer": "Yes. Click Optimize and Skody re-routes the day around the rush."
         }
       ],
       "footer": {
@@ -30,7 +26,7 @@
         "desc": "Can't find the answer you're looking for? Please chat with our friendly team.",
         "cta": {
           "text": "Email Us",
-          "action": "openChat"
+          "action": "info@skody.ai"
         }
       }
     }
@@ -62,7 +58,8 @@
         "desc": "Can't find the answer you're looking for? Please chat with our friendly team.",
         "cta": {
           "text": "Chat Now",
-          "action": "openChat"
+          "action": "info@skody.ai"
+
         }
       }
     }

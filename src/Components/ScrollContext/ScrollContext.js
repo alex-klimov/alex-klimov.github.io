@@ -36,7 +36,7 @@ export const ScrollProvider = ({ children }) => {
       '#demo': demoRef,
       '#dashboard':dashboard,
       '#price':priceRef,
-      '#fap':faqRef,
+      '#faq':faqRef,
 
 
     };

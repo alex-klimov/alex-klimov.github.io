@@ -10,7 +10,33 @@
   border-radius: 20px;
 }
 .slide{
-  overflow: unset !important;
+  overflow: auto !important;
+}
+.slide::-webkit-scrollbar {
+  width: 8px; /* Vertical scrollbar width */
+  height: 12px; /* Horizontal scrollbar height */
+}
+
+/* Customize scrollbar track */
+.slide::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Customize scrollbar thumb */
+.slide::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Customize scrollbar thumb on hover */
+.slide::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Optional: Customize scrollbar corner */
+.slide::-webkit-scrollbar-corner {
+  background: #f1f1f1;
 }
 .dotsContainer {
   display: flex;

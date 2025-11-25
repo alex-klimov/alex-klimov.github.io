@@ -6,6 +6,7 @@
 }
 .differenceHeader :global(.common){
     margin-bottom: 2.2rem;
+    max-width: 737px;
 }
 .comparisonColumn {
     width: 50%;
@@ -47,7 +48,7 @@
 
     }
     .row{
-        padding: 1rem 1rem 0rem !important;
+        padding: 0rem 1rem 0rem !important;
     }
     
 }

@@ -39,26 +39,6 @@ drag & drop.”"
           {OptimizationContent.button.label}
         </SimpleButton>
     </div>
-      {/* <div className={`homePageContainer ${styles.whySkodySection}`}> */}
-        {/* <CommonText
-          newDescription={OptimizationContent.newHeading}
-          size="demo-title"
-        /> */}
-        {/* <Optimization OptimizationContent={OptimizationContent} /> */}
-        {/* <div className={styles.whyButtonContainer}> */}
-        {/* {
-          !isMobile &&
-        <CommonText smallDescription="See How Skody Thinks" size="body-other" weight="font-weight-500" fontFamily='SF Pro' />
-        } */}
-        
-        {/* <SimpleButton
-          className={`buttonText regular  ${styles.watchDemoButton}`}
-          href={OptimizationContent.button.action}
-        >
-          {OptimizationContent.button.label}
-        </SimpleButton> */}
-        {/* </div> */}
-      {/* </div> */}
     </>
   );
 };

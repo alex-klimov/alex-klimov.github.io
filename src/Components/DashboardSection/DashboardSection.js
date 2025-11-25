@@ -79,7 +79,7 @@ const DashboardSection = () => {
                     <div>
                       <CommonText
                         subHeading={feature.title}
-                        size="title-h3"
+                        size="title-h3-custom"
                         weight="font-weight-500"
                       />
                       
