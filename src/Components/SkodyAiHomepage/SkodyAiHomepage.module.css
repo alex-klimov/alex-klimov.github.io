@@ -77,7 +77,6 @@
 @media screen and (max-width:640px) {
     .whySkodySection :global(.commonText) p p {
         font-size: 20px;
-        /* padding: 2rem 0rem; */
         line-height: 26.6px;
         text-align: center;
         font-family: 'SF Pro';

@@ -36,10 +36,6 @@
     gap: 1rem;
 }
 @media screen and (max-width:840px) {
-    /* .comparisonContainer{
-        flex-direction: column;
-
-    } */
     .comparisonColumn{
         width: 100%;
     }

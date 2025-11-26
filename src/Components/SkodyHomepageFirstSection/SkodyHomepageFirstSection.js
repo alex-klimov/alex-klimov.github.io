@@ -89,7 +89,6 @@ function SkodyHomepageFirstSection() {
           <div
             className={styles.slider}
             style={{
-              // height: "460px",
               overflow: "visible",
               position: "relative",
             }}

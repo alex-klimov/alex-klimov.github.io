@@ -109,7 +109,6 @@
 .note {
     color: #343436;
     margin-top: 6px;
-    /* font-style: italic; */
 }
 
 .note :global(.commonText) p {

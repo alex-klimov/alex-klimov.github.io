@@ -17,7 +17,7 @@ const TestimonialSlider = ({ testimonials }) => {
   console.log(current);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
-    mode: "free-snap", // allows smooth both-way snapping
+    mode: "free-snap", 
     renderMode: "precision",
     slides: {
       perView: 2,

@@ -1,6 +1,5 @@
 .mainContainer {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     border-radius: 1rem;
@@ -24,7 +23,6 @@
 .headlineContainer {
     max-width: 873px;
     padding-left: 2.7rem;
-    /* text-align: center; */
 }
 
 .headlineContainer :global(.commonText) h2,
@@ -37,7 +35,6 @@
 .book30MinButton {
     margin-top: 2.2rem;
     background-color: var(--primary-white);
-    /* padding: 12px 24px; */
     border-radius: 8px;
 }
 

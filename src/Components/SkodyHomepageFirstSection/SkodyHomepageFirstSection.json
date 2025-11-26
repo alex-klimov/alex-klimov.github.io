@@ -3,7 +3,7 @@
     "header": {
       "title": "Your ERP shows you jobs. Skody builds the plan.",
       "mobileTitle": "Skody builds the plan your ERP can’t.",
-      "description": "AI Scheduler + KPI Dashboard that reflows production automatically.",
+      "description": "Skody reflows your schedule automatically — balancing machines, operators, vendors, and shifts.",
       "mobileDescription": "Reflows your schedule instantly when things change — downtime, rush jobs, and capacity shifts."
     },
     "schedule": {
@@ -59,7 +59,7 @@
       }
     ]
   },
-   "mobile": {
+  "mobile": {
     "header": {
       "title": "Skody builds the plan your ERP can’t.",
       "mobileTitle": "Skody builds the plan your ERP can’t.",

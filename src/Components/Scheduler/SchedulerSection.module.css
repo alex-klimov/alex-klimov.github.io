@@ -1,5 +1,4 @@
 
-/* ----=------------------- */
 .mainContainer :global(.sub){
     color: var(--charcoal);
 }
@@ -17,11 +16,6 @@
     align-items: center;
 
 }
-/* .schedulerButtonContainer{
-    text-align: center;
-    margin-top: 3rem;
-
-} */
 .schedulerButton{
       display: inline-block;
   cursor: pointer;

@@ -43,7 +43,7 @@ const SkodyAiHomepage = () => {
       <div>
         <ContineslySlider />
       </div>
-      <div ref={priceRef} className="">
+      <div ref={priceRef} >
         {isMobile? <PriceSectionMobile /> :
         <PricingSection/>}        
       </div>

@@ -54,7 +54,6 @@ const DashboardSection = () => {
             <CommonText
               smallDescription={customDashboard.dashboardSection.subtitle}
               size="label-H2-sub2"
-              // weight="font-weight-500"
             />
           </div>
           <div
@@ -82,13 +81,6 @@ const DashboardSection = () => {
                         size="title-h3-custom"
                         weight="font-weight-500"
                       />
-                      
-                      {/* <CommonText
-                        smallDescription={feature.description}
-                        size="label-sub1"
-                        fontFamily="prompt"
-                        weight="label-H3-sub3"
-                      /> */}
                     </div>
                     
                   </div>
@@ -109,21 +101,6 @@ const DashboardSection = () => {
             </SimpleButton>
             </div>
           </div>
-
-          {/* <div className={styles.dashboardFooterContainer}>
-            <CommonText
-              smallDescription={customDashboard.dashboardSection.footerText}
-              size="label-sub1"
-              weight="label-H3-sub3"
-              fontFamily="prompt"
-            />
-            <SimpleButton
-              href={customDashboard.dashboardSection.cta.action}
-              className={`buttonText regular buttonText  ${styles.faqButton}`}
-            >
-              {customDashboard.dashboardSection.cta.text}
-            </SimpleButton> 
-          </div> */}
         </div>
       </div>
     </>

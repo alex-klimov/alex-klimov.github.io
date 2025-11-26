@@ -5,17 +5,17 @@ body {
     --jordyblue: #89B2EF;
     --jordyblue-whyskody: #89B2EF;
     --jordyblue-whyskody-section: #89B2EF;
-    --grey-dashboard-background:white;
-    --customDashboardContainer--light-blue:#DEE7F4;
+    --grey-dashboard-background: white;
+    --customDashboardContainer--light-blue: #DEE7F4;
     --light-blue: #DEE7F4;
     --floralwhite: #FFF6E5;
     --Outerspace: #848BA3;
     --charcoal: #343436;
     --charcoal-light: #5D5D5E;
-    --testimonial-name:#1b2130;
+    --testimonial-name: #1b2130;
     --xanthous: #F4A508;
-    --orange-arrow:#f8911a;
-    --yellow:#FFF6E5;
+    --orange-arrow: #f8911a;
+    --yellow: #FFF6E5;
     --marquee-bg: white;
 
     --footer-text: #b2b2b2;
@@ -34,7 +34,7 @@ body {
 
     --grey-color-300: #EFEFEF;
     --grey-color-300-border: #D9D9D9;
-     --blue-color-500: #0038B1;
+    --blue-color-500: #0038B1;
     --blue-color-600-hover: #4476e2;
     --grey-color-700: #343434;
     --grey-color-800: #131313;
@@ -110,14 +110,17 @@ body {
     font-size: 32px;
     line-height: 38px;
 }
+
 .title-h3-custom {
     font-size: 32px;
     line-height: 38px;
 }
+
 .title-h3-accordion {
     font-size: 32px;
     line-height: 38px;
 }
+
 .title-h3-difference-section {
     font-size: 32px;
     line-height: 38px;
@@ -167,29 +170,34 @@ body {
 }
 
 @media screen and (max-width:640px) {
-    body{
-        --jordyblue-whyskody:#DEE7F4;
-    --customDashboardContainer--light-blue:white;
---marquee-bg: #f9fbff;
-        --jordyblue-whyskody-section:white;
-        --grey-dashboard-background:#DCDCDC;
-        --text-color-getInTouch:var(--charcoal);
+    body {
+        --jordyblue-whyskody: #DEE7F4;
+        --customDashboardContainer--light-blue: white;
+        --marquee-bg: #f9fbff;
+        --jordyblue-whyskody-section: white;
+        --grey-dashboard-background: #DCDCDC;
+        --text-color-getInTouch: var(--charcoal);
     }
+
     .title-64 {
         font-size: 32px;
     }
-.title-h3-custom {
-    font-size: 16px;
-    line-height: 19.6px;
-}
+
+    .title-h3-custom {
+        font-size: 16px;
+        line-height: 19.6px;
+    }
+
     .label-H2-sub2 {
         font-size: 20px;
         line-height: 26.6px;
     }
-.title-h3-accordion {
-    font-size: 22px;
-    line-height: 24px;
-}
+
+    .title-h3-accordion {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
     .label-H3-sub3 {
         font-size: 16px;
         line-height: 19.6px;
@@ -219,14 +227,16 @@ body {
         font-size: 20px;
         line-height: 26px;
     }
+
     .title-h3-difference-section {
-    font-size: 16px;
-    line-height: 38px;
-}
-.label-H2-sub2-bold{
-    font-size: 16px;
-    line-height: 38px;
-}
+        font-size: 16px;
+        line-height: 38px;
+    }
+
+    .label-H2-sub2-bold {
+        font-size: 16px;
+        line-height: 38px;
+    }
 
     .label-sub1 {
         font-size: 20px;

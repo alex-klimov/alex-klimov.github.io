@@ -28,12 +28,6 @@ const GetInTouch = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* {sectionData.ctaButtons[0]?.text && sectionData.ctaButtons[0]?.flag==="visible" && (
-        <SimpleButton className={`regular ${styles.getInTouchButton}`}>
-          {sectionData.ctaButtons[0].text}
-        </SimpleButton>
-      )} */}
-
       <div className={styles.headlineContainer}>
         <CommonText
           heading={sectionData.headline}

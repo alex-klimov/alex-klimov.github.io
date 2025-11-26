@@ -4,7 +4,6 @@
   margin: 0 auto;
   height: 100%;
   padding: 1rem 0;
-  /* add responsive padding/margin if needed */
 }
 
 .keenSlider {
@@ -17,9 +16,7 @@
 .slide {
   position: relative;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  /* padding: 16px 7px; */
 }
 .textContainer :global(.commonText) h3{
   text-align: start;
@@ -27,7 +24,6 @@
 }
 .slideImage {
   width: 100%;
-  /* max-height: 240px; */
   object-fit: contain;
   border-radius: 0.2rem;
   background: #f1f1f1;
@@ -77,7 +73,6 @@
 }
 .dot.active {
   background:rgba(255, 255, 255, 0.1);;
-  /* opacity: 1; */
 }
   
 }

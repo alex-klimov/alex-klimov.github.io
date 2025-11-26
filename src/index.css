@@ -30,10 +30,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* to make sticky work */
   max-height: 100vh;
-  /* max-width: 1440px;
-  margin: 0 auto; */
+
 }
 
 
@@ -44,7 +42,4 @@ body {
   :root {
     font-size: 16px; /* Default for mobile */
   }
-  /* .homePageContainer{
-    padding: 0rem;
-  } */
 }
