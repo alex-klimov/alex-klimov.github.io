@@ -130,6 +130,9 @@
     align-items: unset;
 
     }
+    .note{
+        font-weight: 600;
+    }
 }
 @media screen and (max-width:480px) {
     .note :global(.commonText) p {

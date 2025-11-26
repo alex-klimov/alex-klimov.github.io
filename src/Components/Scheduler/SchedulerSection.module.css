@@ -76,10 +76,10 @@
 }
 @media screen and (max-width: 640px) {
     .mainContainer {
-        padding: unset !important;
+        padding: 2rem 0rem !important;
     }
     .customDashboardContainer{
-        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
     
 }

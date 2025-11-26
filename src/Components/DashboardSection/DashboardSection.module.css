@@ -1,9 +1,11 @@
 .mainContainer {
     padding: 2rem 0;
 }
-.chaosDashboardContainer :global(.common) div p{
+
+.chaosDashboardContainer :global(.common) div p {
     max-width: 700px;
 }
+
 .chaosDashboardContainer :global(.sub) {
     color: var(--charcoal);
 }
@@ -17,7 +19,8 @@
     width: 100%;
 
 }
-.subHeading{
+
+.subHeading {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -33,10 +36,11 @@
 }
 
 .chaosButton {
-    background-color: transparent !important; 
+    background-color: transparent !important;
     border-color: var(--charcoal) !important;
     color: var(--charcoal) !important;
-    margin-top: 2.2rem !important;
+    margin-top: 1.2rem !important;
+    margin-bottom: 1rem;
 }
 
 .dashSlider {
@@ -80,37 +84,49 @@
     padding: 2.7rem 1rem;
     justify-content: center;
 }
-.dashboardFooterContainer :global(.commonText) p{
+
+.dashboardFooterContainer :global(.commonText) p {
     text-align: center;
 }
+
 @media screen and (max-width: 1024px) {
     .cardDashboardContainer {
         flex-direction: column-reverse;
         align-items: center;
         padding: unset;
     }
-    .dashboardFeaturesContainerRight{
+
+    .dashboardFeaturesContainerRight {
         width: 90%;
-    align-items: unset;
+        align-items: unset;
 
         align-self: center;
     }
-    .dashSlider{
+
+    .dashSlider {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 640px) {
     .customDashboardContainer {
         margin: 0 1rem;
     }
-    .featureItem{
-        gap:0.5rem;
+
+    .chaosDashboardContainer :global(.common) div p {
+        padding: 0 1rem
+    }
+
+    .featureItem {
+        gap: 0.5rem;
         align-items: center;
     }
-    .customDashboardContainer .subHeading :global(.commonText) p,.customDashboardContainer .subHeading :global(.commonText) h2 {
-    text-align: start;
-    padding: 0 1rem;
-}
 
-    
+    .customDashboardContainer .subHeading :global(.commonText) p,
+    .customDashboardContainer .subHeading :global(.commonText) h2 {
+        text-align: start;
+        padding: 0 1rem;
+    }
+
+
 }

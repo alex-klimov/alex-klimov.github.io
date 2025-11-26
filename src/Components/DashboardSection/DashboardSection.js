@@ -91,7 +91,7 @@ const DashboardSection = () => {
               smallDescription={customDashboard.dashboardSection.footerText}
               size="label-sub1"
               weight="label-H3-sub3"
-              fontFamily="prompt"
+              // fontFamily="prompt"
             />
               <SimpleButton
               href={customDashboard.dashboardSection.cta.action}

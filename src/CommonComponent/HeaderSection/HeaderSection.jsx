@@ -6,7 +6,7 @@ const HeaderSection = ({ tag, title, subtitle, description }) => {
   return (
       <div className={`common ${styles.container}`}>
         {tag && (
-          <div className={`body-lg font-weight-500 ${styles.tagLabel}`}>
+          <div style={{marginBottom:'4px'}} className={`body-lg font-weight-500 ${styles.tagLabel}`}>
             {tag}
           </div>
         )}

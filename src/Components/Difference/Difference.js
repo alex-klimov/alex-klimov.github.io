@@ -52,6 +52,7 @@ const Difference = () => {
                     <CommonText
                       smallDescription={itemText}
                       size="label-H2-sub2-bold"
+                      weight="font-weight-500"
                       fontFamily="SF Pro"
                     />
                   </div>
