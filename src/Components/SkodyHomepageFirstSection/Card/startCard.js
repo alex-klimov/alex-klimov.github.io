@@ -48,7 +48,7 @@ const StartCard = () => {
         <div className={styles.writer}>
           {!isMobile
             ? "– Zachary Yeager, CEO, Yeager Manufacturing"
-            : "- Three Sigma Mfg"}
+            : "– Zachary Yeager, CEO, Yeager Manufacturing"}
         </div>
       </div>
     </>
