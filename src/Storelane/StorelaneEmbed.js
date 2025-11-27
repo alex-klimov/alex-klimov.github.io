@@ -36,9 +36,9 @@ const StorylaneEmbed = () => {
         >
           <iframe
             loading="lazy"
-            title="Storylane Embed"
             class="sl-demo"
-            src="https://app.storylane.io/demo/rmtmua8ep9hv?embed=inline"
+            title="skody scheduler"
+            src="https://app.storylane.io/demo/gjkite9w38xx?embed=inline"
             name="sl-embed"
             allow="fullscreen"
             allowfullscreen
@@ -69,12 +69,12 @@ const StorylaneEmbed = () => {
           <iframe
             loading="lazy"
             class="sl-demo"
-            title="Storylane Embed"
-            src="https://app.storylane.io/demo/sj3fhbig4inz?embed=inline"
+            title="skody scheduler"
+            src="https://app.storylane.io/demo/tlanrvmvjbbh?embed=inline"
             name="sl-embed"
             allow="fullscreen"
             allowfullscreen
-            style={{
+             style={{
               position: "absolute",
               top: 0,
               left: 0,
@@ -88,7 +88,6 @@ const StorylaneEmbed = () => {
           ></iframe>
         </div>
       )}
-        
     </div>
   );
 };

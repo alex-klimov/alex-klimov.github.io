@@ -16,7 +16,7 @@ const DashboardSlider = ({ imageData }) => {
   }, []);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const [isOpen, setIsOpen] = useState(false); // 🔥 for fullscreen view
+  const [isOpen, setIsOpen] = useState(false);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
@@ -27,7 +27,6 @@ const DashboardSlider = ({ imageData }) => {
     mode: "free-snap",
   });
 
-  
   return (
     <>
       {isMobile ? (
@@ -61,26 +60,45 @@ const DashboardSlider = ({ imageData }) => {
 
           {/* FULLSCREEN VIEW 🔥 */}
           {isOpen && (
-            <Lightbox
-              mainSrc={`/assets/newDesign/CustomDashboard/${imageData[currentSlide].image}`}
-              nextSrc={`/assets/newDesign/CustomDashboard/${
-                imageData[(currentSlide + 1) % imageData.length]?.image
-              }`}
-              prevSrc={`/assets/newDesign/CustomDashboard/${
-                imageData[
-                  (currentSlide + imageData.length - 1) % imageData.length
-                ]?.image
-              }`}
-              onCloseRequest={() => setIsOpen(false)}
-              onMovePrevRequest={() =>
-                setCurrentSlide(
-                  (currentSlide + imageData.length - 1) % imageData.length
-                )
-              }
-              onMoveNextRequest={() =>
-                setCurrentSlide((currentSlide + 1) % imageData.length)
-              }
-            />
+            <>
+              <Lightbox
+                mainSrc={`/assets/newDesign/CustomDashboard/${imageData[currentSlide].image}`}
+                nextSrc={`/assets/newDesign/CustomDashboard/${
+                  imageData[(currentSlide + 1) % imageData.length]?.image
+                }`}
+                prevSrc={`/assets/newDesign/CustomDashboard/${
+                  imageData[
+                    (currentSlide + imageData.length - 1) % imageData.length
+                  ]?.image
+                }`}
+                onCloseRequest={() => setIsOpen(false)}
+                onMovePrevRequest={() =>
+                  setCurrentSlide(
+                    (currentSlide + imageData.length - 1) % imageData.length
+                  )
+                }
+                onMoveNextRequest={() =>
+                  setCurrentSlide((currentSlide + 1) % imageData.length)
+                }
+              />
+              <div
+                style={{
+                  position: "fixed",
+                  top: "11%",
+                  right: 20,
+                  padding: "10px 14px",
+                  background: "white",
+                  borderRadius: "50%",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                  color: "black",
+                  zIndex: 10000,
+                }}
+                onClick={() => setIsOpen(false)}
+              >
+                ✕
+              </div>
+            </>
           )}
         </div>
       ) : (
