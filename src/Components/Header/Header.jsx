@@ -70,7 +70,7 @@ const Header = () => {
                   >
                     {menuOpen ? (
                       <>
-                        <img src="/assets/icons/X.png" alt="menu" />
+                        <img src="/assets/images/X.png" alt="menu" />
                       </>
                     ) : (
                       <>
