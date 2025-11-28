@@ -1,0 +1,50 @@
+[
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos1.png",
+    "bgColor": "#f8911a",
+    "title": "Revenue Command Center",
+    "desc": "Shipped vs Target | Booked vs Needed | Backlog $ Value"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos3.png",
+    "bgColor": "#1459f6",
+    "title": "People & Capacity",
+    "desc": "Who's Clocked In, Uptime, PM Status"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos4.png",
+    "bgColor": "#19a721",
+    "title": "Quality & Delivery",
+    "desc": "OTD %, Active NCRs, Final QC Dwell"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos2.png",
+    "bgColor": "#f8911a",
+    "title": "WIP Risk & Commitments",
+    "desc": "Jobs Due • At Risk • Past Due"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos1.png",
+    "bgColor": "#f8911a",
+    "title": "Revenue Command Center",
+    "desc": "Shipped vs Target | Booked vs Needed | Backlog $ Value"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos3.png",
+    "bgColor": "#1459f6",
+    "title": "People & Capacity",
+    "desc": "Who's Clocked In, Uptime, PM Status"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos4.png",
+    "bgColor": "#19a721",
+    "title": "Quality & Delivery",
+    "desc": "OTD %, Active NCRs, Final QC Dwell"
+  },
+  {
+    "image": "/assets/newDesign/ChaosSection/chaos2.png",
+    "bgColor": "#f8911a",
+    "title": "WIP Risk & Commitments",
+    "desc": "Jobs Due • At Risk • Past Due"
+  }
+]

@@ -1,0 +1,39 @@
+.starContainer {
+    width: 100%;
+    border-radius: 1.2rem;
+    padding: 0.9rem 1rem;
+}
+.italicPart {
+font-style: italic;
+}
+.description {
+        letter-spacing: 1px;
+    font-size: 18px;
+}
+.descriptionContent{
+    max-width: 508px;
+}
+.star {
+
+    padding-left: 4px;
+}
+
+.writer {
+    font-size: 14px;
+        padding-top: 0.5rem;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+@media screen and (max-width:640px) {
+
+    .description,
+    .writer {
+        font-size: 12px;
+    }
+
+    .writer {
+        text-align: end;
+
+    }
+}

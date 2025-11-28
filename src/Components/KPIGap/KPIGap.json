@@ -1,0 +1,52 @@
+{
+  "desktop":{
+
+  "tag": "Analysis",
+  "title": "FREE Shop KPI Gap Analysis",
+  "subtitle": "We just built the **Skody KPI Intake Form** — an AI-powered tool that compares your current metrics to top-performing CNC shops.",
+  "image": {
+    "src": "/assets/newDesign/KPISection/Factory Image.png",
+    "alt": "Factory with KPI charts"
+  },
+  "infoTitle": "In under 10 minutes, you'll get:",
+  "features": [
+    "Personalized AI-driven analysis",
+    "Benchmarks vs industry",
+    "Scheduling + delivery insights",
+    "Actionable steps to improve flow"
+  ],
+  "cta": {
+    "text": "Start here",
+    "action": "https://agent.skody.ai"
+  },
+  "note": "No signup required. Takes 10 minutes."
+
+  },
+  "mobile":{
+
+  "tag": "Analysis",
+  "title": "FREE KPI Gap Analysis",
+  "subtitle": "Personalized insights that compare your shop to top performers — in under 10 minutes.",
+  "image": {
+    "src": "/assets/newDesign/KPISection/Factory Image.png",
+    "alt": "Factory with KPI charts"
+  },
+  "features": [
+    "Personalized shop analysis",
+    "Benchmarks vs industry",
+    "Delivery & scheduling insights",
+    "Clear next steps"
+  ],
+
+  "ctaBook":{
+    "text": "Book Free Demo",
+    "action": "https://calendly.com/skody-ai/demo"
+  },
+    "cta": {
+    "text": "Start Free Analysis",
+    "action": "https://agent.skody.ai"
+  },
+  "note": "No login required. Instant results."
+
+  }
+}

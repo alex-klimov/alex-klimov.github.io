@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 986px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.tagLabel {
+  display: inline-block;
+  color: var(--zaffra);
+  background: var(--blue-100);
+  border: 2px solid #1a2972;
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 100%;
+}
+
+.title {
+  color: var(--charcoal);
+  font-family: 'SF Pro';
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-family: 'SF Pro';
+
+  color: var(--charcoal-light);
+}
+
+.subtitle p {
+  font-family: "SF Pro";
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.description {
+  color: var(--charcoal);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .subtitle p {
+    font-family: "SF Pro";
+    font-size: 20px;
+    line-height: 38px;
+  }
+  .description{
+    font-family: "SF Pro";
+    font-size: 20px;
+    line-height: 38px;
+  }
+.container{
+  padding: 0 8px;
+}
+}

@@ -1,0 +1,57 @@
+{
+  "footer": {
+    "description":"AI-powered scheduling and KPI dashboards for manufacturing shops.",
+    "logo": {
+      "image": "/assets/images/skodyAitextlogo.png",
+      "alt": "SkodyAI"
+    },
+    "socialLinks": [
+      {
+        "platform": {
+          "src": "/assets/newDesign/SocialIcons/lindedIn.png",
+          "alt": "LinkedIn"
+        },
+        "url": "https://www.linkedin.com/company/skody-ai/"
+      },
+      {
+        "platform": {
+          "src": "/assets/newDesign/SocialIcons/X.png",
+          "alt": "X"
+        },
+        "url": "https://x.com/skody_ai"
+      },
+      {
+        "platform": {
+          "src": "/assets/newDesign/SocialIcons/youtube.png",
+          "alt": "youtube"
+        },
+        "url": "https://www.youtube.com/@SkodyAI"
+      }
+    ],
+    "productLinks": [
+      { "name": "Scheduler", "url": "/#scheduler" },
+      { "name": "Dashboard", "url": "/#dashboard" },
+      { "name": "Pricing", "url": "/#pricing" }
+,
+      { "name": "Integrations", "url": "/#integrations" }
+
+    ],
+    "links": [
+      { "name": "About", "url": "/coming-soon" },
+      { "name": "Contact", "url": "/coming-soon" }
+,
+      { "name": "Case Studies", "url": "/coming-soon" }
+,
+      { "name": "Blogs", "url": "https://blog.skody.ai/" }
+    ],
+    "contact": {
+      "email": "info@skody.ai"
+    },
+    "contact1":  [
+      { "name": "Privacy Policy", "url": "/privacy-policy" },
+      { "name": "Terms of Service", "url": "/term-condition" }
+,
+      { "name": "Help Center", "url": "/coming-soon" }   ],
+    "copyright": "© 2025 Skody AI. All rights reserved."
+  }
+}
