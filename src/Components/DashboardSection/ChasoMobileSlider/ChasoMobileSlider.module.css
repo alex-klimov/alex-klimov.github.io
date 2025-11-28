@@ -1,0 +1,89 @@
+.sliderContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.keenSlider {
+  height: 100%;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 5px 1px #00000045;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.textContainer :global(.commonText) h3 {
+  text-align: start;
+  color: var(--primary-white);
+}
+
+.slideImage {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.2rem;
+  background: #f1f1f1;
+}
+
+.textContainer {
+  margin-top: 14px;
+  text-align: center;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 0 0;
+}
+
+.dot {
+  padding: 0.8rem;
+
+  border-radius: 50%;
+  background: #848BA3;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.dot.active {
+  background: #848BA3;
+  opacity: 1;
+}
+
+.imageWrapper {
+  width: 50%;
+  padding: 0.6rem;
+}
+
+@media screen and (max-width: 640px) {
+  .dot {
+    padding: 0.3rem;
+    border-radius: 50%;
+    background: var(--primary-white);
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+  }
+
+  .dot.active {
+    background: rgba(255, 255, 255, 0.1);
+    ;
+  }
+
+  .sliderContainer {
+    width: 93%;
+
+  }
+
+}

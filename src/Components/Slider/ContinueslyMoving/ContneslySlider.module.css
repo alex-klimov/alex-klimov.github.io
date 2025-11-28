@@ -1,0 +1,38 @@
+/* MarqueeSlider.module.css */
+.marqueeContainer {
+  width: 100%;
+  padding: 5rem 0rem;
+  overflow: hidden;
+  background: var(--marquee-bg);
+}
+
+.marquee {
+  display: flex;
+  animation: scrollMarquee 14s linear infinite;
+}
+
+.image {
+  min-width: 249px;
+  height: 83px;
+  margin: 0 16px;
+  object-fit: none;
+  border-radius: 8px;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width:640px) {
+  .marqueeContainer {
+    padding: 2rem 0rem;
+    
+  }
+
+  
+}

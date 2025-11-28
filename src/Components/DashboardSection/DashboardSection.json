@@ -1,0 +1,94 @@
+{
+  "desktop":{
+    "Chaos": {
+    "tag": "DASHBOARD",
+    "title": "From Chaos to Clarity.",
+    "subtitle": "Out-of-the-box dashboards for CEOs, planners, and supervisors — no Power BI, no IT setup, live in one day.",
+    "cta": {
+      "text": "See Full Dashboard",
+      "action":"skody.ai"
+    }
+  },
+  "dashboardSection": {
+    "title": "Customer Dashboard",
+    "subtitle": "Your customers get the same clarity — without logins or extra work for your team.",
+    "image": [
+      {
+        "image": "customDashboard.jpeg",
+        "alt": "Dashboard Slide 1"
+      },
+      {
+        "image": "customDashboard2.jpeg",
+        "alt": "Dashboard Slide 2"
+      },
+      {
+        "image": "CustomerDashboardFull.png",
+        "alt": "Dashboard Slide 3"
+      }
+    ],
+    "features": [
+      {
+        "title": "Email-first experience",
+        "description": "customers receive clean, branded updates automatically"
+      },
+      {
+        "title": "Clean, simple status updates",
+        "description": "Secure link to order, shipment, and invoice updates"
+      },
+      {
+        "title": "No login needed",
+        "description": "Everything works through their inbox"
+      }
+    ],
+    "footerText": "This keeps your customers informed, your team focused, and your shop looking world-class.",
+    "cta": {
+      "text": "See Dashboard in Action",
+      "action": "https://portal.skody.ai/acme-cnc-corp"
+    }
+  }
+  },
+  "mobile":{
+  "Chaos": {
+    "tag": "DASHBOARD",
+    "title": "From Chaos to Clarity.",
+    "subtitle": "Out-of-the-box dashboards. No Power BI. Live in one day.",
+    "cta": {
+      "text": "See Full Dashboard",
+      "action":"skody.ai"
+    }
+  },
+  "dashboardSection": {
+    "title": "Customer Dashboard",
+    "subtitle": "Your customers get the same clarity — without logins or extra work for your team.",
+    "image": [
+      {
+        "image": "customDashboard.jpeg",
+        "alt": "Dashboard Slide 1"
+      },
+      {
+        "image": "customDashboard2.jpeg",
+        "alt": "Dashboard Slide 2"
+      },
+      {
+        "image": "CustomerDashboardFull.png",
+        "alt": "Dashboard Slide 3"
+      }
+    ],
+    "features": [
+      {
+        "title": "Email-first experience",
+        "description": "customers receive clean, branded updates automatically"
+      },
+      {
+        "title": "Clean, simple status updates",
+        "description": "Secure link to order, shipment, and invoice updates"
+      }
+    ],
+    "footerText": "Customers get clean, simple job updates — no logins needed.",
+    "cta": {
+      "text": "See Dashboard in Action",
+      "action": "https://portal.skody.ai/acme-cnc-corp"
+    }
+  }
+}
+}

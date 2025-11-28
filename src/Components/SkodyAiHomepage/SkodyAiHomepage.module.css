@@ -1,0 +1,111 @@
+.skodyImpactContainer {
+    margin-top: 5rem;
+}
+
+
+.whyskodyHeader :global(.common) div p {
+    max-width: 660px;
+
+}
+
+.trafficDesc {
+    width: 100%;
+}
+
+.marginDifference {
+    padding:3rem 1rem 4rem 1rem;
+}
+
+.skodyCalendlySection {
+    padding: 1rem 0 0rem;
+}
+
+.whyskodyHeader :global(.common) {
+    margin: 2.2rem auto;
+}
+
+.whySkody {
+    padding: 4rem 0 0;
+}
+
+.whySkodySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--jordyblue-whyskody-section);
+    padding: 2.7rem 0rem;
+    border-radius: 1rem;
+}
+
+.whySkodySection :global(.commonText) p p {
+    font-size: 32px;
+    padding: 0rem 6rem;
+    text-align: center;
+    font-family: 'SF Pro';
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+}
+
+.dashBoardSection {
+    background-color: var(--grey-dashboard-background);
+}
+
+.schedulerSection {
+    background-color: var(--light-blue);
+}
+
+.watchDemoButton {
+    /* margin-top: 0.6rem; */
+    background: var(--violet) !important;
+    border-radius: 0.4rem !important;
+    padding: 12px 24px !important;
+    font-family: 'Prompt' !important;
+}
+
+.getInTouch {
+    background: linear-gradient(to bottom, white 50%, black 50%);
+}
+
+.whyButtonContainer {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width:640px) {
+    .whySkodySection :global(.commonText) p p {
+        font-size: 20px;
+        line-height: 26.6px;
+        text-align: center;
+        font-family: 'SF Pro';
+        margin-bottom: 0rem;
+        color: var(--charcoal);
+        background-color: #DEE7F4;
+
+    }
+
+    .whySkodySection {
+        padding: unset;
+        border-radius: unset;
+    }
+
+    .dashBoardSection {
+        padding: 2rem 0;
+        margin-top: 1rem;
+    }
+
+    .marginDifference {
+        padding: 4rem 0rem 0rem;
+    }
+
+    .whyButtonContainer {
+        margin-top: unset;
+        margin-bottom: 2rem;
+    }
+
+    .whyskodyHeader :global(.common) {
+        margin: 1rem auto;
+    }
+    .whyskodyHeader :global(.common) div p {
+        padding: 0 1.5rem;
+}
+}

@@ -1,0 +1,70 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 4rem 1rem;
+    gap: 1rem;
+    text-align: center;
+
+}
+
+.getInTouchButton {
+    color: var(--zaffra);
+    background-color: var(--blue-200);
+    border-radius: 0.4rem;
+    border: 1px solid var(--zaffra);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'SF Pro';
+}
+
+.headlineContainer {
+    max-width: 873px;
+    padding-left: 2.7rem;
+}
+
+.headlineContainer :global(.commonText) h2,
+.headlineContainer :global(.commonText) p {
+    color: var(--text-color-getInTouch);
+    padding-bottom: 0.4rem;
+    text-align: start;
+}
+
+.book30MinButton {
+    margin-top: 2.2rem;
+    background-color: var(--primary-white);
+    border-radius: 8px;
+}
+
+.getInTouch {
+    margin-right: 2.7rem !important;
+    background-color: var(--primary-white) !important;
+    color: var(--violet) !important ; 
+}
+@media screen and (max-width:640px) {
+    .getInTouch{
+         background-color: var(--violet) !important;
+    color :var(--primary-white) !important;
+    margin-right: 0rem !important;
+
+    }
+    .mainContainer{
+        flex-direction: column;
+    }
+    .mainContainer {
+        border-radius: 0.4rem;
+        padding: 2rem 1rem;
+        align-items: unset;
+
+    }
+    .headlineContainer{
+        padding-left: 0rem;
+    }
+    .headlineContainer :global(.commonText) h2,
+.headlineContainer :global(.commonText) p {
+    text-align: center;
+    
+}
+}

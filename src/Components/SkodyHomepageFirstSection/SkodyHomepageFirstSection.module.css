@@ -1,0 +1,180 @@
+.backgroundImageContainer {
+    width: 100%;
+    background: radial-gradient(ellipse at center, #1740cf 9%, #000218 87%);
+}
+
+.imageContainerNew {
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    max-width: 1700px;
+}
+
+.outerContainer {
+    padding-top: 5.8rem;
+    padding-bottom: 2rem;
+    overflow: unset;
+    align-items: start;
+    display: flex;
+}
+
+.headingContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading :global(.commonText) h2 {
+    color: var(--primary-white);
+    text-align: start;
+    margin-bottom: 0.8rem;
+    z-index: 1;
+    position: relative;
+}
+
+.description :global(.commonText) p {
+    color: var(--primary-white);
+    letter-spacing: 0.2px;
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.mySpecialButton {
+    background: var(--primary-white) !important;
+    color: var(--primary-black) !important;
+}
+
+.watchDemoButton {
+    background: transparent !important;
+    color: var(--primary-white) !important;
+    border-color: var(--primary-white) !important;
+}
+
+/* ⭐ FIXED IMAGE SECTION (MOST IMPORTANT) ⭐ */
+.imageSection {
+    width: 50%;
+
+    /* The fix */
+    height: 460px;
+    overflow: visible;  /* Allow slider to fully show */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.imageContainer {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.imageContainer img {
+    width: 96%;
+    height: auto;
+}
+.slider{
+    width: 50%;
+}
+/* ---------------------
+   RESPONSIVE FIXES 
+----------------------- */
+
+
+@media screen and (max-width:1046px) {
+    .imageContainer {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .headingContainer {
+        width: 100%;
+    }
+
+    .imageSection {
+        width: 100%;
+        height: 380px; /* scale down on tablet */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .imageContainerNew {
+        background: none;
+    }
+
+    .backgroundImageContainer {
+        background-color: unset;
+        height: auto;
+    }
+
+    .heading :global(.commonText) h2 {
+        padding-top: 2rem;
+    }
+
+    .imageSection {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .heading :global(.commonText) h2 {
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    .description :global(.commonText) p {
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    .outerContainer{
+        padding: 2.8rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider{
+        width: 100%;
+    }
+    .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 0.8rem;
+    }
+
+    .buttonContainer a {
+        padding: 10px 0;
+    }
+
+    .watchDemoButton,
+    .mySpecialButton {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .imageContainer {
+        margin-top: 3.2rem;
+    }
+
+    .imageSection {
+        width: 100%;
+        height: 260px; /* mobile height */
+        overflow: visible !important;
+    }
+
+    .imageContainer img {
+        width: 100%;
+    }
+}

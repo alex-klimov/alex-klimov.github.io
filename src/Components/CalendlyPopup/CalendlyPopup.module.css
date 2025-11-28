@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--violet);
+  border: 2px solid  var(--violet);
+  font-family: 'Prompt';
+  color: var(--primary-white);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.button:disabled,
+.button[aria-disabled="true"] {
+  background-color: #dbe7fd;
+  color: #9cb4d5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 640px) {
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+}

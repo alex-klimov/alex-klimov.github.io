@@ -1,0 +1,84 @@
+.sliderContainer {
+  max-width: 100%;
+  height: 100%;
+}
+.slideImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.slide{
+  overflow: auto !important;
+}
+.slide::-webkit-scrollbar {
+  width: 8px; /* Vertical scrollbar width */
+  height: 12px; /* Horizontal scrollbar height */
+}
+
+/* Customize scrollbar track */
+.slide::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Customize scrollbar thumb */
+.slide::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Customize scrollbar thumb on hover */
+.slide::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Optional: Customize scrollbar corner */
+.slide::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.keenSlider{
+  height: 100%;
+  overflow-y: auto !important;
+  border-radius: 1rem;
+      height: 400px !important;
+  box-shadow: 0px 0px 5px 1px #00000045;
+}
+.keenSlider::-webkit-scrollbar {
+  width: 5px;
+}
+
+.keenSlider::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+
+.keenSlider::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a09e97, #777776);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.keenSlider::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b4b4b4, #747474);
+}
+
+.dot {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #848BA3;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #848BA3;
+  opacity: 0.6;
+}

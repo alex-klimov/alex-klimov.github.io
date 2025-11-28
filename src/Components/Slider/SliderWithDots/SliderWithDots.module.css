@@ -1,0 +1,52 @@
+.sliderWrapper {
+  width: 100%;
+  /* height: 460px; */
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  min-height: 100%; /* FIXES half-image issue */
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.keen-slider__slide {
+  height: auto !important;
+  min-height: 460px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* DOTS */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.dot {
+  padding: 0.4rem;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dotActive {
+  background: white;
+  transform: scale(1.25);
+}

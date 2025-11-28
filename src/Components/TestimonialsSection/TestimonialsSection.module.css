@@ -1,0 +1,86 @@
+.testimonialContainer {
+  background-color: var(--violet);
+  padding-top: 4.5rem;
+}
+
+.testimonialContainer :global(.common) h2 {
+  color: var(--primary-white) !important;
+  margin-bottom: 2.5rem;
+
+}
+
+.statsSection {
+  position: relative;
+}
+
+.statsBox {
+  min-width: 1400px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 2rem 3rem;
+  border-radius: 0 40px 0 0;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(0 0%,
+      18% 0%,
+      34.5% 0%,
+      36.4% 2.7%,
+      37.1% 8.5%,
+      37.7% 33%,
+      39% 86.6%,
+      39.4% 93%,
+      40.4% 98.6%,
+      50% 99%,
+      56% 99%,
+      63% 99%,
+      73% 100%,
+      93% 100%,
+      98% 100%,
+      24% 100%,
+      0% 100%,
+      0 88%)
+}
+
+/* text styling */
+.statsBox h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: start;
+}
+
+.statsBox p {
+  margin: 8px 0 0 0;
+  line-height: 1.3;
+  color: #333;
+  text-align: start;
+}
+
+@media screen and (max-width:768px) {
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+  .statsBox p{
+    text-align: center;
+  }
+  .statsBox h2{
+        font-weight: 600;
+  }
+  .statsBox {
+    padding: 2rem 1rem;
+    clip-path: unset;
+    background: var(--violet);
+    max-width: unset;
+    min-width: unset;
+    display: flex;
+    gap: unset;
+    justify-content: space-around;
+  }
+  .colTesti{
+    text-align: center;
+    color: var(--primary-white) !important;
+  }
+}
