@@ -54,7 +54,7 @@
     .mainContainer {
         flex-direction: column;
         border-radius: 0.4rem;
-        padding: 2rem 0rem;
+        padding: 2rem 1rem;
         align-items: unset;
     }
 
