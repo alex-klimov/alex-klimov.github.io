@@ -36,6 +36,7 @@
   background: #fff;
   justify-content: space-evenly;
   min-height: 430px !important;
+  height: 500px;
 }
 
 .cardHeader {
@@ -131,7 +132,7 @@
   color: var(--primary-white);
   border-radius: 20px;
   padding: 0.3rem 1rem;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
