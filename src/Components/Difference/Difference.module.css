@@ -4,10 +4,12 @@
     border-radius: 0.8rem;
     padding: unset !important;
 }
-.differenceHeader :global(.common){
+
+.differenceHeader :global(.common) {
     margin-bottom: 2.2rem;
     max-width: 737px;
 }
+
 .comparisonColumn {
     width: 50%;
     padding-bottom: 3rem;
@@ -16,12 +18,14 @@
 .comparisonColumn:first-child {
     background: var(--yellow);
 }
-.comparisonRows{
+
+.comparisonRows {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
 }
+
 .comparisonColumn :global(.commonText) h3 {
     padding: 1rem 4rem !important;
     background-color: var(--violet);
@@ -40,38 +44,47 @@
     align-items: center;
     gap: 1rem;
 }
+
 @media screen and (max-width:840px) {
-    .comparisonColumn{
+    .comparisonColumn {
         width: 100%;
     }
+
     .comparisonColumn :global(.commonText) h3 {
         padding: 1rem 1rem !important;
 
     }
-    .row{
+
+    .row {
         padding: 0rem 1rem 0rem !important;
     }
-    
+
 }
+
 @media screen and (max-width:640px) {
-    .comparisonColumn{
-        background:transparent !important;
+    .comparisonColumn {
+        background: transparent !important;
         padding-bottom: 0rem;
     }
-    .comparisonContainer{
-        background:transparent !important;
+
+    .comparisonContainer {
+        background: transparent !important;
 
     }
-    .differenceHeader :global(.common) h2{
+
+    .differenceHeader :global(.common) h2 {
         padding: 0rem 2rem;
-}
-    .differenceHeader :global(.common) div p{
-        padding: 0rem 2rem;
-}
-    .row{
-            align-items: baseline;
     }
-     .comparisonContainer {
+
+    .differenceHeader :global(.common) div p {
+        padding: 0rem 2rem;
+    }
+
+    .row {
+        align-items: baseline;
+    }
+
+    .comparisonContainer {
         border-radius: unset;
     }
 }

@@ -24,12 +24,11 @@ const FAQ = () => {
         <HeaderSection tag={faqHeader.tag} title={faqHeader.title} />
         <Accordion items={faqs} />
         <div className={styles.faqButtonContainer}>
-
           <HeaderSection subtitle={footer.subtitle} description={footer.desc} />
         </div>
         <div className={` ${styles.faqButtonContainer}`}>
           <button
-          className={`buttonText regular ${styles.button}`}
+            className={`buttonText regular ${styles.button}`}
             onClick={() => {
               window.location.href = `mailto:${footer.cta.action}`;
             }}

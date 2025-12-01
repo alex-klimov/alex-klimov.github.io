@@ -120,6 +120,7 @@
   background: var(--zaffra) !important;
   color: var(--primary-white) !important;
 }
+
 .popularBadge {
   position: absolute;
   top: -1rem;
@@ -146,11 +147,13 @@
   font-weight: bold;
   color: var(--violet);
 }
+
 @media (max-width: 464px) {
-    .sliderWrapper {
-      max-width: 300px;
-      padding-top: 2.2rem;
-    }
+  .sliderWrapper {
+    max-width: 300px;
+    padding-top: 2.2rem;
+  }
+
   .card {
     padding: 0.7rem;
     max-width: 98vw;

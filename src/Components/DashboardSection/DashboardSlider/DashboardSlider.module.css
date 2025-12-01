@@ -5,14 +5,13 @@
 .slideImage {
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 .slide{
   overflow: auto !important;
 }
 .slide::-webkit-scrollbar {
-  width: 8px; /* Vertical scrollbar width */
-  height: 12px; /* Horizontal scrollbar height */
+  width: 8px; 
+  height: 12px; 
 }
 
 /* Customize scrollbar track */

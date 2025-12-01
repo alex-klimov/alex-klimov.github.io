@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 1rem;
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
     gap: 1rem;
     text-align: center;
 
@@ -41,30 +41,30 @@
 .getInTouch {
     margin-right: 2.7rem !important;
     background-color: var(--primary-white) !important;
-    color: var(--violet) !important ; 
+    color: var(--violet) !important;
 }
+
 @media screen and (max-width:640px) {
-    .getInTouch{
-         background-color: var(--violet) !important;
-    color :var(--primary-white) !important;
-    margin-right: 0rem !important;
+    .getInTouch {
+        background-color: var(--violet) !important;
+        color: var(--primary-white) !important;
+        margin-right: 0rem !important;
+    }
 
-    }
-    .mainContainer{
-        flex-direction: column;
-    }
     .mainContainer {
+        flex-direction: column;
         border-radius: 0.4rem;
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
         align-items: unset;
-
     }
-    .headlineContainer{
+
+    .headlineContainer {
         padding-left: 0rem;
     }
+
     .headlineContainer :global(.commonText) h2,
-.headlineContainer :global(.commonText) p {
-    text-align: center;
-    
-}
+    .headlineContainer :global(.commonText) p {
+        text-align: center;
+
+    }
 }

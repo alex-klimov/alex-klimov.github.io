@@ -1,5 +1,11 @@
-import React, { createContext, useContext, useRef, useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, {
+  createContext,
+  useContext,
+  useRef,
+  useEffect,
+  useState,
+} from "react";
+import { useLocation } from "react-router-dom";
 
 const ScrollContext = createContext();
 
@@ -14,36 +20,30 @@ export const ScrollProvider = ({ children }) => {
   const priceRef = useRef(null);
   const faqRef = useRef(null);
 
-
-
   const [isImpactInView, setIsImpactInView] = useState(false);
   const location = useLocation();
 
-  
-
   const scrollToSection = (ref) => {
     if (ref?.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   useEffect(() => {
     const hash = location.hash;
     const scrollMap = {
-      '#product': productRef,
-      '#why': whyRef,
-      '#impact': impactRef,
-      '#demo': demoRef,
-      '#dashboard':dashboard,
-      '#price':priceRef,
-      '#faq':faqRef,
-
-
+      "#product": productRef,
+      "#why": whyRef,
+      "#impact": impactRef,
+      "#demo": demoRef,
+      "#dashboard": dashboard,
+      "#price": priceRef,
+      "#faq": faqRef,
     };
     if (hash && scrollMap[hash]) {
       setTimeout(() => {
         scrollToSection(scrollMap[hash]);
-      }, 200); 
+      }, 200);
     }
   }, [location]);
 

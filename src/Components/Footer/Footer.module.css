@@ -5,7 +5,7 @@
 }
 
 .container {
-    background-color: black;
+    background-color: var(--primary-black-dark);
 }
 .footerDescription :global(.commonText) p,.link :global(.commonText) p,.copyRight :global(.commonText) p{
     color:#B2B2B2;
