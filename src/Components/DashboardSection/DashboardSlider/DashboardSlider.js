@@ -3,6 +3,7 @@ import "keen-slider/keen-slider.min.css";
 import styles from "./DashboardSlider.module.css";
 import { useKeenSlider } from "keen-slider/react";
 import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
 const DashboardSlider = ({ imageData }) => {
@@ -63,12 +64,21 @@ const DashboardSlider = ({ imageData }) => {
             ))}
           </div>
 
-          {/* FULLSCREEN VIEW with yet-another-react-lightbox */}
+          {/* FULLSCREEN VIEW with Zoom 🔥 */}
           <Lightbox
             open={isOpen}
             close={() => setIsOpen(false)}
             slides={lightboxSlides}
             index={currentSlide}
+            plugins={[Zoom]}
+            zoom={{
+              maxZoomPixelRatio: 3,
+              scrollToZoom: true,
+              wheelZoomRatio: 1.1,
+              doubleTapDelay: 300,
+              doubleClickDelay: 300,
+              doubleClickMaxStops: 2,
+            }}
             on={{
               view: ({ index }) => setCurrentSlide(index),
             }}

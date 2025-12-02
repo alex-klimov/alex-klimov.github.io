@@ -5,6 +5,7 @@ import "keen-slider/keen-slider.min.css";
 import { useState, useEffect } from "react";
 import images from "./ChasoSlider.json";
 import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
 const ChasoMobileSlider = () => {
@@ -48,7 +49,7 @@ const ChasoMobileSlider = () => {
                 src={slide.image}
                 alt={slide.alt}
                 className={styles.slideImage}
-                onClick={() => isMobile && setIsOpen(true)} // 🔥 open lightbox on mobile only
+                onClick={() => isMobile && setIsOpen(true)}
                 style={{ cursor: isMobile ? "zoom-in" : "default" }}
               />
             </div>
@@ -82,13 +83,25 @@ const ChasoMobileSlider = () => {
         ))}
       </div>
 
-      {/* FULLSCREEN LIGHTBOX - Mobile Only 🔥 */}
+      {/* FULLSCREEN LIGHTBOX with ZOOM - Mobile Only 🔥 */}
       {isMobile && (
         <Lightbox
           open={isOpen}
           close={() => setIsOpen(false)}
           slides={lightboxSlides}
           index={currentSlide}
+          plugins={[Zoom]}
+          carousel={{
+            finite: true,
+          }}
+          zoom={{
+            maxZoomPixelRatio: 3,
+            scrollToZoom: true,
+            wheelZoomRatio: 1.1,
+            doubleTapDelay: 300,
+            doubleClickDelay: 300,
+            doubleClickMaxStops: 2,
+          }}
           on={{
             view: ({ index }) => setCurrentSlide(index),
           }}
