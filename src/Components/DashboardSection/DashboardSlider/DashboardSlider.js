@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import styles from "./DashboardSlider.module.css";
 import { useKeenSlider } from "keen-slider/react";
-import "react-image-lightbox/style.css";
-import Lightbox from "react-image-lightbox";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const DashboardSlider = ({ imageData }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const checkMobileView = () => setIsMobile(window.innerWidth <= 768);
@@ -14,9 +16,6 @@ const DashboardSlider = ({ imageData }) => {
     window.addEventListener("resize", checkMobileView);
     return () => window.removeEventListener("resize", checkMobileView);
   }, []);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const [isOpen, setIsOpen] = useState(false);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
@@ -26,6 +25,12 @@ const DashboardSlider = ({ imageData }) => {
     slides: { perView: 1 },
     mode: "free-snap",
   });
+
+  // Prepare slides for lightbox
+  const lightboxSlides = imageData.map((slide) => ({
+    src: `/assets/newDesign/CustomDashboard/${slide.image}`,
+    alt: slide.alt,
+  }));
 
   return (
     <>
@@ -38,7 +43,7 @@ const DashboardSlider = ({ imageData }) => {
                   src={`/assets/newDesign/CustomDashboard/${slide.image}`}
                   alt={slide.alt}
                   className={`slideNew ${styles.slideImage}`}
-                  onClick={() => setIsOpen(true)} // 🔥 open fullscreen
+                  onClick={() => setIsOpen(true)}
                   style={{ cursor: "zoom-in" }}
                 />
               </div>
@@ -58,48 +63,16 @@ const DashboardSlider = ({ imageData }) => {
             ))}
           </div>
 
-          {/* FULLSCREEN VIEW 🔥 */}
-          {isOpen && (
-            <>
-              <Lightbox
-                mainSrc={`/assets/newDesign/CustomDashboard/${imageData[currentSlide].image}`}
-                nextSrc={`/assets/newDesign/CustomDashboard/${
-                  imageData[(currentSlide + 1) % imageData.length]?.image
-                }`}
-                prevSrc={`/assets/newDesign/CustomDashboard/${
-                  imageData[
-                    (currentSlide + imageData.length - 1) % imageData.length
-                  ]?.image
-                }`}
-                onCloseRequest={() => setIsOpen(false)}
-                onMovePrevRequest={() =>
-                  setCurrentSlide(
-                    (currentSlide + imageData.length - 1) % imageData.length
-                  )
-                }
-                onMoveNextRequest={() =>
-                  setCurrentSlide((currentSlide + 1) % imageData.length)
-                }
-              />
-              <div
-                style={{
-                  position: "fixed",
-                  top: "11%",
-                  right: 20,
-                  padding: "10px 14px",
-                  background: "white",
-                  borderRadius: "50%",
-                  fontSize: "20px",
-                  cursor: "pointer",
-                  color: "black",
-                  zIndex: 10000,
-                }}
-                onClick={() => setIsOpen(false)}
-              >
-                ✕
-              </div>
-            </>
-          )}
+          {/* FULLSCREEN VIEW with yet-another-react-lightbox */}
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={lightboxSlides}
+            index={currentSlide}
+            on={{
+              view: ({ index }) => setCurrentSlide(index),
+            }}
+          />
         </div>
       ) : (
         <div className={styles.sliderContainer}>

@@ -4,8 +4,8 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState, useEffect } from "react";
 import images from "./ChasoSlider.json";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const ChasoMobileSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,11 +28,21 @@ const ChasoMobileSlider = () => {
     mode: "free-snap",
   });
 
+  // Prepare slides for lightbox
+  const lightboxSlides = images.map((slide) => ({
+    src: slide.image,
+    alt: slide.alt,
+  }));
+
   return (
     <div className={styles.sliderContainer}>
       <div ref={sliderRef} className={`keen-slider ${styles.keenSlider}`}>
         {images.map((slide, i) => (
-          <div className={`keen-slider__slide ${styles.slide}`} style={{ backgroundColor: slide.bgColor }} key={i}>
+          <div
+            className={`keen-slider__slide ${styles.slide}`}
+            style={{ backgroundColor: slide.bgColor }}
+            key={i}
+          >
             <div className={styles.imageWrapper}>
               <img
                 src={slide.image}
@@ -44,7 +54,11 @@ const ChasoMobileSlider = () => {
             </div>
 
             <div className={styles.textContainer}>
-              <CommonText subHeading={slide.title} weight="font-weight-500" size="title-h3" />
+              <CommonText
+                subHeading={slide.title}
+                weight="font-weight-500"
+                size="title-h3"
+              />
               <CommonText
                 subHeading={slide.desc}
                 size="label-sub2"
@@ -68,40 +82,17 @@ const ChasoMobileSlider = () => {
         ))}
       </div>
 
- 
       {/* FULLSCREEN LIGHTBOX - Mobile Only 🔥 */}
-      {isMobile && isOpen && (
-        <>
-          <Lightbox
-            mainSrc={images[currentSlide].image}
-            nextSrc={images[(currentSlide + 1) % images.length]?.image}
-            prevSrc={images[(currentSlide + images.length - 1) % images.length]?.image}
-            onCloseRequest={() => setIsOpen(false)}
-            onMovePrevRequest={() =>
-              setCurrentSlide((currentSlide + images.length - 1) % images.length)
-            }
-            onMoveNextRequest={() =>
-              setCurrentSlide((currentSlide + 1) % images.length)
-            }
-          />
-          <div
-            style={{
-              position: "fixed",
-              top: "11%",
-              right: 20,
-              padding: "10px 14px",
-              background: "white",
-              borderRadius: "50%",
-              fontSize: "20px",
-              cursor: "pointer",
-              color: "black",
-              zIndex: 10000,
-            }}
-            onClick={() => setIsOpen(false)}
-          >
-            ✕
-          </div>
-        </>
+      {isMobile && (
+        <Lightbox
+          open={isOpen}
+          close={() => setIsOpen(false)}
+          slides={lightboxSlides}
+          index={currentSlide}
+          on={{
+            view: ({ index }) => setCurrentSlide(index),
+          }}
+        />
       )}
     </div>
   );
