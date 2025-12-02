@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
 }
+.pricingSection :global(.common) {
+  max-width: 715px !important;
+}
 
 .cardHeader {
   padding: 2rem;

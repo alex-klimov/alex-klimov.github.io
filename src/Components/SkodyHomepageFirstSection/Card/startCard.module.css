@@ -11,7 +11,7 @@
 .description {
     letter-spacing: 0.9px;
     font-size: 18px;
-    text-align: center;
+    text-align: start;
 }
 
 .descriptionContent {
@@ -35,6 +35,10 @@
     .description,
     .writer {
         font-size: 12px;
+
+    }
+    .description{
+    text-align: center;
 
     }
 

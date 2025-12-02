@@ -1,7 +1,7 @@
 /* MarqueeSlider.module.css */
 .marqueeContainer {
   width: 100%;
-  padding: 5rem 0rem;
+  padding: 3rem 0rem;
   overflow: hidden;
   background: var(--marquee-bg);
 }

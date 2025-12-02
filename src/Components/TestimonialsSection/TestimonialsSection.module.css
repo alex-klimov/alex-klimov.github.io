@@ -91,4 +91,9 @@
   .testimonialContainer :global(.common) {
     padding: 0 1.2rem !important;
 }
+.testimonialContainer :global(.common) h2{
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+
+}
 }
