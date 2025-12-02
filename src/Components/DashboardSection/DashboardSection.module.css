@@ -1,5 +1,5 @@
 .mainContainer {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 .chaosDashboardContainer :global(.common) div p {
@@ -108,6 +108,9 @@
 }
 
 @media screen and (max-width: 640px) {
+    .mainContainer{
+        padding: 2rem 0rem;
+    }
     .customDashboardContainer {
         margin: 0 1rem;
     }
