@@ -7,6 +7,7 @@
 
 .sectionContainer :global(.common) {
     max-width: 791px;
+    padding: unset !important;
 }
 
 .headingContainer {
@@ -126,11 +127,11 @@
     }
 
     .leftImageContainer {
-        width: 90%;
+        width: 100%;
     }
 
     .rightContentContainer {
-        width: 85%;
+        width: 100%;
         align-items: unset;
 
     }

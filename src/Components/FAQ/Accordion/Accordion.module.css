@@ -77,5 +77,11 @@
   .question :global(.commonText) h3 {
     font-weight: 600;
   }
+  .item{
+    margin-bottom: unset;
 
+  }
+  .accordion{
+    margin: 0.8rem auto;
+  }
 }

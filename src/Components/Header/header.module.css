@@ -51,6 +51,7 @@
     padding: 0.5rem 1rem;
 
 }
+
 .button {
     background-color: var(--violet);
     color: var(--primary-white);
@@ -61,6 +62,7 @@
     font-size: 20px;
     border-radius: 0.4rem;
 }
+
 .header nav ul li a {
     all: unset
 }
@@ -165,11 +167,13 @@
     }
 
 }
+
 @media screen and (max-width:640px) {
     .button {
-    font-size: 12px;
-}
-    
+        font-size: 12px;
+        padding: 0.6rem 1rem;
+    }
+
 }
 
 @media screen and (max-width:445px) {

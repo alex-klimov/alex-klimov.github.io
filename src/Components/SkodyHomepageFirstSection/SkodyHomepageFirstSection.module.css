@@ -133,6 +133,8 @@
     .heading :global(.commonText) h2 {
         margin-bottom: 0.8rem;
         text-align: center;
+        padding-top: 0rem;
+
     }
     .description :global(.commonText) p {
         margin-bottom: 0.8rem;

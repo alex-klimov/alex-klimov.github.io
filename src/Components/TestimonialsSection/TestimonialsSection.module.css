@@ -84,3 +84,11 @@
     color: var(--primary-white) !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .testimonialContainer {
+    padding-top: 2.3rem;
+  }
+  .testimonialContainer :global(.common) {
+    padding: 0 1.2rem !important;
+}
+}

@@ -21,7 +21,7 @@ const DashboardSection = () => {
     const customDashboard=isMobile ?customDashboard1.mobile :customDashboard1.desktop;
   return (
     <>
-      <div className="">
+      <div>
         <div className={`homePageContainer ${styles.chaosDashboardContainer}`}>
           <HeaderSection
             tag={customDashboard.Chaos.tag}
