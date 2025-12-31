@@ -53,9 +53,7 @@ export default function PricingSection() {
                 key={plan.name}
                 className={`keen-slider__slide ${styles.card}`}
               >
-                {plan.mostPopular && (
-                  <div className={styles.popularBadge}>Most Popular</div>
-                )}
+
                 <div className={styles.cardHeader}>
                   <div className={styles.iconContainer}>
                     <div className={styles.priceIconContainer}>
@@ -79,6 +77,8 @@ export default function PricingSection() {
                     </span>
                     <span className={styles.unit}>{plan.unit}</span>
                   </div>
+                <div className={styles.spacer} >
+
                   <ul className={styles.features}>
                     {plan.features.map((f) => (
                       <div className={styles.bulletPointContainer} key={f}>
@@ -98,6 +98,7 @@ export default function PricingSection() {
                     ))}
                   </ul>
                   <CalendlyPopup text={plan.cta} className={styles.cta} />
+                  </div>
                 </div>
               </div>
             ))}
@@ -126,24 +127,21 @@ export default function PricingSection() {
                 plan.mostPopular ? styles.mostPopular : ""
               }`}
             >
-              {plan.mostPopular && (
-                <div className={styles.popularBadge}>Most Popular</div>
-              )}
               <div className={styles.cardHeader}>
                 <div className={styles.iconContainer}>
-                  <div className={styles.priceIconContainer}>
-                    <img src={plan.icon} alt="icon" />
-                  </div>
                   <CommonText
                     subHeading={plan.name}
                     size="title-h3"
                     weight="font-weight-500"
                   />
-                </div>
                 <CommonText
                   smallDescription={plan.users}
                   size="label-H3-sub3"
                 />
+                </div>
+                  <div className={styles.priceIconContainer}>
+                    <img src={plan.icon} alt="icon" />
+                  </div>
               </div>
               <div className={styles.cardBody}>
                 <div className={styles.priceRow}>
@@ -152,7 +150,8 @@ export default function PricingSection() {
                   </span>
                   <span className={styles.unit}>{plan.unit}</span>
                 </div>
-                <ul className={styles.features}>
+                <div className={styles.spacer} >
+<ul className={styles.features}>
                   {plan.features.map((f) => (
                     <div key={f} className={styles.bulletPointContainer}>
                       <img
@@ -171,6 +170,8 @@ export default function PricingSection() {
                   ))}
                 </ul>
                 <CalendlyPopup text={plan.cta} className={styles.cta} />
+                </div>
+                
               </div>
             </div>
           ))}

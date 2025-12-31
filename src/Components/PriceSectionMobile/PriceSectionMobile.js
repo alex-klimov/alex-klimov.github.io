@@ -19,7 +19,7 @@ export default function PriceSectionMobile() {
   const [currentSlide, setCurrentSlide] = useState();
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      initial: 1,
+      initial: 0,
       loop: true,
       mode: "snap",
       slides: { perView: 1, spacing: 16 },
@@ -43,48 +43,70 @@ export default function PriceSectionMobile() {
   };
 
   // Helper for feature display per card
-  const renderFeatures = (plan) => {
+    const renderFeatures = (plan) => {
+    // 1. Determine the limit: 3 for Custom (price is null), 4 for others
+    const initialLimit = plan.price === null ? 3 : 4;
+    
     const isExpanded = expandedCards[plan.name] || false;
-    const visibleFeatures = isExpanded ? plan.features : plan.features.slice(0, 3);
-    const remainingCount = plan.features.length - 3;
+    
+    // 2. Use the dynamic limit to slice the array
+    const visibleFeatures = isExpanded ? plan.features : plan.features.slice(0, initialLimit);
+    
+    // 3. Calculate remaining count based on the dynamic limit
+    const remainingCount = plan.features.length - initialLimit;
+
     return (
-      <ul className={styles.features}>
-        {visibleFeatures.map((f) => (
-          <li key={f} className={styles.bulletPointContainer}>
-            <img
-              src="/assets/newDesign/tick.png"
-              alt="tick"
-              className={styles.tickIcon}
-            />
-            <CommonText
-              smallDescription={f}
-              size="body-lg-type2"
-              fontFamily="prompt"
-            />
-          </li>
-        ))}
-        {/* Show more/less link */}
-        {!isExpanded && remainingCount > 0 && (
-          <li
-            className={styles.showMore}
-            onClick={() => toggleCard(plan.name)}
-            style={{ color: "#0057ff", cursor: "pointer",listStyle:'none', fontWeight: 500 }}
-          >
-            {plan.hasShowAll 
-              ? "... show all features" 
-              : `... show ${remainingCount} more`}
-          </li>
-        )}
-        {isExpanded && (
-          <li
-            className={styles.showMore}
-            onClick={() => toggleCard(plan.name)}
-            style={{ color: "#0057ff", cursor: "pointer",listStyle:'none', fontWeight: 500 }}
-          >
-            show less
-          </li>
-        )}
-      </ul>
+      <div className={styles.spacer}>
+        <ul className={styles.features}>
+          {visibleFeatures.map((f) => (
+            <li key={f} className={styles.bulletPointContainer}>
+              <img
+                src="/assets/newDesign/tick.png"
+                alt="tick"
+                className={styles.tickIcon}
+              />
+              <CommonText
+                smallDescription={f}
+                size="body-lg-type2"
+                fontFamily="prompt"
+              />
+            </li>
+          ))}
+          
+          {/* Show more/less link */}
+          {!isExpanded && remainingCount > 0 && (
+            <li
+              className={styles.showMore}
+              onClick={() => toggleCard(plan.name)}
+              style={{
+                color: "#0057ff",
+                cursor: "pointer",
+                listStyle: "none",
+                fontWeight: 500,
+              }}
+            >
+              {plan.hasShowAll
+                ? "... show all features"
+                : `... show ${remainingCount} more`}
+            </li>
+          )}
+          {isExpanded && (
+            <li
+              className={styles.showMore}
+              onClick={() => toggleCard(plan.name)}
+              style={{
+                color: "#0057ff",
+                cursor: "pointer",
+                listStyle: "none",
+                fontWeight: 500,
+              }}
+            >
+              show less
+            </li>
+          )}
+        </ul>
+        <CalendlyPopup text={plan.cta} className={styles.cta} />
+      </div>
     );
   };
 
@@ -100,21 +122,29 @@ export default function PriceSectionMobile() {
           <div ref={sliderRef} className={`keen-slider ${styles.keenSlider}`}>
             {plans.cards.map((plan) => (
               <div key={plan.name} className={`keen-slider__slide ${styles.card}`}>
-                {plan.mostPopular && (
+                {/* {plan.mostPopular && (
                   <div className={styles.popularBadge}>Most Popular</div>
-                )}
-                <div className={styles.cardHeader}>
-                  <div className={styles.iconContainer}>
-                    <div className={styles.priceIconContainer}>
-                      <img src={plan.icon} alt="icon" />
-                    </div>
-                    <CommonText
-                      subHeading={plan.name}
-                      size="title-h3"
-                      weight="font-weight-500"
-                    />
-                  </div>
+                )} */}
+                 <div className={styles.cardHeader}>
+                <div className={styles.iconContainer}>
+                  {/* <div className={styles.priceIconContainer}>
+                    <img src={plan.icon} alt="icon" />
+                  </div> */}
+                  <CommonText
+                    subHeading={plan.name}
+                    size="title-h3"
+                    weight="font-weight-500"
+                  />
+                <CommonText
+                  smallDescription={plan.users}
+                  size="label-H3-sub3"
+                />
                 </div>
+
+                  <div className={styles.priceIconContainer}>
+                    <img src={plan.icon} alt="icon" />
+                  </div>
+              </div>
                 <div className={styles.cardBody}>
                   <div className={styles.priceRow}>
                     <span className={styles.price}>
@@ -123,7 +153,6 @@ export default function PriceSectionMobile() {
                     <span className={styles.unit}>{plan.unit}</span>
                   </div>
                   {renderFeatures(plan)}
-                  <CalendlyPopup text={plan.cta} className={styles.cta} />
                 </div>
               </div>
             ))}

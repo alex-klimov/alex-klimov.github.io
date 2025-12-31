@@ -33,10 +33,10 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 1rem 1.2rem;
-  background: #fff;
+  background: var(--light-blue);
   justify-content: space-evenly;
   min-height: 430px !important;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .cardHeader {
@@ -48,26 +48,33 @@
 
 .iconContainer {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 1rem;
 }
 
+
 .priceIconContainer {
-  width: 60px;
-  height: 60px;
-  background: var(--blue-50);
+padding: 0.8rem;
+  
+      background: #89b2ef33;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.card:first-child .cardBody .priceRow span {
+  color: white;
+  font-family: "SF Pro";
 
+}
 .features {
   margin: 1rem 0 2rem 0;
   color: var(--charcoal);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0;
+  overflow: auto;
   padding-left: 0;
 }
 
@@ -102,16 +109,16 @@
 }
 
 .dotActive {
-  background: rgb(37, 37, 37);
+  background: rgb(37 37 37 / 60%); 
   transform: scale(1.25);
 }
 
 .cta {
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 2rem;
   width: 100%;
   background: transparent !important;
   border: 1px solid var(--violet) !important;
-  color: var(--violet) !important;
+  color: var(--charcoal) !important;
   cursor: pointer;
   font-weight: 400 !important;
   transition: background 0.2s;
@@ -142,13 +149,62 @@
   align-items: baseline;
   margin-bottom: 1rem;
 }
+.priceRow .unit {
+  /* font-size: 1.2rem; */
+      color: var(--Outerspace);
+  margin-left: 0.3rem;
+}
+
 
 .price {
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--violet);
 }
+.cardHeader {
+  padding: 0.5rem 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  border-bottom: 1px solid #3434363b;
+}
+.card:first-child{
+ background: linear-gradient(150deg, #002BC4, 32%, #AFCFFF);
+}
+.card:first-child .cardHeader {
+    border-bottom: 1px solid white;
 
+
+}
+.card:first-child .cardHeader .iconContainer :global(.commonText) h3 {
+  color: white;
+
+}
+.card:first-child .cardHeader .iconContainer :global(.commonText) p {
+  color: rgba(255, 255, 255, 0.603);
+
+}
+.iconContainer {
+  padding-bottom: 0.2rem;
+  display: flex;
+  /* align-items: center; */
+  gap: 0.2rem;
+  flex-direction: column;
+}
+.spacer{
+  display: flex;
+  height: 257px;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding:1.3rem;
+  /* margin-bottom: 2rem; */
+  border-radius: 0.7rem;  
+}
+.iconContainer :global(.commonText) h3 {
+  font-size:28px;
+}
 @media (max-width: 464px) {
   .sliderWrapper {
     max-width: 300px;
